@@ -5,11 +5,7 @@ import {  Link, useLocation } from "react-router-dom";
 import Dropdown from './Dropdown';
 
 export default function Navbar() {
-  // const [tab, setTab] = useState('/');
   const location = useLocation();
-  // useEffect(() => {
-  //   setTab(location.pathname);
-  // }, [location])
 
   function getTabColor(tab) {
     switch (location.pathname) {
