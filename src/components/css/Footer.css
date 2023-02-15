@@ -1,0 +1,29 @@
+.footer-container {
+  position: relative;
+  display: block;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+}
+
+.icons {
+  position: relative;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  transition: 0.2s ease;
+}
+
+.icon {
+  padding-inline: 15px;
+  transition: 0.2s ease;
+}
+
+.icons:hover .icon {
+  opacity: 0.5;
+}
+
+.icons .icon:hover {
+  opacity: 1;
+}
