@@ -24,10 +24,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-weight:normal;
 }
 
 .tab:hover {
   color:black !important;
+}
+
+.tabs-light .tab:hover {
+  color: lightgray !important;
 }
 
 Link {
@@ -38,6 +43,6 @@ Link {
   display: inherit;
 }
 
-Link:hover {
-  color:black !important;
+.tabs-light .tab Link:hover {
+  color:lightgray !important;
 }

@@ -14,7 +14,7 @@ import Fellowship from './pages/Fellowship';
 function App() {
   return (
     <Router>
-      <Navbar />
+      <Navbar light={true} />
       <Routes>
         <Route index element={<Home/>} />
         <Route path='/about' element={<About/>} />

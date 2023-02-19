@@ -1,0 +1,51 @@
+.main-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.about-title-container {
+  background-image: url('../../assets/about/about-bkg.svg');
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  width: 100vw;
+  height: auto;
+  position: relative;
+  margin-top: -15%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-title-container h1 {
+  padding: 27%;
+  color: white;
+  /* text-align: center; */
+}
+
+.about-section {
+  display: flex;
+  position: relative;
+  /* text-align: center; */
+  /* justify-content: space-between; */
+  /* margin: 5vw; */
+  width: 100vw;
+  height: auto;
+}
+
+.about-text {
+  width: 38vw;
+  padding: 10vw;
+  /* padding-left: 10vw; */
+}
+
+.about-image {
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+  padding-right: 10vw;
+  width: 30vw;
+  height:auto;
+}

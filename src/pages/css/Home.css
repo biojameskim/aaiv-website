@@ -11,7 +11,7 @@ h1 {
   margin: 0;
 }
 
-.title-container {
+.home-title-container {
   background-image: url('../../assets/home/home-bkg2.svg');
   background-size:cover;
   background-position: center;
@@ -22,10 +22,10 @@ h1 {
   position: relative;
   margin-top: -15%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
-.title-container .text-container {
+.home-title-container .text-container {
   margin-top: 35%;
   padding-left: 8vw;
 }
@@ -34,7 +34,8 @@ h1 {
   width: 55vw;
   height: auto;
   margin-top: 35vh;
-  padding-right: 8vw;
+  padding-right: 6vw;
+  padding-left: 2vw;
   margin-bottom: 15vh;
 }
 
@@ -61,7 +62,13 @@ h1 {
   width: 35vw;
 }
 
-.vision-image {
+/* .vision-image {
+  width: 25vw !important;
+  height: auto !important;
+  padding:8% !important;
+  margin-top: 10% !important;
+} */
+FadeInSection {
   width: 25vw !important;
   height: auto !important;
   padding:8% !important;
