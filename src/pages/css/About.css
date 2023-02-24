@@ -1,18 +1,21 @@
 
 .about-title-container {
   background-image: url('../../assets/about/about-bkg.svg');
-  background-size:cover;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
   height: auto;
+  overflow:visible;
   position: relative;
   display: flex;
   justify-content: center;
 }
 
 .about-title-container h1 {
-  padding: 23%;
+  /* padding: 23%; */
+  padding-top: 50vh;
+  padding-bottom: 50vh;
   color: white;
   /* text-align: center; */
 }
@@ -27,16 +30,41 @@
   height: auto;
 }
 
+.about-section-mobile {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+  justify-content: center;
+}
+
 .about-text {
   width: 38vw;
   padding: 10vw;
   /* padding-left: 10vw; */
 }
 
+.about-text-mobile {
+  text-align: center;
+  justify-content: center;
+  width: 80vw;
+  padding: 10vw 0vw 5vw 0vw;
+}
+
 .about-image {
   padding-top: 10vw;
   padding-bottom: 10vw;
   padding-right: 10vw;
+  /* padding: 10vw; */
   width: 30vw;
   height:auto;
+}
+
+.about-image-mobile {
+  padding: 5vw;
+  width: 90vw;
+  height: auto;
 }

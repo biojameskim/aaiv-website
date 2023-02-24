@@ -14,7 +14,12 @@
 
 .sg-title-image {
   position: relative;
-  margin: 4vw 6vw 0vw 6vw;
+  margin: 5vw 6vw 0vw 6vw;
+}
+
+.sg-title-container-mobile .sg-title-image {
+  position: relative;
+  margin: 15vw 6vw 0vw 6vw;
 }
 
 .sg-title-container .text-container {
@@ -22,6 +27,14 @@
   width: 35vw;
   margin-top: -18vw;
   margin-bottom: 10vw;
+  align-self: center;
+}
+
+.sg-title-container-mobile .text-container {
+  position: relative;
+  width: 80vw;
+  margin-top: 5vw;
+  margin-bottom: 20vw;
   align-self: center;
 }
 

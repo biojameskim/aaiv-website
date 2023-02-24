@@ -12,9 +12,23 @@
 .church-title-container .text-container {
   width: 40vw;
   color: white;
-  margin-top: 22%;
-  margin-bottom: 16%;
+  margin-top: 40vh;
+  margin-bottom: 40vh;
   margin-left: 12vw;
+  text-shadow: 0px 2.5px black;
+}
+
+.church-title-container .text-container-mobile {
+  display: block;
+  /* flex-direction: column; */
+  width: 70vw;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32vh;
+  margin-bottom: 32vh;
+  margin-left: 15vw;
+  color: white;
   text-shadow: 0px 2.5px black;
 }
 
@@ -25,6 +39,23 @@
   width: 100vw;
   height: auto;
   align-items: center;
+}
+
+.church-section-mobile {
+  flex-direction: column;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  text-align: center;
+  justify-content:space-evenly;
+  /* width: auto; */
+}
+
+.church-section-mobile .text-container-mobile {
+  /* margin: 5vw; */
+  margin-left: 10vw;
+  margin-right: 10vw;
+  justify-content: center;
+  /* margin-bottom: 10vw; */
 }
 
 .church-section-left {
@@ -50,11 +81,21 @@
   margin: 7vw 5vw 7vw 5vw;
 }
 
+.church-image-mobile {
+  width: 50vw;
+  margin: 5vw 5vw 0vw 5vw;
+}
+
 .button-container {
+  position: relative;
   display: flex;
   text-align: center;
   margin-top: 4%;
   margin-bottom: 5%;
+}
+
+.button-container-mobile {
+  justify-content: center;
 }
 
 button {

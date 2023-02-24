@@ -76,7 +76,7 @@
   height: 100%;
   position: absolute;
   background-color: white;
-  overflow: hidden;
+  overflow:scroll;
   text-align: center;
   align-items: center;
   padding-top: 15%;
@@ -95,6 +95,10 @@
   padding: 20px;
 }
 
+.menu a:hover {
+  font-weight: bold;
+}
+
 .nav{
   position:fixed;
   /* max-height: 0; */
@@ -102,7 +106,7 @@
   transition: max-width .5s ease-out;
 }
 
-.nav a{
+.nav a {
   text-decoration: inherit !important;
   color: inherit !important;
 
@@ -130,9 +134,13 @@
 .subnav-content a {
   text-decoration: none;
   padding: 10px;
-  padding-left: 40px;
+  margin-left: 50px;
 }
 .subnav:hover .subnav-content {
   display: flex;
   flex-direction: column;
+}
+
+.subnav-content a:hover {
+  font-weight: bold;
 }

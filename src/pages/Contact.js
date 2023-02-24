@@ -34,9 +34,9 @@ export default function Contact({isMobile=false}) {
   }, []);
 
   return <div className="main-container">
-      <div className="contact-title-container">
-          <img className="contact-img" src={contact_img} alt="contact-img"></img>
-          <div className="text-container">
+      <div className={`contact-title-container ${isMobile ? 'contact-title-container-mobile' : ''}`}>
+          <img className={`contact-img ${isMobile ? 'contact-img-mobile' : ''}`} src={contact_img} alt="contact-img"></img>
+          <div className={`text-container ${isMobile ? 'text-container-mobile' : ''}`}>
               <h1>Contact Us</h1>
               <div className="icons">
                   <a href="https://www.instagram.com/cornellaaiv/" target="_blank" rel="noopener noreferrer">

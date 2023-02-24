@@ -32,14 +32,14 @@ function App() {
     <Router>
       {isMobile() ? <MobileNavbar/> : <Navbar/>}
       <Routes>
-        <Route index element={<Home/>} /> {/*isMobile() ? <MobileHome/> : <Home/>*/}
-        <Route path='/about' element={<About/>} />
-        <Route path='/nso' element={<NSO/>} />
-        <Route path='/large-group' element={<LargeGroup/>} />
-        <Route path='/small-group' element={<SmallGroup/>} />
-        <Route path='/contact' element={<Contact/>} />
-        <Route path='/church' element={<Church/>} />
-        <Route path='/fellowship' element={<Fellowship/>} />
+        <Route index element={<Home isMobile={isMobile()}/>} />
+        <Route path='/about' element={<About isMobile={isMobile()}/>} />
+        <Route path='/nso' element={<NSO isMobile={isMobile()}/>} />
+        <Route path='/large-group' element={<LargeGroup isMobile={isMobile()}/>} />
+        <Route path='/small-group' element={<SmallGroup isMobile={isMobile()}/>} />
+        <Route path='/contact' element={<Contact isMobile={isMobile()}/>} />
+        <Route path='/church' element={<Church isMobile={isMobile()}/>} />
+        <Route path='/fellowship' element={<Fellowship isMobile={isMobile()}/>} />
       </Routes>
     </Router>
   );

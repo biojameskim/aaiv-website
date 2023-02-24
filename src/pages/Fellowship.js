@@ -4,9 +4,9 @@ import urbana2 from '../assets/fellowship/urbana2.svg';
 import './css/Fellowship.css';
 import Footer from '../components/Footer';
 
-export default function Fellowship() {
+export default function Fellowship({isMobile=false}) {
   return <div className="main-container">
-    <div className="fellowship-container">
+    <div className={`fellowship-container ${isMobile ? 'fellowship-container-mobile' : ''}`}>
         <div className="fellowship-left">
             <img className="urbana1" src={urbana1} alt="urbana1"></img>
             <img className="urbana2" src={urbana2} alt="urbana2"></img>

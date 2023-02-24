@@ -11,6 +11,10 @@
   align-items: center;
 }
 
+.contact-title-container-mobile {
+  flex-direction: column;
+}
+
 .contact-img {
   position: relative;
   width: 35vw;
@@ -18,13 +22,25 @@
   margin: 18vh 5vw 18vh 0vw;
 }
 
+.contact-img-mobile {
+  width: 60vw;
+  height: auto;
+  margin: 17vh 0vw 5vh 0vw;
+}
+
 .contact-title-container .text-container {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 18vh 5vw 18vh 0vw;
+  margin: 40vh 5vw 40vh 0vw;
   text-align: center;
+}
+
+.contact-title-container .text-container-mobile {
+  margin: 0;
+  margin-top: 5vh;
+  margin-bottom: 20vh;
 }
 
 .icons {
@@ -75,6 +91,11 @@
   padding-top: 15vh;
   padding-bottom: 10vh;
   text-align: center;
+}
+
+.exec-container h1 {
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .exec-members {

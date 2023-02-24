@@ -5,7 +5,7 @@ import gallery2 from '../assets/about/about2.svg';
 import gallery3 from '../assets/about/about3.svg';
 import Footer from '../components/Footer';
 
-export default function About() {
+export default function About({isMobile=false}) {
   const [isVisible1, setVisible1] = useState(false);
   const [isVisible2, setVisible2] = useState(false);
   const [isVisible3, setVisible3] = useState(false);
@@ -33,8 +33,8 @@ export default function About() {
       <div className="about-title-container">
           <h1>About</h1>
       </div>
-      <div className={`about-section fade-in-section ${isVisible1 ? 'is-visible' : ''}`} ref={domRef1} style={{backgroundColor:'#e6f9ff'}}>
-        <div className="about-text">
+      <div className={`${!isMobile ? 'about-section' : 'about-section-mobile'} fade-in-section ${isVisible1 ? 'is-visible' : ''}`} ref={domRef1} style={{backgroundColor:'#e6f9ff'}}>
+        <div className={`${!isMobile ? 'about-text' : 'about-text-mobile'} `}>
             <h1>What We Believe</h1>
             <p><b>We believe in:</b><br></br><br></br>
                 The only true God, the almighty Creator of all things, <br></br>
@@ -73,10 +73,10 @@ export default function About() {
                 <b>- InterVarsity USA</b>
             </p>
         </div>
-        <img className="about-image" src={gallery1} alt="gallery1"></img>
+        <img className={`${!isMobile ? 'about-image' : 'about-image-mobile'} `} src={gallery1} alt="gallery1"></img>
       </div>
-      <div className={`about-section fade-in-section ${isVisible2 ? 'is-visible' : ''}`} ref={domRef2} style={{backgroundColor:'#fff7ed'}}>
-          <div className="about-text">
+      <div className={`${!isMobile ? 'about-section' : 'about-section-mobile'} fade-in-section ${isVisible2 ? 'is-visible' : ''}`} ref={domRef2} style={{backgroundColor:'#fff7ed'}}>
+          <div className={`${!isMobile ? 'about-text' : 'about-text-mobile'} `}>
               <h1>Tied to Intervarsity</h1>
               <p>
                 We are an affiliated chapter of InterVarsity, established in 1941 with approximately 700 campus chapters worldwide. <br></br><br></br>
@@ -97,14 +97,14 @@ export default function About() {
 
               </p>
           </div>
-          <img className="about-image" src={gallery2} alt="gallery2"></img>
+          <img className={`${!isMobile ? 'about-image' : 'about-image-mobile'} `} src={gallery2} alt="gallery2"></img>
       </div>
-      <div className={`about-section fade-in-section ${isVisible3 ? 'is-visible' : ''}`} ref={domRef3}>
-          <div className="about-text">
+      <div className={`${!isMobile ? 'about-section' : 'about-section-mobile'} fade-in-section ${isVisible3 ? 'is-visible' : ''}`} ref={domRef3}>
+          <div className={`${!isMobile ? 'about-text' : 'about-text-mobile'} `}>
               <h1>History</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
-          <img className="about-image" src={gallery3} alt="gallery3"></img>
+          <img className={`${!isMobile ? 'about-image' : 'about-image-mobile'} `} src={gallery3} alt="gallery3"></img>
       </div>
       <Footer/>
   </div>;
