@@ -16,24 +16,23 @@ h1 {
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: -1;
   width: 100vw;
   height: auto;
   position: relative;
-  margin-top: -15%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .home-title-container .text-container {
-  margin-top: 35%;
+  margin-top: 60vh;
+  margin-bottom: 20vh;
   padding-left: 8vw;
 }
 
 .home-image {
   width: 55vw;
   height: auto;
-  margin-top: 35vh;
+  margin-top: 18vh;
   padding-right: 6vw;
   padding-left: 2vw;
   margin-bottom: 15vh;

@@ -3,18 +3,16 @@
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: -1;
   width: 100vw;
   height: auto;
   position: relative;
-  margin-top: -15%;
   display: flex;
 }
 
 .church-title-container .text-container {
   width: 40vw;
   color: white;
-  margin-top: 30%;
+  margin-top: 22%;
   margin-bottom: 16%;
   margin-left: 12vw;
   text-shadow: 0px 2.5px black;
@@ -34,6 +32,7 @@
 }
 
 .church-section-left .text-container {
+  margin: 5vw;
   margin-left: 10vw;
 }
 

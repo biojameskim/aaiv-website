@@ -6,7 +6,7 @@
   height: auto;
 }
 
-.icons {
+.footer-container .icons {
   position: relative;
   align-items: center;
   padding: 20px;
@@ -15,15 +15,15 @@
   transition: 0.2s ease;
 }
 
-.icon {
+.footer-container .icons .icon {
   padding-inline: 15px;
   transition: 0.2s ease;
 }
 
-.icons:hover .icon {
+.footer-container .icons:hover .icon {
   opacity: 0.5;
 }
 
-.icons .icon:hover {
+.footer-container .icons .icon:hover {
   opacity: 1;
 }

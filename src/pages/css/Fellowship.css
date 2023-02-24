@@ -3,18 +3,16 @@
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: -1;
   width: 100vw;
   height: auto;
   position: relative;
-  margin-top: -15%;
   display: flex;
   justify-content: space-evenly;
 }
 
 .fellowship-left {
   position: relative;
-  margin: 12vw 0vw 8vw 5vw;
+  margin: 10vh 5vw 15vh 5vw;
   /* width: 25vw;
   height: auto; */
 }
@@ -24,7 +22,7 @@
 }
 
 .fellowship-right {
-  margin: 18vw 5vw 5vw -5vw;
+  margin: 25vh 5vw 15vh -5vw;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -45,7 +43,6 @@
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: -1;
   width: 100vw;
   height: auto;
   position: relative;
@@ -56,7 +53,7 @@
 }
 
 .fellowship-section .text-container {
-  margin: 10vw 5vw 10vw 5vw;
+  margin: 15vh 5vw 20vh 5vw;
 }
 
 .fellowship-section a {

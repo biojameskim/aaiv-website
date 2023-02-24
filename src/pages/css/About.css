@@ -1,27 +1,18 @@
-/* .main-container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 100vw;
-  height: 100vh;
-} */
 
 .about-title-container {
   background-image: url('../../assets/about/about-bkg.svg');
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: -1;
-  width: 100vw;
+  width: 100%;
   height: auto;
   position: relative;
-  margin-top: -15%;
   display: flex;
   justify-content: center;
 }
 
 .about-title-container h1 {
-  padding: 27%;
+  padding: 23%;
   color: white;
   /* text-align: center; */
 }

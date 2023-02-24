@@ -1,15 +1,39 @@
-import React from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import './css/About.css';
+import gallery1 from '../assets/about/about1.svg';
 import gallery2 from '../assets/about/about2.svg';
 import gallery3 from '../assets/about/about3.svg';
 import Footer from '../components/Footer';
 
 export default function About() {
+  const [isVisible1, setVisible1] = useState(false);
+  const [isVisible2, setVisible2] = useState(false);
+  const [isVisible3, setVisible3] = useState(false);
+  const domRef1 = useRef();
+  const domRef2 = useRef();
+  const domRef3 = useRef();
+  useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => setVisible1(entry.isIntersecting));
+    });
+    observer.observe(domRef1.current);
+
+    const observer2 = new IntersectionObserver(entries => {
+      entries.forEach(entry => setVisible2(entry.isIntersecting));
+    });
+    observer2.observe(domRef2.current);
+
+    const observer3 = new IntersectionObserver(entries => {
+      entries.forEach(entry => setVisible3(entry.isIntersecting));
+    });
+    observer3.observe(domRef3.current);
+  }, []);
+
   return <div className="main-container">
       <div className="about-title-container">
           <h1>About</h1>
       </div>
-      <div className="about-section" style={{backgroundColor:'#e6f9ff'}}>
+      <div className={`about-section fade-in-section ${isVisible1 ? 'is-visible' : ''}`} ref={domRef1} style={{backgroundColor:'#e6f9ff'}}>
         <div className="about-text">
             <h1>What We Believe</h1>
             <p><b>We believe in:</b><br></br><br></br>
@@ -49,9 +73,9 @@ export default function About() {
                 <b>- InterVarsity USA</b>
             </p>
         </div>
-        {/* <img className="about-image" src={home_image} alt="home_image"></img> */}
+        <img className="about-image" src={gallery1} alt="gallery1"></img>
       </div>
-      <div className="about-section" style={{backgroundColor:'#fff7ed'}}>
+      <div className={`about-section fade-in-section ${isVisible2 ? 'is-visible' : ''}`} ref={domRef2} style={{backgroundColor:'#fff7ed'}}>
           <div className="about-text">
               <h1>Tied to Intervarsity</h1>
               <p>
@@ -75,7 +99,7 @@ export default function About() {
           </div>
           <img className="about-image" src={gallery2} alt="gallery2"></img>
       </div>
-      <div className="about-section">
+      <div className={`about-section fade-in-section ${isVisible3 ? 'is-visible' : ''}`} ref={domRef3}>
           <div className="about-text">
               <h1>History</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>

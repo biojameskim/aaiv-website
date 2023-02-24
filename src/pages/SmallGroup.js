@@ -29,8 +29,7 @@ export default function SmallGroup() {
             <h1>Meet our Spring 2023 Small Group Leaders</h1>
             <p>Guided by one or two of our amazing and friendly small group leaders, you can share life and explore God together in weekly meetings centered around a Bible study, which are often preceded by a small group dinner. Whether you’ve grown up in church your whole life or are just starting to question if there could be a God who has created all things, you are invited to come check out a small group as we cover the book of Hebrews! Learn more about the specific small groups listed below. </p>
         </div>
-        <div className={`leaders fade-in-section ${isVisible ? 'is-visible' : ''}`}
-      ref={domRef}>
+        <div className={`leaders fade-in-section ${isVisible ? 'is-visible' : ''}`} ref={domRef}>
             <div className='leader'>
                 <p>Monday</p>
                 <hr></hr>
