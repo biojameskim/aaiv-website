@@ -1,0 +1,156 @@
+.main-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.home-title-container {
+  background-image: url('../../assets/home/home-bkg2.svg');
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-title-container .text-container {
+  margin-top: 60vh;
+  margin-bottom: 20vh;
+  padding-left: 8vw;
+}
+
+.home-image {
+  width: 55vw;
+  height: auto;
+  margin-top: 18vh;
+  padding-right: 6vw;
+  padding-left: 2vw;
+  margin-bottom: 15vh;
+  overflow: hidden;
+}
+
+.home-title-container-mobile {
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-title-container-mobile .home-image {
+  margin:0;
+  padding: 0;
+  margin-top: 20vh;
+  width: 80vw;
+  height: auto;
+}
+
+.home-title-container-mobile .text-container {
+  margin: 0;
+  padding: 0;
+  margin-top: 8vh;
+  margin-bottom: 20vh;
+  padding-left: 8vw;
+  padding-right: 5vw;
+}
+
+.vision-container {
+  background-image: url('../../assets/home/vision-bkg.svg');
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.vision-container-mobile {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.vision-container .text-container {
+  margin-top: 8%;
+  padding-left: 8vw;
+  margin-bottom: 8%;
+}
+
+.vision-container p {
+  width: 35vw;
+}
+
+.vision-container-mobile .text-container {
+  margin-top: 10vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  margin-bottom: 0vh;
+}
+.vision-container-mobile p {
+  width: 80vw;
+}
+
+.vision-image {
+  width: 25vw !important;
+  height: auto !important;
+  padding:8% !important;
+  margin-top: 10% !important;
+}
+
+.vision-container-mobile .vision-image {
+  width: 60vw !important;
+  height: auto;
+  margin-bottom: 5vh;
+}
+
+.campus-container {
+  background-image: url('../../assets/home/fellowship-bkg.svg');
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  position: relative;
+  align-items:end;
+}
+
+.campus-container .text-container {
+  margin-top: 8%;
+  padding-right: 8vw;
+  margin-bottom: 25%;
+  text-align: end;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+
+.campus-container-mobile .text-container {
+  margin-top: 10vh;
+  padding-right: 5vw;
+  padding-left: 5vw;
+  margin-bottom: 15vh;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.campus-container p {
+  width: 35vw;
+}
+
+.campus-container-mobile p {
+  width: 80vw;
+}

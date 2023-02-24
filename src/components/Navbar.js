@@ -1,22 +1,46 @@
-import React, {useState, useEffect} from 'react';
 import './css/Navbar.css';
 import logo from '../assets/navbar/Logo.svg';
 import {  Link, useLocation } from "react-router-dom";
 import Dropdown from './Dropdown';
+import React from 'react';
 
 export default function Navbar() {
   const location = useLocation();
+  let light = getLightMode();
+  let default_color = light ? 'white' : 'gray';
+  let hover_color = light ? 'lightgray' : 'black';
+  // updateLightMode();
+  function updateLightMode() {
+    light = getLightMode();
+    default_color = light ? 'white' : 'gray';
+    hover_color = light ? 'lightgray' : 'black';
+  }
 
-  function getTabColor(tab) {
+  function getLightMode() {
     switch (location.pathname) {
-      case '/': return tab==='Home' ? 'black' : 'gray';
-      case '/about': return tab==='About' ? 'black' : 'gray';
+      case '/': 
       case '/nso':
       case '/large-group':
-      case '/small-group': return tab==='Events' ? 'black' : 'gray';
+      case '/small-group':
+      case '/contact':
+        return false;
+      case '/about': 
+      case '/church':
+      case '/fellowship':
+        return true;
+      default: return false;
+    } 
+  }
+  function getTabColor(tab) {
+    switch (location.pathname) {
+      case '/': return tab==='Home' ? hover_color : default_color;
+      case '/about': return tab==='About' ? hover_color : default_color;
+      case '/nso':
+      case '/large-group':
+      case '/small-group': return tab==='Events' ? hover_color : default_color;
       case '/contact':
       case '/church':
-      case '/fellowship': return tab==='Connect' ? 'black' : 'gray';
+      case '/fellowship': return tab==='Connect' ? hover_color : default_color;
       default: return 'gray';
     } 
   }
@@ -25,20 +49,20 @@ export default function Navbar() {
         <Link to="/">
           <img className="logo" src={logo} alt="Logo"/>
         </Link>
-        <ul className="tabs">
+        <ul className={`tabs ${light ? 'tabs-light' : ''}`}>
             <li className="tab" style={{color: getTabColor('Home')}}>
-                <Link to="/" style={{ color: 'inherit', textDecoration: 'inherit'}}>Home</Link>
+                <Link to="/" style={{ color: 'inherit', textDecoration: 'inherit'}} onClick={() => updateLightMode()}>Home</Link>
             </li>
             <li className="tab" style={{color: getTabColor('About')}}>
-                <Link to="/about" style={{ color: 'inherit', textDecoration: 'inherit'}}>About</Link>
+                <Link to="/about" style={{ color: 'inherit', textDecoration: 'inherit'}} onClick={() => updateLightMode()}>About</Link>
             </li>
             <li className="tab" style={{color: getTabColor('Events')}}>
-                <Link to="/nso" style={{ color: 'inherit', textDecoration: 'inherit'}}>Events</Link>
-                <Dropdown items={['NSO', 'Large Group', 'Small Group']} links={['/nso', '/large-group', '/small-group']}/>
+                <Link to="/nso" style={{ color: 'inherit', textDecoration: 'inherit'}} onClick={() => updateLightMode()}>Events</Link>
+                <Dropdown items={['NSO', 'Large Group', 'Small Group']} links={['/nso', '/large-group', '/small-group']} light={light}/>
             </li>
             <li className="tab" style={{color: getTabColor('Connect')}}>
-                <Link to="/contact" style={{ color: 'inherit', textDecoration: 'inherit'}}>Connect</Link>
-                <Dropdown items={['Contact', 'Church', 'Fellowships']} links={['/contact', '/church', '/fellowship']}/>
+                <Link to="/contact" style={{ color: 'inherit', textDecoration: 'inherit'}} onClick={() => updateLightMode()}>Connect</Link>
+                <Dropdown items={['Contact', 'Church', 'Fellowships']} links={['/contact', '/church', '/fellowship']} light={light}/>
             </li>
         </ul>
     </div>

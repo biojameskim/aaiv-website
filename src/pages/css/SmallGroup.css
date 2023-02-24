@@ -1,0 +1,109 @@
+.sg-title-container {
+  background-image: url('../../assets/small_group/sg-bkg.svg');
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.sg-title-image {
+  position: relative;
+  margin: 5vw 6vw 0vw 6vw;
+}
+
+.sg-title-container-mobile .sg-title-image {
+  position: relative;
+  margin: 15vw 6vw 0vw 6vw;
+}
+
+.sg-title-container .text-container {
+  position: relative;
+  width: 35vw;
+  margin-top: -18vw;
+  margin-bottom: 10vw;
+  align-self: center;
+}
+
+.sg-title-container-mobile .text-container {
+  position: relative;
+  width: 80vw;
+  margin-top: 5vw;
+  margin-bottom: 20vw;
+  align-self: center;
+}
+
+.sg-leaders-section {
+  background-image: url('../../assets/small_group/sg-bkg2.svg');
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.sg-leaders-section .text-container {
+  margin: 10vw 10vw 3vw 10vw;
+  width: 72vw;
+}
+
+.leaders {
+  display: flex;
+  width: 95vw;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 5vw;
+  flex-wrap: wrap;
+}
+
+.leader {
+  border-radius: 8px;
+  box-shadow: 0px 5px 8px darkgray;
+  background-color: white;
+  padding: 1%;
+  margin: 1vw;
+  text-align: start;
+}
+
+.leader p {
+  padding: 0;
+  margin: 0;
+  color: gray;
+}
+.leader hr {
+  background-color: gray;
+}
+.leader h3 {
+  font-weight: normal;
+  font-size:normal;
+  margin: 10px 0px 5px 0px;
+}
+
+/* .leader img {
+  width: 19vw;
+  height: auto;
+} */
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(10vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease, transform 1.2s ease;
+  will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
