@@ -57,15 +57,15 @@ export default function Church({isMobile=false}) {
         </div>
     </div> 
     <div className={`church-section ${isMobile ? 'church-section-mobile' : ''} church-section-right fade-in-section ${isVisible1 ? 'is-visible' : ''}`} ref={domRef1}>
-        <img className={`${isMobile ? 'church-image-mobile' : 'church-image'}`} src={ficcc} alt="ficcc-image"></img>
+        <img className={`${isMobile ? 'church-image-mobile' : 'church-image'}`} src={ficcc} alt="ficcc"></img>
         <div className={`${isMobile ? 'text-container-mobile' : 'text-container'}`}>
             <h2>9:45 AM</h2>
             <h1>First Ithaca Chinese Christian Church</h1>
             <div className={`button-container ${isMobile ? 'button-container-mobile' : ''}`}>
-                <a href='http://ithacachinesechurch.org/ficccem/' target="_blank" rel="noreferrer">
+                <a href='http://ithacachinesechurch.org/ficccem/' target="_blank" rel="noopener noreferrer">
                     <button>Website</button>
                 </a>
-                <a href='http://ithacachinesechurch.org/ficccem/' target="_blank" rel="noreferrer">
+                <a href='http://ithacachinesechurch.org/ficccem/' target="_blank" rel="noopener noreferrer">
                     <button>Rides</button>
                 </a>
             </div>
@@ -77,16 +77,16 @@ export default function Church({isMobile=false}) {
             <h2>10:00 AM</h2>
             <h1>Ithaca First Assembly of God</h1>
             <div className={`button-container ${isMobile ? 'button-container-mobile' : ''}`}>
-                <a href='https://www.ithacafirstassembly.org/' target="_blank" rel="noreferrer">
+                <a href='https://www.ithacafirstassembly.org/' target="_blank" rel="noopener noreferrer">
                     <button>Website</button>
                 </a>
-                <a href='https://www.ithacafirstassembly.org/' target="_blank" rel="noreferrer">
+                <a href='https://www.ithacafirstassembly.org/' target="_blank" rel="noopener noreferrer">
                     <button>Rides</button>
                 </a>
             </div>
             <p>Contact Karen Ma (kym9) for more details.</p>
         </div>
-        <img className={`${isMobile ? 'church-image-mobile' : 'church-image'}`} src={ithaca_first} alt="ithaca-first-image"></img>
+        <img className={`${isMobile ? 'church-image-mobile' : 'church-image'}`} src={ithaca_first} alt="ithaca-first"></img>
     </div>
     <div className={`church-section ${isMobile ? 'church-section-mobile' : ''} church-section-right  fade-in-section ${isVisible3 ? 'is-visible' : ''}`} ref={domRef3}>
         <img className={`${isMobile ? 'church-image-mobile' : 'church-image'}`} src={vineyard} alt="vineyard"></img>
@@ -94,10 +94,10 @@ export default function Church({isMobile=false}) {
             <h2>10:00 AM</h2>
             <h1>Vineyard Church of Ithaca</h1>
             <div className={`button-container ${isMobile ? 'button-container-mobile' : ''}`}>
-                <a href='https://ithacavineyard.org/' target="_blank" rel="noreferrer">
+                <a href='https://ithacavineyard.org/' target="_blank" rel="noopener noreferrer">
                     <button>Website</button>
                 </a>
-                <a href='https://ithacavineyard.org/how-to-get-here/' target="_blank" rel="noreferrer">
+                <a href='https://ithacavineyard.org/how-to-get-here/' target="_blank" rel="noopener noreferrer">
                     <button>Rides</button>
                 </a>
             </div>
@@ -109,27 +109,27 @@ export default function Church({isMobile=false}) {
             <h2>10:30 AM</h2>
             <h1>Calvary Chapel</h1>
             <div className={`button-container ${isMobile ? 'button-container-mobile' : ''}`}>
-                <a href='https://calvarychapelithaca.org/' target="_blank" rel="noreferrer">
+                <a href='https://calvarychapelithaca.org/' target="_blank" rel="noopener noreferrer">
                     <button>Website</button>
                 </a>
-                <a href='https://docs.google.com/forms/d/e/1FAIpQLScOAMrSJuTAD45HhTtGL82HscS5YPMwgMmBOqTbkNufeDARAQ/viewform' target="_blank" rel="noreferrer">
+                <a href='https://docs.google.com/forms/d/e/1FAIpQLScOAMrSJuTAD45HhTtGL82HscS5YPMwgMmBOqTbkNufeDARAQ/viewform' target="_blank" rel="noopener noreferrer">
                     <button>Rides</button>
                 </a>
             </div>
             <p>Contact Brian Zhong (bz99) for more details.</p>
         </div>
-        <img className={`${isMobile ? 'church-image-mobile' : 'church-image'}`} src={calvary} alt="calvary-image"></img>
+        <img className={`${isMobile ? 'church-image-mobile' : 'church-image'}`} src={calvary} alt="calvary"></img>
     </div>
     <div className={`church-section ${isMobile ? 'church-section-mobile' : ''} church-section-right fade-in-section ${isVisible5 ? 'is-visible' : ''}`} ref={domRef5}>
-        <img className={`${isMobile ? 'church-image-mobile' : 'church-image'}`} src={christ_chapel} alt="christ-chapel-image"></img>
+        <img className={`${isMobile ? 'church-image-mobile' : 'church-image'}`} src={christ_chapel} alt="christ-chapel"></img>
         <div className={`${isMobile ? 'text-container-mobile' : 'text-container'}`}>
             <h2>10:30 AM</h2>
             <h1>Christ Chapel</h1>
             <div className={`button-container ${isMobile ? 'button-container-mobile' : ''}`}>
-                <a href='https://www.christchapelithaca.org/' target="_blank" rel="noreferrer">
+                <a href='https://www.christchapelithaca.org/' target="_blank" rel="noopener noreferrer">
                     <button>Website</button>
                 </a>
-                <a href='https://christchapelithaca.churchcenter.com/people/forms/261746' target="_blank" rel="noreferrer">
+                <a href='https://christchapelithaca.churchcenter.com/people/forms/261746' target="_blank" rel="noopener noreferrer">
                     <button>Rides</button>
                 </a>
             </div>

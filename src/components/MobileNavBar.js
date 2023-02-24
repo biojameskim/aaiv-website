@@ -1,15 +1,14 @@
-import React, {useRef, useState} from 'react';
+import React, {useState} from 'react';
 import './css/MobileNavBar.css';
 import logo from '../assets/navbar/Logo.svg';
-import {  Link, useLocation } from "react-router-dom";
+import {  Link } from "react-router-dom";
 
 export default function MobileNavBar() {
-  const navRef = useRef();
   const [open, setOpen] = useState(false);
   return <div className="mob-navbar-container">
-      <Link to="/">
+      <a href="https://intervarsity.org/" target="_blank" rel="noopener noreferrer">
           <img className="mob-logo" src={logo} alt="Logo"/>
-      </Link>
+      </a>
         <input className="side-menu" type="checkbox" id="side-menu" checked={open} onClick={()=>setOpen(!open)}/>
         <label className="hamb" htmlFor="side-menu"><span className="hamb-line"></span></label>
         <nav className="nav">

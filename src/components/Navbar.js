@@ -46,9 +46,9 @@ export default function Navbar() {
   }
   return (
     <div className="Navbar">
-        <Link to="/">
+        <a href="https://intervarsity.org/" target="_blank" rel="noopener noreferrer">
           <img className="logo" src={logo} alt="Logo"/>
-        </Link>
+        </a>
         <ul className={`tabs ${light ? 'tabs-light' : ''}`}>
             <li className="tab" style={{color: getTabColor('Home')}}>
                 <Link to="/" style={{ color: 'inherit', textDecoration: 'inherit'}} onClick={() => updateLightMode()}>Home</Link>

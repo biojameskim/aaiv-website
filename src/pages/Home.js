@@ -29,10 +29,10 @@ export default function Home({isMobile=false}) {
                 <h1>Asian American Intervarsity</h1>
                 <p style={{padding: 0, margin: 0,}}>@Cornell University</p>
             </div>
-            <img className="home-image" src={home_image} alt="home_image"></img>
+            <img className="home-image" src={home_image} alt="home"></img>
         </div> : 
         <div className={`home-title-container home-title-container-mobile`}>
-            <img className="home-image" src={home_image} alt="home_image"></img>
+            <img className="home-image" src={home_image} alt="home"></img>
             <div className="text-container">
                 <h1>Asian American Intervarsity</h1>
                 <p style={{padding: 0, margin: 0,}}>@Cornell University</p>
@@ -44,7 +44,7 @@ export default function Home({isMobile=false}) {
               <h1>Our Vision</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
-          <img className="vision-image" src={vision_image} alt="vision_image"></img>
+          <img className="vision-image" src={vision_image} alt="vision"></img>
       </div>
       <div className={`campus-container fade-in-section ${isMobile ? 'campus-container-mobile' : ''} ${isVisible2 ? 'is-visible' : ''}`} ref={campusRef}>
           <div className="text-container">

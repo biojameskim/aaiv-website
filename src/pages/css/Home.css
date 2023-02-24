@@ -153,4 +153,9 @@ h1 {
 
 .campus-container-mobile p {
   width: 80vw;
+  color: black;
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: 50px;
 }

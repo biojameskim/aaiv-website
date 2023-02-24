@@ -24,7 +24,6 @@ function App() {
       updateSize();
       return () => window.removeEventListener('resize', updateSize);
     }, []);
-    console.log(size);
     return size[0] < 750 || size[0] < size[1];
   }
 
