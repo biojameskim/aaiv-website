@@ -3,7 +3,7 @@ import './css/SmallGroup.css';
 import sg_img from '../assets/small_group/sg-img.svg';
 import monday_img from '../assets/small_group/elisabeth-melody.svg';
 import tuesday_img from '../assets/small_group/grace-chen.svg';
-// import wed_img from '../assets/small_group/'
+import wed_img from '../assets/small_group/simon-jed.svg'
 import thurs_img from '../assets/small_group/grace-li.svg';
 import Footer from '../components/Footer';
 
@@ -68,7 +68,7 @@ export default function SmallGroup({ isMobile = false }) {
         <div className={`leader fade-in-section ${isVisible3 ? 'is-visible' : ''}`} ref={wednesdayRef}>
           <p>Wednesday</p>
           <hr></hr>
-          <img src={monday_img} alt="wednesday"></img>
+          <img src={wed_img} alt="wednesday"></img>
           <h3>Simon & Jed (sc2925, jyt8)</h3>
           <p>6pm @ HOLLISTER HALL</p>
         </div>

@@ -58,7 +58,7 @@ export default function Navbar() {
             </li>
             <li className="tab" style={{color: getTabColor('Events')}}>
                 <Link to="/nso" style={{ color: 'inherit', textDecoration: 'inherit'}} onClick={() => updateLightMode()}>Events</Link>
-                <Dropdown items={['NSO', 'Large Group', 'Small Group']} links={['/nso', '/large-group', '/small-group']} light={light}/>
+                <Dropdown items={['Outreach', 'Large Group', 'Small Group']} links={['/nso', '/large-group', '/small-group']} light={light}/>
             </li>
             <li className="tab" style={{color: getTabColor('Connect')}}>
                 <Link to="/contact" style={{ color: 'inherit', textDecoration: 'inherit'}} onClick={() => updateLightMode()}>Connect</Link>

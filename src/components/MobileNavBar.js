@@ -18,7 +18,7 @@ export default function MobileNavBar() {
                 <li className="subnav">
                     <p className="subnavbtn">Events</p>
                     <div className="subnav-content">
-                        <Link to="/nso" onClick={()=>setOpen(false)}>NSO</Link>
+                        <Link to="/nso" onClick={()=>setOpen(false)}>Outreach</Link>
                         <Link to="/large-group" onClick={()=>setOpen(false)}>Large Group</Link>
                         <Link to="/small-group" onClick={()=>setOpen(false)}>Small Group</Link>
                     </div>
