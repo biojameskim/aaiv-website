@@ -1,6 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react';
 import './css/Gallery.css';
 
+// THERE IS A BUG WHERE THE ANIMATE FUNCTION DOESN'T WORK ON MOBILE.
 export default function Gallery({images = []}) {
   const [mouseDown, setMouseDown] = useState(0);
   const [prevPerc, setPrevPerc] = useState(0);
