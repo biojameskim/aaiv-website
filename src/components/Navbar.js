@@ -20,11 +20,11 @@ export default function Navbar() {
     switch (location.pathname) {
       case '/': 
       case '/nso':
-      case '/large-group':
       case '/small-group':
       case '/contact':
         return false;
       case '/about': 
+      case '/large-group':
       case '/church':
       case '/fellowship':
         return true;
@@ -36,8 +36,8 @@ export default function Navbar() {
       case '/': return tab==='Home' ? hover_color : default_color;
       case '/about': return tab==='About' ? hover_color : default_color;
       case '/nso':
-      case '/large-group':
       case '/small-group': return tab==='Events' ? hover_color : default_color;
+      case '/large-group':
       case '/contact':
       case '/church':
       case '/fellowship': return tab==='Connect' ? hover_color : default_color;

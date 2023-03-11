@@ -1,0 +1,64 @@
+
+.lg-title-container {
+  background-image: url('../../assets/large_group/lg-bkg.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  overflow:visible;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.lg-title-container .text-container {
+  text-align: center;
+  color: white;
+  margin: 50vh 20vw 25vh 20vw;
+}
+
+.lg-content-container {
+  width: 100vw;
+  height: auto;
+  background: linear-gradient(0deg, black 0%, lightgray 100%);
+
+}
+
+.flyer-container {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 10vh 0vw 0vh 0vw;
+  overflow: hidden;
+}
+
+.flyer {
+  display: block;
+  width: 65%;
+  height: auto;
+  margin: auto;
+  border-radius: 20px;
+  border: white solid 20px;
+  overflow: hidden;
+}
+
+.algae-container {
+  width: 100%;
+  display: block;
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20vh 0vw 0vh 0vw;
+  overflow: hidden;
+}
+
+.algae-container .text-container {
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
