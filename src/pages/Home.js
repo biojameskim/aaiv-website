@@ -1,6 +1,6 @@
 import React, {useEffect, useState, useRef} from 'react';
 import './css/Home.css';
-import home_image from '../assets/home/home-img.svg';
+import home_image from '../assets/home/home-img.png';
 import vision_image from '../assets/home/vision.svg';
 import Footer from '../components/Footer';
 

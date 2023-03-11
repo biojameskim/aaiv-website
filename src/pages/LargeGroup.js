@@ -3,14 +3,14 @@ import './css/LargeGroup.css';
 import flyer from '../assets/large_group/flyer.png';
 import Gallery from '../components/Gallery';
 import Footer from '../components/Footer';
-import a1 from '../assets/large_group/algae2.png';
-import a2 from '../assets/large_group/algae5.png';
-import a3 from '../assets/large_group/algae7.png';
-import a4 from '../assets/large_group/algae1.png';
-import a5 from '../assets/large_group/algae3.png';
-import a6 from '../assets/large_group/algae4.png';
-import a7 from '../assets/large_group/algae6.png';
-import a8 from '../assets/large_group/algae8.png';
+import a1 from '../assets/large_group/algae2.svg';
+import a2 from '../assets/large_group/algae5.svg';
+import a3 from '../assets/large_group/algae7.svg';
+import a4 from '../assets/large_group/algae1.svg';
+import a5 from '../assets/large_group/algae3.svg';
+import a6 from '../assets/large_group/algae4.svg';
+import a7 from '../assets/large_group/algae6.svg';
+import a8 from '../assets/large_group/algae8.svg';
 
 
 export default function LargeGroup({ isMobile = false }) {
@@ -30,12 +30,11 @@ export default function LargeGroup({ isMobile = false }) {
     });
     observer2.observe(algaeRef.current);
   })
-  return <div classname="main-container">
+  return <div className="main-container">
   <div className="lg-title-container">
     <div className='text-container'>
       <h1>Large Group</h1>
       <p>Large Group is our biggest weekly gathering! Join us every Friday night at 7:30pm in RPCC 205 for a time of fellowship, worship, and learning (followed by fun!). All are welcome, whether you are curious about Christianity or have been Christian your entire life. </p>
-      <br></br>
       <p>Check our instagram page for important updates:) We hope to see you there!</p>
     </div>
   </div>

@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import './css/SmallGroup.css';
-import sg_img from '../assets/small_group/sg-img.svg';
+import sg_img from '../assets/small_group/sg-img.png';
 import monday_img from '../assets/small_group/elisabeth-melody.svg';
 import tuesday_img from '../assets/small_group/grace-chen.svg';
 import wed_img from '../assets/small_group/simon-jed.svg'

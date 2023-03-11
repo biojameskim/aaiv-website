@@ -15,6 +15,7 @@
 .sg-title-image {
   position: relative;
   margin: 5vw 6vw 0vw 6vw;
+  object-fit:contain;
 }
 
 .sg-title-container-mobile .sg-title-image {
@@ -71,7 +72,7 @@
   border-radius: 8px;
   box-shadow: 0px 5px 8px darkgray;
   background-color: white;
-  padding: 1%;
+  padding: 10px;
   margin: 1vw;
   text-align: start;
   transition: all 200ms ease-in-out;
@@ -94,8 +95,9 @@
 
 .leader h3 {
   font-weight: normal;
-  font-size: normal;
+  font-size:large;
   margin: 10px 0px 5px 0px;
+  object-fit:contain;
 }
 
 /* .leader img {
