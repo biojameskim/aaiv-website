@@ -138,3 +138,24 @@
   padding: 0;
   margin: 0;
 }
+
+.email-container {
+  background-image: url('../../assets/contact/contact-bkg1.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15vh;
+  padding-bottom: 10vh;
+  text-align: center;
+}
+
+.mailchimp-form {
+  justify-content: flex;
+  flex-direction: column;
+}

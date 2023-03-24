@@ -131,7 +131,7 @@ export default function Church({ isMobile = false }) {
                     </a>
                     <p>Anabel Taylor Hall B21 (One World Room)</p>
                 </div>
-                <p>Contact James Kim (jjk297) for more details.</p>
+                <p>Contact Kaitlin Chung (khc73) for more details.</p>
             </div>
         </div>
         <Footer />

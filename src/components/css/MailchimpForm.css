@@ -1,0 +1,14 @@
+.chimp-forms {
+  justify-content: flex;
+  background-color: aqua;
+  flex-direction: column;
+  justify-self: center;
+  justify-items: center;
+  align-content: center;
+  width: 50%;
+  margin: auto;
+}
+
+.chimp-forms form {
+  border-radius: 10%;
+}

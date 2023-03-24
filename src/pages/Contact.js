@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './css/Contact.css';
 import contact_img from '../assets/contact/contact-img.svg';
 import instagram from '../assets/footer/instagram.svg';
@@ -15,7 +15,9 @@ import ben_prof from '../assets/contact/ben-profile.svg';
 import jonah_prof from '../assets/contact/jonah-profile.svg';
 import Question from '../components/Question';
 
-export default function Contact({isMobile=false}) {
+import MailchimpForm from '../components/MailchimpForm';
+
+export default function Contact({ isMobile = false }) {
     const customStyles = {
         content: {
           top: '50%',
@@ -38,31 +40,32 @@ export default function Contact({isMobile=false}) {
   const [benIsOpen, setBenIsOpen] = useState(false);
   const [jonahIsOpen, setJonahIsOpen] = useState(false);
 
-  const amyRef = useRef();
-  const benRef = useRef();
-  const jonahRef = useRef();
-  useEffect(() => {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => setVisibleAmy(entry.isIntersecting));
-    });
-    observer.observe(amyRef.current);
+    const amyRef = useRef();
+    const benRef = useRef();
+    const jonahRef = useRef();
+    useEffect(() => {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => setVisibleAmy(entry.isIntersecting));
+        });
+        observer.observe(amyRef.current);
 
-    const observer2 = new IntersectionObserver(entries => {
-      entries.forEach(entry => setVisibleBen(entry.isIntersecting));
-    });
-    observer2.observe(benRef.current);
+        const observer2 = new IntersectionObserver(entries => {
+            entries.forEach(entry => setVisibleBen(entry.isIntersecting));
+        });
+        observer2.observe(benRef.current);
 
-    const observer3 = new IntersectionObserver(entries => {
-      entries.forEach(entry => setVisibleJonah(entry.isIntersecting));
-    });
-    observer3.observe(jonahRef.current);
-  }, []);
+        const observer3 = new IntersectionObserver(entries => {
+            entries.forEach(entry => setVisibleJonah(entry.isIntersecting));
+        });
+        observer3.observe(jonahRef.current);
+    }, []);
 
   return <div className="main-container">
       <div className={`contact-title-container ${isMobile ? 'contact-title-container-mobile' : ''}`}>
           <img className={`contact-img ${isMobile ? 'contact-img-mobile' : ''}`} src={contact_img} alt="contact-img"></img>
           <div className={`text-container ${isMobile ? 'text-container-mobile' : ''}`}>
               <h1>Contact Us</h1>
+              <p>Do you have more questions about who we are and what we do? Interested in serving? </p>
               <div className="icons">
                   <a href="https://www.instagram.com/cornellaaiv/" target="_blank" rel="noopener noreferrer">
                       <img className="icon" src={instagram} alt="insta-icon"></img>
@@ -153,8 +156,11 @@ export default function Contact({isMobile=false}) {
           </div>
       </div>
       <div className="email-container">
-
-      </div>
-      <Footer/>
-  </div>;
+            <h2>Join Our Mailing List!</h2>
+            <div className='mailchimp-form'>
+                <MailchimpForm />
+            </div>
+        </div>
+        <Footer />
+    </div >;
 }
