@@ -1,6 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react';
 import './css/Gallery.css';
 
+// THERE IS A BUG WHERE THE ANIMATE FUNCTION DOESN'T WORK ON MOBILE.
 export default function Gallery({images = []}) {
   const [mouseDown, setMouseDown] = useState(0);
   const [prevPerc, setPrevPerc] = useState(0);
@@ -30,17 +31,21 @@ export default function Gallery({images = []}) {
     const nextPercentageUnconstrained = prevPerc + percentage;
     const nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
     setPercent(nextPercentage);
-
-    track.current.animate({
-      transform: `translate(${nextPercentage}%, -50%)`
-    }, { duration: 1200, fill: "forwards" });
-
-    for(let i = 0; i < imageRefs.length; i+=1) {
-      const image = imageRefs[i];
-      image.current.animate({
-        objectPosition: `${100 + nextPercentage}% center`
+    try{
+      track.current.animate({
+        transform: `translate(${nextPercentage}%, -50%)`
       }, { duration: 1200, fill: "forwards" });
+
+      for(let i = 0; i < imageRefs.length; i+=1) {
+        const image = imageRefs[i];
+        image.current.animate({
+          objectPosition: `${100 + nextPercentage}% center`
+        }, { duration: 1200, fill: "forwards" });
+      }
+    } catch(e) {
+      console.log(e);
     }
+    
   }
 
   useEffect(() => {

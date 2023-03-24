@@ -1,0 +1,27 @@
+.profile-container {
+  display: block;
+  padding: 20px 20px 30px 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  justify-self: center;
+  margin: 0px 5% 0px 5%;
+  border-bottom: 2px solid #f6f6f6;
+}
+
+.profile-img {
+  transition: all 0.1s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+.profile-container h2 {
+  margin-bottom: 2vh;
+  padding-bottom: 0;
+}
+.profile-container p {
+  margin: 0;
+  padding: 0;
+}
