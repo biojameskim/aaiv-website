@@ -9,6 +9,11 @@ import ben from '../assets/contact/ben.svg';
 import jonah from '../assets/contact/jonah.svg';
 import Footer from '../components/Footer';
 import Modal from 'react-modal';
+import Profile from '../components/Profile';
+import amy_prof from '../assets/contact/amy-profile.svg';
+import ben_prof from '../assets/contact/ben-profile.svg';
+import jonah_prof from '../assets/contact/jonah-profile.svg';
+import Question from '../components/Question';
 
 export default function Contact({isMobile=false}) {
     const customStyles = {
@@ -19,8 +24,13 @@ export default function Contact({isMobile=false}) {
           bottom: 'auto',
           marginRight: '-50%',
           transform: 'translate(-50%, -50%)',
+          width: '65%',
+          overflow: 'scroll',
+          maxHeight: '80vh',
         },
+        overlay: {zIndex: 2}
       };
+  Modal.setAppElement('body');
   const [isVisibleAmy, setVisibleAmy] = useState(false);
   const [isVisibleBen, setVisibleBen] = useState(false);
   const [isVisibleJonah, setVisibleJonah] = useState(false);
@@ -77,7 +87,6 @@ export default function Contact({isMobile=false}) {
                           <img className="exec-icon" src={email} alt="email-icon"></img>
                       </a>
                   </div>
-                  
                   <p>Small Group Coordinator</p>
               </div>
               <div className={`exec fade-in-section ${isVisibleBen ? 'is-visible' : ''}`} ref={benRef} onClick={() => {setBenIsOpen(true)}}>
@@ -94,7 +103,7 @@ export default function Contact({isMobile=false}) {
                   <img className="exec-image" src={jonah} alt="amy"></img>
                   <div className="exec-title">
                       <h3>Jonah Bernand (jb2528)</h3>
-                      <a href="mailto: bjl99@cornell.edu">
+                      <a href="mailto: jb2528@cornell.edu">
                           <img className="exec-icon" src={email} alt="email-icon"></img>
                       </a>
                   </div>
@@ -106,22 +115,40 @@ export default function Contact({isMobile=false}) {
                 isOpen={amyIsOpen}
                 onRequestClose={() => {setAmyIsOpen(false)}}
                 style={customStyles}
-            >
-                <p>Hello! I am Amy!</p>
+            >   
+                <div>
+                    <Profile image={amy_prof} title={'Amy Ge'} text={'Small Group Coordinator'} email={'aqg4@cornell.edu'}/>
+                    <Question isMobile={isMobile} image={amy_prof} question={'tell us a bit about yourself.'} answer={'Hii! I’m Amy, a freshman studying Information Science from San Diego, CA. Outside of AAIV, I’m also part of Cornell AppDev and the Cornell Badminton Club Team. In my free time, I enjoy art, video games, and reading.'}/>
+                    <Question isMobile={isMobile} image={amy_prof} question={'what is your vision for AAIV?'} answer={'My vision for AAIV is for us to be a witnessing community that seeks to share God’s love with the people around us. AAIV small groups hold a special place in my heart as I think it’s a great place to grow in our understanding of God’s word as well as in our relationships with each other. As small group coordinator, I hope to support our amazing small group leaders in facilitating these spaces. Feel free to reach out if you have any questions or just want to chat!'}/>
+                    <Question isMobile={isMobile} image={amy_prof} question={'favorite AAIV memory?'} answer={'Stargazing on rawlings green!'}/>
+                    <Question isMobile={isMobile} image={amy_prof} question={'describe AAIV with three emojis.'} answer={'...'}/>
+                </div>
             </Modal>
             <Modal
                 isOpen={benIsOpen}
                 onRequestClose={() => {setBenIsOpen(false)}}
                 style={customStyles}
             >
-                <p>Hello! I am Ben!</p>
+                <div>
+                    <Profile image={ben_prof} title={'Ben Loong'} text={'Outreach Coordinator'} email={'bjl99@cornell.edu'}/>
+                    <Question isMobile={isMobile} image={ben_prof} question={'tell us a bit about yourself.'} answer={'...'}/>
+                    <Question isMobile={isMobile} image={ben_prof} question={'what is your vision for AAIV?'} answer={'...'}/>
+                    <Question isMobile={isMobile} image={ben_prof} question={'favorite AAIV memory?'} answer={'...'}/>
+                    <Question isMobile={isMobile} image={ben_prof} question={'describe AAIV with three emojis.'} answer={'...'}/>
+                </div>
             </Modal>
             <Modal
                 isOpen={jonahIsOpen}
                 onRequestClose={() => {setJonahIsOpen(false)}}
                 style={customStyles}
             >
-                <p>Hello! I am Jonah!</p>
+                <div>
+                    <Profile image={jonah_prof} title={'Jonah Bernand'} text={'Large Group Coordinator'} email={'jb2528@cornell.edu'}/>
+                    <Question isMobile={isMobile} image={jonah_prof} question={'tell us a bit about yourself.'} answer={'Hi! I\'m Jonah :) I\'m in the Class of 2026 studying ECE and ORIE. I come from Seattle, WA and in my free time I love to read ;)'}/>
+                    <Question isMobile={isMobile} image={jonah_prof} question={'what is your vision for AAIV?'} answer={'I believe AAIV should be a place where anyone on campus can come and find a loving, Christ-centered community. As large group coordinator, I want everyone to feel welcome, grow individually and as a community, and have a lot of fun together!'}/>
+                    <Question isMobile={isMobile} image={jonah_prof} question={'favorite AAIV memory?'} answer={'My favorite AAIV memory is playing beach volleyball with Intervarsity chapters from all over NY and NJ at our annual Selah retreat :))'}/>
+                    <Question isMobile={isMobile} image={jonah_prof} question={'describe AAIV with three emojis.'} answer={'...'}/>
+                </div>
             </Modal>
           </div>
       </div>

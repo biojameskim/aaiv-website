@@ -57,8 +57,10 @@ export default function Navbar() {
                 <Link to="/about" style={{ color: 'inherit', textDecoration: 'inherit'}} onClick={() => updateLightMode()}>About</Link>
             </li>
             <li className="tab" style={{color: getTabColor('Events')}}>
-                <Link to="/nso" style={{ color: 'inherit', textDecoration: 'inherit'}} onClick={() => updateLightMode()}>Events</Link>
-                <Dropdown items={['Outreach', 'Large Group', 'Small Group']} links={['/nso', '/large-group', '/small-group']} light={light}/>
+                <Link to="/large-group" style={{ color: 'inherit', textDecoration: 'inherit'}} onClick={() => updateLightMode()}>Events</Link>
+                {/* <Dropdown items={['Outreach', 'Large Group', 'Small Group']} links={['/nso', '/large-group', '/small-group']} light={light}/> */}
+                <Dropdown items={['Large Group', 'Small Group']} links={['/large-group', '/small-group']} light={light}/>
+
             </li>
             <li className="tab" style={{color: getTabColor('Connect')}}>
                 <Link to="/contact" style={{ color: 'inherit', textDecoration: 'inherit'}} onClick={() => updateLightMode()}>Connect</Link>

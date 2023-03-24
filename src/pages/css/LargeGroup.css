@@ -4,13 +4,11 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 100vw;
   height: auto;
-  overflow:visible;
   position: relative;
   display: flex;
   justify-content: center;
-  overflow: hidden;
 }
 
 .lg-title-container .text-container {
@@ -23,7 +21,7 @@
   width: 100vw;
   height: auto;
   background: linear-gradient(0deg, black 0%, lightgray 100%);
-
+  position: relative;
 }
 
 .flyer-container {
