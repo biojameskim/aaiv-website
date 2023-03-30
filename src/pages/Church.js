@@ -5,6 +5,7 @@ import ithaca_first from '../assets/church/ithaca-first.svg';
 import vineyard from '../assets/church/vineyard.svg';
 import calvary from '../assets/church/calvary.svg';
 import christ_chapel from '../assets/church/christ-chapel.svg';
+import emmaus from '../assets/church/emmaus.svg';
 import Footer from '../components/Footer';
 
 export default function Church({ isMobile = false }) {
@@ -121,7 +122,7 @@ export default function Church({ isMobile = false }) {
             <img className={`${isMobile ? 'church-image-mobile' : 'church-image'}`} src={calvary} alt="calvary"></img>
         </div>
         <div className={`church-section ${isMobile ? 'church-section-mobile' : ''} church-section-right fade-in-section ${isVisible5 ? 'is-visible' : ''}`} ref={domRef5}>
-            <img className={`${isMobile ? 'church-image-mobile' : 'church-image'}`} src={ithaca_first} alt="ithaca-first"></img>
+            <img className={`${isMobile ? 'church-image-mobile' : 'church-image'}`} src={emmaus} alt="emmaus-road"></img>
             <div className={`${isMobile ? 'text-container-mobile' : 'text-container'}`}>
                 <h2>10:30 AM</h2>
                 <h1>Emmaus Road</h1>
@@ -129,8 +130,8 @@ export default function Church({ isMobile = false }) {
                     <a href='https://www.emmausroadcornell.com/' target="_blank" rel="noopener noreferrer">
                         <button>Website</button>
                     </a>
-                    <p>Anabel Taylor Hall B21 (One World Room)</p>
                 </div>
+                <p>Anabel Taylor Hall B21 (One World Room)</p>
                 <p>Contact Kaitlin Chung (khc73) for more details.</p>
             </div>
         </div>
