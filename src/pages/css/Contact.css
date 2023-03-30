@@ -35,12 +35,14 @@
   align-items: center;
   margin: 40vh 5vw 40vh 0vw;
   text-align: center;
+  width: 30%;
 }
 
 .contact-title-container .text-container-mobile {
   margin: 0;
   margin-top: 5vh;
   margin-bottom: 20vh;
+  width: 75%;
 }
 
 .icons {
@@ -140,10 +142,11 @@
 }
 
 .email-container {
-  background-image: url('../../assets/contact/contact-bkg1.svg');
+  /* background-image: url('../../assets/contact/contact-bkg1.svg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+  background-color: #f6f6f6;
   width: 100vw;
   height: auto;
   position: relative;
@@ -151,11 +154,28 @@
   flex-direction: column;
   align-items: center;
   padding-top: 15vh;
-  padding-bottom: 10vh;
+  padding-bottom: 15vh;
   text-align: center;
+}
+
+.email-container .text-container {
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 .mailchimp-form {
   justify-content: flex;
   flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  width: 35%;
+  height: auto;
+  padding: 5vw;
+  margin-top: 4vh;
+  box-shadow: 0px 0px 30px 5px lightgray;
+}
+
+.mailchimp-form-mobile {
+  width: 65%;
+  padding: 10vw;
 }

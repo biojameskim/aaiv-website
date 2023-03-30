@@ -1,14 +1,29 @@
 .chimp-forms {
-  justify-content: flex;
-  background-color: aqua;
+  justify-content: block;
+  position: relative;
+  display: block;
+  /* background-color: aqua; */
   flex-direction: column;
   justify-self: center;
-  justify-items: center;
-  align-content: center;
-  width: 50%;
+  /* justify-items: center; */
+  /* align-content: center; */
+  width: 100%;
   margin: auto;
 }
 
 .chimp-forms form {
-  border-radius: 10%;
+  width: 100%;
+  /* border-radius: 10%; */
+}
+
+.chimp-forms input {
+  width: 100%;
+  height: 4vh;
+  align-self: flex-start;
+}
+
+.chimp-forms button {
+  min-width: 100px;
+  margin-top: 4vh;
+  align-self: flex-start;
 }

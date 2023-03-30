@@ -156,8 +156,12 @@ export default function Contact({ isMobile = false }) {
             </div>
         </div>
         <div className="email-container">
-            <h2>Join Our Mailing List!</h2>
-            <div className='mailchimp-form'>
+            <div className="text-container">
+                <h1>Email List</h1>
+                <p>JOIN THE LISTSERV to receive weekly updates on what’s happening at AAIV.</p>
+            </div>
+            
+            <div className={`mailchimp-form ${isMobile ? 'mailchimp-form-mobile' : ''}`}>
                 <MailchimpForm />
             </div>
         </div>

@@ -1,9 +1,8 @@
-import Mailchimp from "react-mailchimp-form"
-import React from "react"
-import "./css/MailchimpForm.css"
+import Mailchimp from "react-mailchimp-form";
+import React from "react";
+import "./css/MailchimpForm.css";
 
-
-const MailchimpForm = () => {
+export default function MailchimpForm() {
   return (
     <Mailchimp
       action={process.env.REACT_APP_MAILCHIMP_KEY}
@@ -19,5 +18,3 @@ const MailchimpForm = () => {
     />
   )
 }
-
-export default MailchimpForm
