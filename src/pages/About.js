@@ -14,17 +14,35 @@ export default function About({ isMobile = false }) {
   const domRef3 = useRef();
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => setVisible1(entry.isIntersecting));
+      entries.forEach(entry => {
+        if (entry.boundingClientRect.top > 0) {
+            if (entry.isIntersecting) {
+                setVisible1(entry.isIntersecting);
+            }
+          }
+    });
     });
     observer.observe(domRef1.current);
 
     const observer2 = new IntersectionObserver(entries => {
-      entries.forEach(entry => setVisible2(entry.isIntersecting));
+      entries.forEach(entry => {
+        if (entry.boundingClientRect.top > 0) {
+            if (entry.isIntersecting) {
+                setVisible2(entry.isIntersecting);
+            }
+          }
+    });
     });
     observer2.observe(domRef2.current);
 
     const observer3 = new IntersectionObserver(entries => {
-      entries.forEach(entry => setVisible3(entry.isIntersecting));
+      entries.forEach(entry => {
+        if (entry.boundingClientRect.top > 0) {
+            if (entry.isIntersecting) {
+                setVisible3(entry.isIntersecting);
+            }
+          }
+    });
     });
     observer3.observe(domRef3.current);
   }, []);

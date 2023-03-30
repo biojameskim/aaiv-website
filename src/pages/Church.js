@@ -21,31 +21,61 @@ export default function Church({ isMobile = false }) {
     const domRef5 = React.useRef();
     React.useEffect(() => {
         const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => setVisible1(entry.isIntersecting));
+            entries.forEach(entry => {
+                if (entry.boundingClientRect.top > 0) {
+                    if (entry.isIntersecting) {
+                        setVisible1(entry.isIntersecting);
+                    }
+                  }
+            });
         });
         observer.observe(domRef1.current);
     }, []);
     React.useEffect(() => {
         const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => setVisible2(entry.isIntersecting));
+            entries.forEach(entry => {
+                if (entry.boundingClientRect.top > 0) {
+                    if (entry.isIntersecting) {
+                        setVisible2(entry.isIntersecting);
+                    }
+                  }
+            });
         });
         observer.observe(domRef2.current);
     }, []);
     React.useEffect(() => {
         const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => setVisible3(entry.isIntersecting));
+            entries.forEach(entry => {
+                if (entry.boundingClientRect.top > 0) {
+                    if (entry.isIntersecting) {
+                        setVisible3(entry.isIntersecting);
+                    }
+                  }
+            });
         });
         observer.observe(domRef3.current);
     }, []);
     React.useEffect(() => {
         const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => setVisible4(entry.isIntersecting));
+            entries.forEach(entry => {
+                if (entry.boundingClientRect.top > 0) {
+                    if (entry.isIntersecting) {
+                        setVisible4(entry.isIntersecting);
+                    }
+                  }
+            });
         });
         observer.observe(domRef4.current);
     }, []);
     React.useEffect(() => {
         const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => setVisible5(entry.isIntersecting));
+            entries.forEach(entry => {
+                if (entry.boundingClientRect.top > 0) {
+                    if (entry.isIntersecting) {
+                        setVisible5(entry.isIntersecting);
+                    }
+                  }
+            });
         });
         observer.observe(domRef5.current);
     }, []);

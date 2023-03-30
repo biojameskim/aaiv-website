@@ -36,6 +36,7 @@ export default function Contact({ isMobile = false }) {
     const [isVisibleAmy, setVisibleAmy] = useState(false);
     const [isVisibleBen, setVisibleBen] = useState(false);
     const [isVisibleJonah, setVisibleJonah] = useState(false);
+    const [isVisibleEmail, setVisibleEmail] = useState(false);
     const [amyIsOpen, setAmyIsOpen] = useState(false);
     const [benIsOpen, setBenIsOpen] = useState(false);
     const [jonahIsOpen, setJonahIsOpen] = useState(false);
@@ -43,21 +44,51 @@ export default function Contact({ isMobile = false }) {
     const amyRef = useRef();
     const benRef = useRef();
     const jonahRef = useRef();
+    const emailRef = useRef();
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => setVisibleAmy(entry.isIntersecting));
+            entries.forEach(entry => {
+                if (entry.boundingClientRect.top > 0) {
+                    if (entry.isIntersecting) {
+                        setVisibleAmy(entry.isIntersecting);
+                    }
+                  }
+            });
         });
         observer.observe(amyRef.current);
 
         const observer2 = new IntersectionObserver(entries => {
-            entries.forEach(entry => setVisibleBen(entry.isIntersecting));
+            entries.forEach(entry => {
+                if (entry.boundingClientRect.top > 0) {
+                    if (entry.isIntersecting) {
+                        setVisibleBen(entry.isIntersecting);
+                    }
+                  }
+            });
         });
         observer2.observe(benRef.current);
 
         const observer3 = new IntersectionObserver(entries => {
-            entries.forEach(entry => setVisibleJonah(entry.isIntersecting));
+            entries.forEach(entry => {
+                if (entry.boundingClientRect.top > 0) {
+                    if (entry.isIntersecting) {
+                        setVisibleJonah(entry.isIntersecting);
+                    }
+                  }
+            });
         });
         observer3.observe(jonahRef.current);
+
+        const observer4 = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.boundingClientRect.top > 0) {
+                    if (entry.isIntersecting) {
+                        setVisibleEmail(entry.isIntersecting);
+                    }
+                  }
+            });
+        });
+        observer4.observe(emailRef.current);
     }, []);
 
     return <div className="main-container">
@@ -161,7 +192,7 @@ export default function Contact({ isMobile = false }) {
                 <p>JOIN THE LISTSERV to receive weekly updates on what’s happening at AAIV.</p>
             </div>
             
-            <div className={`mailchimp-form ${isMobile ? 'mailchimp-form-mobile' : ''}`}>
+            <div className={`mailchimp-form fade-in-section ${isMobile ? 'mailchimp-form-mobile' : ''} ${isVisibleEmail ? 'is-visible' : ''}`} ref={emailRef}>
                 <MailchimpForm />
             </div>
         </div>

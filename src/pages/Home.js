@@ -12,12 +12,24 @@ export default function Home({isMobile=false}) {
     const campusRef = useRef();
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => setVisible1(entry.isIntersecting));
+            entries.forEach(entry => {
+                if (entry.boundingClientRect.top > 0) {
+                    if (entry.isIntersecting) {
+                        setVisible1(entry.isIntersecting);
+                    }
+                  }
+            });
         });
         observer.observe(visionRef.current);
 
         const observer2 = new IntersectionObserver(entries => {
-            entries.forEach(entry => setVisible2(entry.isIntersecting));
+            entries.forEach(entry => {
+                if (entry.boundingClientRect.top > 0) {
+                    if (entry.isIntersecting) {
+                        setVisible2(entry.isIntersecting);
+                    }
+                  }
+            });
         });
         observer2.observe(campusRef.current);
     }, []);

@@ -45,22 +45,46 @@ export default function SmallGroup({ isMobile = false }) {
   const thursdayRef = useRef();
   useEffect(() => {
     const observer1 = new IntersectionObserver(entries => {
-      entries.forEach(entry => setVisible1(entry.isIntersecting));
+      entries.forEach(entry => {
+        if (entry.boundingClientRect.top > 0) {
+            if (entry.isIntersecting) {
+                setVisible1(entry.isIntersecting);
+            }
+          }
+    });
     });
     observer1.observe(mondayRef.current);
 
     const observer2 = new IntersectionObserver(entries => {
-      entries.forEach(entry => setVisible2(entry.isIntersecting));
+      entries.forEach(entry => {
+        if (entry.boundingClientRect.top > 0) {
+            if (entry.isIntersecting) {
+                setVisible2(entry.isIntersecting);
+            }
+          }
+    });
     });
     observer2.observe(tuesdayRef.current);
 
     const observer3 = new IntersectionObserver(entries => {
-      entries.forEach(entry => setVisible3(entry.isIntersecting));
+      entries.forEach(entry => {
+        if (entry.boundingClientRect.top > 0) {
+            if (entry.isIntersecting) {
+                setVisible3(entry.isIntersecting);
+            }
+          }
+    });
     });
     observer3.observe(wednesdayRef.current);
 
     const observer4 = new IntersectionObserver(entries => {
-      entries.forEach(entry => setVisible4(entry.isIntersecting));
+      entries.forEach(entry => {
+        if (entry.boundingClientRect.top > 0) {
+            if (entry.isIntersecting) {
+                setVisible4(entry.isIntersecting);
+            }
+          }
+    });
     });
     observer4.observe(thursdayRef.current);
   }, []);

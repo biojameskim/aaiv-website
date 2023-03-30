@@ -21,12 +21,24 @@ export default function LargeGroup({ isMobile = false }) {
   const algaeRef = useRef();
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => setIsVisibleFlyer(entry.isIntersecting));
+      entries.forEach(entry => {
+        if (entry.boundingClientRect.top > 0) {
+            if (entry.isIntersecting) {
+                setIsVisibleFlyer(entry.isIntersecting);
+            }
+          }
+    });
     });
     observer.observe(flyerRef.current);
 
     const observer2 = new IntersectionObserver(entries => {
-      entries.forEach(entry => setIsVisibleAlgae(entry.isIntersecting));
+      entries.forEach(entry => {
+        if (entry.boundingClientRect.top > 0) {
+            if (entry.isIntersecting) {
+                setIsVisibleAlgae(entry.isIntersecting);
+            }
+          }
+    });
     });
     observer2.observe(algaeRef.current);
   })
