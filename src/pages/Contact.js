@@ -52,7 +52,7 @@ export default function Contact({ isMobile = false }) {
                     if (entry.isIntersecting) {
                         setVisibleAmy(entry.isIntersecting);
                     }
-                  }
+                }
             });
         });
         observer.observe(amyRef.current);
@@ -63,7 +63,7 @@ export default function Contact({ isMobile = false }) {
                     if (entry.isIntersecting) {
                         setVisibleBen(entry.isIntersecting);
                     }
-                  }
+                }
             });
         });
         observer2.observe(benRef.current);
@@ -74,7 +74,7 @@ export default function Contact({ isMobile = false }) {
                     if (entry.isIntersecting) {
                         setVisibleJonah(entry.isIntersecting);
                     }
-                  }
+                }
             });
         });
         observer3.observe(jonahRef.current);
@@ -85,7 +85,7 @@ export default function Contact({ isMobile = false }) {
                     if (entry.isIntersecting) {
                         setVisibleEmail(entry.isIntersecting);
                     }
-                  }
+                }
             });
         });
         observer4.observe(emailRef.current);
@@ -96,7 +96,7 @@ export default function Contact({ isMobile = false }) {
             <img className={`contact-img ${isMobile ? 'contact-img-mobile' : ''}`} src={contact_img} alt="contact-img"></img>
             <div className={`text-container ${isMobile ? 'text-container-mobile' : ''}`}>
                 <h1>Contact Us</h1>
-                <p >Do you have more questions about who we are and what we do? Or interested in serving?</p>
+                <p >Have more questions about who we are and what we do? Interested in serving?</p>
                 <div className="icons">
                     <a href="https://www.instagram.com/cornellaaiv/" target="_blank" rel="noopener noreferrer">
                         <img className="icon" src={instagram} alt="insta-icon"></img>
@@ -191,7 +191,7 @@ export default function Contact({ isMobile = false }) {
                 <h1>Email List</h1>
                 <p>JOIN THE LISTSERV to receive weekly updates on what’s happening at AAIV.</p>
             </div>
-            
+
             <div className={`mailchimp-form fade-in-section ${isMobile ? 'mailchimp-form-mobile' : ''} ${isVisibleEmail ? 'is-visible' : ''}`} ref={emailRef}>
                 <MailchimpForm />
             </div>

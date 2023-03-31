@@ -1,20 +1,28 @@
-import Mailchimp from "react-mailchimp-form";
-import React from "react";
+
 import "./css/MailchimpForm.css";
 
+import MailchimpSubscribe from 'react-mailchimp-subscribe';
+import React from 'react';
+import { useState } from 'react';
+
 export default function MailchimpForm() {
+  const url = process.env.REACT_APP_MAILCHIMP_KEY
+
+  const [email, setEmail] = useState("");
+
+  const render = ({ subscribe, status, message }) => (
+    <div>
+      <input type="email" name="EMAIL" placeholder="Your email address" onChange={(e) => setEmail(e.target.value)} value={email} />
+      <button onClick={() => subscribe({ EMAIL: email })}>
+        Subscribe
+      </button>
+      {status === "sending" && <div>Sending...</div>}
+      {status === "success" && <div>Thanks for subscribing!</div>}
+      {status === "error" && <div dangerouslySetInnerHTML={{ __html: message }} />}
+    </div>
+  );
+
   return (
-    <Mailchimp
-      action={process.env.REACT_APP_MAILCHIMP_KEY}
-      className="chimp-forms"
-      fields={[
-        {
-          name: "EMAIL",
-          placeholder: "Email Address",
-          type: "email",
-          required: true,
-        }
-      ]}
-    />
-  )
+    <MailchimpSubscribe className="chimp-forms" url={url} render={render} />
+  );
 }
