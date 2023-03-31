@@ -1,7 +1,7 @@
 import React from 'react';
 import './css/Church.css';
 import ficcc from '../assets/church/ficcc.svg';
-import ithaca_first from '../assets/church/ithaca-first.svg';
+// import ithaca_first from '../assets/church/ithaca-first.svg';
 import vineyard from '../assets/church/vineyard.svg';
 import calvary from '../assets/church/calvary.svg';
 import christ_chapel from '../assets/church/christ-chapel.svg';
@@ -26,7 +26,7 @@ export default function Church({ isMobile = false }) {
                     if (entry.isIntersecting) {
                         setVisible1(entry.isIntersecting);
                     }
-                  }
+                }
             });
         });
         observer.observe(domRef1.current);
@@ -38,7 +38,7 @@ export default function Church({ isMobile = false }) {
                     if (entry.isIntersecting) {
                         setVisible2(entry.isIntersecting);
                     }
-                  }
+                }
             });
         });
         observer.observe(domRef2.current);
@@ -50,7 +50,7 @@ export default function Church({ isMobile = false }) {
                     if (entry.isIntersecting) {
                         setVisible3(entry.isIntersecting);
                     }
-                  }
+                }
             });
         });
         observer.observe(domRef3.current);
@@ -62,7 +62,7 @@ export default function Church({ isMobile = false }) {
                     if (entry.isIntersecting) {
                         setVisible4(entry.isIntersecting);
                     }
-                  }
+                }
             });
         });
         observer.observe(domRef4.current);
@@ -74,7 +74,7 @@ export default function Church({ isMobile = false }) {
                     if (entry.isIntersecting) {
                         setVisible5(entry.isIntersecting);
                     }
-                  }
+                }
             });
         });
         observer.observe(domRef5.current);
