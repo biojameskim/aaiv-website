@@ -11,7 +11,7 @@ export default function MailchimpForm() {
   const [email, setEmail] = useState("");
 
   const render = ({ subscribe, status, message }) => (
-    <div>
+    <div className="chimp-forms">
       <input type="email" name="EMAIL" placeholder="Your email address" onChange={(e) => setEmail(e.target.value)} value={email} />
       <button onClick={() => subscribe({ EMAIL: email })}>
         Subscribe
@@ -23,6 +23,6 @@ export default function MailchimpForm() {
   );
 
   return (
-    <MailchimpSubscribe className="chimp-forms" url={url} render={render} />
+    <MailchimpSubscribe url={url} render={render} />
   );
 }
