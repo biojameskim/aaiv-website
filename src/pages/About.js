@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './css/About.css';
 // import gallery1 from '../assets/about/about1.svg';
-import gallery2 from '../assets/about/about2.svg';
-import gallery3 from '../assets/about/about3.svg';
+import gallery2 from '../assets/about/about1(new).svg';
+import gallery3 from '../assets/about/about2(new).svg';
 import Footer from '../components/Footer';
 
 export default function About({ isMobile = false }) {
