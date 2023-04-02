@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './css/About.css';
-import gallery1 from '../assets/about/about1.svg';
+// import gallery1 from '../assets/about/about1.svg';
 import gallery2 from '../assets/about/about2.svg';
 import gallery3 from '../assets/about/about3.svg';
 import Footer from '../components/Footer';
@@ -16,22 +16,22 @@ export default function About({ isMobile = false }) {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.boundingClientRect.top > 0) {
-            if (entry.isIntersecting) {
-                setVisible1(entry.isIntersecting);
-            }
+          if (entry.isIntersecting) {
+            setVisible1(entry.isIntersecting);
           }
-    });
+        }
+      });
     });
     observer.observe(domRef1.current);
 
     const observer2 = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.boundingClientRect.top > 0) {
-            if (entry.isIntersecting) {
-                setVisible2(entry.isIntersecting);
-            }
+          if (entry.isIntersecting) {
+            setVisible2(entry.isIntersecting);
           }
-    });
+        }
+      });
     });
     observer2.observe(domRef2.current);
 
