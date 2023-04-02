@@ -1,6 +1,6 @@
 .fellowship-container {
   background-image: url('../../assets/fellowship/fellowship-bkg.svg');
-  background-size:cover;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100vw;
@@ -27,24 +27,24 @@
   margin: 15vh 5vw 0vh 5vw;
 }
 
-.urbana1 {
+.fship1 {
   width: 38vw;
   height: auto;
 }
 
-.fellowship-container-mobile .fellowship-left .urbana1 {
+.fellowship-container-mobile .fellowship-left .fship1 {
   width: 50vw;
   height: auto;
 }
 
-.urbana2 {
+.fship2 {
   margin-top: 3vw;
   /* margin-left: -7vw; */
-  width: 15vw;
+  width: 18vw;
   height: auto;
 }
 
-.fellowship-container-mobile .fellowship-left .urbana2 {
+.fellowship-container-mobile .fellowship-left .fship2 {
   margin-top: 3vw;
   width: 20vw;
   height: auto;
@@ -63,13 +63,13 @@
 .fellowship-container-mobile .fellowship-right {
   margin: 5vh 5vw 10vh 5vw;
   width: 85vw;
-  
+
 }
 
 
 .fellowship-section {
   background-image: url('../../assets/fellowship/fellowship-bkg2.svg');
-  background-size:cover;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100vw;

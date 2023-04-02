@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './css/Contact.css';
-import contact_img from '../assets/contact/contact-img.png';
+import contact_img from '../assets/contact/contact_background.png';
 import instagram from '../assets/footer/instagram.svg';
 import facebook from '../assets/footer/facebook.svg';
 import email from '../assets/footer/email.svg';

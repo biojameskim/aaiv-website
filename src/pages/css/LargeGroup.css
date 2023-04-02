@@ -1,5 +1,5 @@
 .lg-title-container {
-  background-image: url('../../assets/large_group/lg-bkg.svg');
+  background-image: url('../../assets/small_group/sg-bkg.svg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -12,7 +12,7 @@
 
 .lg-title-container .text-container {
   text-align: center;
-  color: white;
+  color: black;
   margin: 55vh 20vw 25vh 20vw;
 }
 

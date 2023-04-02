@@ -1,4 +1,4 @@
-import React, {useState, useRef, useEffect} from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './css/LargeGroup.css';
 import flyer from '../assets/large_group/flyer.png';
 import Gallery from '../components/Gallery';
@@ -23,45 +23,45 @@ export default function LargeGroup({ isMobile = false }) {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.boundingClientRect.top > 0) {
-            if (entry.isIntersecting) {
-                setIsVisibleFlyer(entry.isIntersecting);
-            }
+          if (entry.isIntersecting) {
+            setIsVisibleFlyer(entry.isIntersecting);
           }
-    });
+        }
+      });
     });
     observer.observe(flyerRef.current);
 
     const observer2 = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.boundingClientRect.top > 0) {
-            if (entry.isIntersecting) {
-                setIsVisibleAlgae(entry.isIntersecting);
-            }
+          if (entry.isIntersecting) {
+            setIsVisibleAlgae(entry.isIntersecting);
           }
-    });
+        }
+      });
     });
     observer2.observe(algaeRef.current);
   })
   return <div className="main-container">
-  <div className="lg-title-container">
-    <div className='text-container'>
-      <h1>Large Group</h1>
-      <p>Large Group is our biggest weekly gathering! Join us every Friday night at 7:30pm in RPCC 205 for a time of fellowship, worship, and learning (followed by fun!). All are welcome, whether you are curious about Christianity or have been Christian your entire life. </p>
-      <p>Check our instagram page for important updates:) We hope to see you there!</p>
-    </div>
-  </div>
-  <div className="lg-content-container">
-    <div className='flyer-container'>
-      <img className={`flyer fade-in-section ${isVisibleFlyer ? 'is-visible' : ''}`} ref={flyerRef} src={flyer} alt='lg-flyer'></img>
-    </div>
-    <div className={`algae-container fade-in-section ${isVisibleAlgae ? 'is-visible' : ''}`} ref={algaeRef}>
+    <div className="lg-title-container">
       <div className='text-container'>
-        <h1>ALGAE</h1>
-        <p>ALGAE stands for After Large Group Activities and Events. It takes place right after Large Group on Friday nights where we…  Everyone is invited to come and have fun!</p>
+        <h1>Large Group</h1>
+        <p>Large Group is our biggest weekly gathering! Join us every Friday night at 7:30pm in RPCC 205 for a time of fellowship, worship, and learning (followed by fun!). All are welcome, whether you are curious about Christianity or have been Christian your entire life. </p>
+        <p>Check our instagram page for important updates:) We hope to see you there!</p>
       </div>
-      <Gallery images={images} isMobile={isMobile}/>
     </div>
-  </div>
-  <Footer/>
-</div>;
+    <div className="lg-content-container">
+      <div className='flyer-container'>
+        <img className={`flyer fade-in-section ${isVisibleFlyer ? 'is-visible' : ''}`} ref={flyerRef} src={flyer} alt='lg-flyer'></img>
+      </div>
+      <div className={`algae-container fade-in-section ${isVisibleAlgae ? 'is-visible' : ''}`} ref={algaeRef}>
+        <div className='text-container'>
+          <h1>ALGAE</h1>
+          <p>ALGAE stands for After Large Group Activities and Events. It takes place right after Large Group on Friday nights where we…  Everyone is invited to come and have fun!</p>
+        </div>
+        <Gallery images={images} isMobile={isMobile} />
+      </div>
+    </div>
+    <Footer />
+  </div>;
 }

@@ -1,6 +1,8 @@
 import React from 'react';
-import urbana1 from '../assets/fellowship/urbana1.svg';
-import urbana2 from '../assets/fellowship/urbana2.svg';
+// import urbana1 from '../assets/fellowship/urbana1.svg';
+// import urbana2 from '../assets/fellowship/urbana2.svg';
+import fellowship_img from '../assets/fellowship/fellowship_img.png';
+import fellowship_img2 from '../assets/fellowship/fellowship_img2.png';
 import './css/Fellowship.css';
 import Footer from '../components/Footer';
 
@@ -8,8 +10,8 @@ export default function Fellowship({ isMobile = false }) {
     return <div className="main-container">
         <div className={`fellowship-container ${isMobile ? 'fellowship-container-mobile' : ''}`}>
             <div className="fellowship-left">
-                <img className="urbana1" src={urbana1} alt="urbana1"></img>
-                <img className="urbana2" src={urbana2} alt="urbana2"></img>
+                <img className="fship1" src={fellowship_img} alt="fellowship1"></img>
+                <img className="fship2" src={fellowship_img2} alt="fellowship2"></img>
             </div>
             <div className="fellowship-right">
                 <div className="text-container">
