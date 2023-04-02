@@ -59,7 +59,7 @@ export default function LargeGroup({ isMobile = false }) {
         <h1>ALGAE</h1>
         <p>ALGAE stands for After Large Group Activities and Events. It takes place right after Large Group on Friday nights where we…  Everyone is invited to come and have fun!</p>
       </div>
-      <Gallery images={images}/>
+      <Gallery images={images} isMobile={isMobile}/>
     </div>
   </div>
   <Footer/>

@@ -8,10 +8,10 @@ import Footer from '../components/Footer';
 export default function About({ isMobile = false }) {
   const [isVisible1, setVisible1] = useState(false);
   const [isVisible2, setVisible2] = useState(false);
-  const [isVisible3, setVisible3] = useState(false);
+  // const [isVisible3, setVisible3] = useState(false);
   const domRef1 = useRef();
   const domRef2 = useRef();
-  const domRef3 = useRef();
+  // const domRef3 = useRef();
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -35,16 +35,16 @@ export default function About({ isMobile = false }) {
     });
     observer2.observe(domRef2.current);
 
-    const observer3 = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.boundingClientRect.top > 0) {
-            if (entry.isIntersecting) {
-                setVisible3(entry.isIntersecting);
-            }
-          }
-    });
-    });
-    observer3.observe(domRef3.current);
+    // const observer3 = new IntersectionObserver(entries => {
+    //   entries.forEach(entry => {
+    //     if (entry.boundingClientRect.top > 0) {
+    //         if (entry.isIntersecting) {
+    //             setVisible3(entry.isIntersecting);
+    //         }
+    //       }
+    //   });
+    // });
+    // observer3.observe(domRef3.current);
   }, []);
 
   return <div className="main-container">
@@ -91,7 +91,7 @@ export default function About({ isMobile = false }) {
           <b>- InterVarsity USA</b>
         </p>
       </div>
-      <img className={`${!isMobile ? 'about-image' : 'about-image-mobile'} `} src={gallery1} alt="gallery1"></img>
+      <img className={`${!isMobile ? 'about-image' : 'about-image-mobile'} `} src={gallery3} alt="gallery1"></img>
     </div>
     <div className={`${!isMobile ? 'about-section' : 'about-section-mobile'} fade-in-section ${isVisible2 ? 'is-visible' : ''}`} ref={domRef2} style={{ backgroundColor: '#fff7ed' }}>
       <div className={`${!isMobile ? 'about-text' : 'about-text-mobile'} `}>
@@ -117,13 +117,13 @@ export default function About({ isMobile = false }) {
       </div>
       <img className={`${!isMobile ? 'about-image' : 'about-image-mobile'} `} src={gallery2} alt="gallery2"></img>
     </div>
-    <div className={`${!isMobile ? 'about-section' : 'about-section-mobile'} fade-in-section ${isVisible3 ? 'is-visible' : ''}`} ref={domRef3}>
+    {/* <div className={`${!isMobile ? 'about-section' : 'about-section-mobile'} fade-in-section ${isVisible3 ? 'is-visible' : ''}`} ref={domRef3}>
       <div className={`${!isMobile ? 'about-text' : 'about-text-mobile'} `}>
         <h1>History</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
       <img className={`${!isMobile ? 'about-image' : 'about-image-mobile'} `} src={gallery3} alt="gallery3"></img>
-    </div>
+    </div> */}
     <Footer />
   </div>;
 }

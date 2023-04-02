@@ -101,7 +101,7 @@
 button {
   border: solid black 1px;
   width: 7.5vw;
-  min-width: 80px;
+  min-width: 100px;
   height: 3.6vw;
   min-height: 50px;
   background-color: white;

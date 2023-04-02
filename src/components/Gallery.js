@@ -2,7 +2,7 @@ import React, {useEffect, useRef, useState} from 'react';
 import './css/Gallery.css';
 
 // THERE IS A BUG WHERE THE ANIMATE FUNCTION DOESN'T WORK ON MOBILE.
-export default function Gallery({images = []}) {
+export default function Gallery({images = [], isMobile = false}) {
   const [mouseDown, setMouseDown] = useState(0);
   const [prevPerc, setPrevPerc] = useState(0);
   const [percent, setPercent] = useState(0);
@@ -25,27 +25,29 @@ export default function Gallery({images = []}) {
 
   function handleOnMove(e) {
     if (mouseDown === 0) return;
-    const mouseDelta = mouseDown - e.clientX;
+    const mouseDelta = isMobile ? (mouseDown - e.clientX) / 3 : mouseDown - e.clientX;
     const maxDelta = window.innerWidth / 2;
     const percentage = (mouseDelta / maxDelta * -100);
     const nextPercentageUnconstrained = prevPerc + percentage;
     const nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
     setPercent(nextPercentage);
-    try{
-      track.current.animate({
-        transform: `translate(${nextPercentage}%, -50%)`
-      }, { duration: 1200, fill: "forwards" });
 
-      for(let i = 0; i < imageRefs.length; i+=1) {
-        const image = imageRefs[i];
-        image.current.animate({
-          objectPosition: `${100 + nextPercentage}% center`
+    if (!isMobile) {
+      try {
+        track.current.animate({
+          transform: `translate(${nextPercentage}%, -50%)`
         }, { duration: 1200, fill: "forwards" });
+
+        for(let i = 0; i < imageRefs.length; i+=1) {
+          const image = imageRefs[i];
+          image.current.animate({
+            objectPosition: `${100 + nextPercentage}% center`
+          }, { duration: 1200, fill: "forwards" });
+        }
+      } catch(e) {
+        console.log(e);
       }
-    } catch(e) {
-      console.log(e);
     }
-    
   }
 
   useEffect(() => {
@@ -66,10 +68,10 @@ export default function Gallery({images = []}) {
     };
     
   })
-  return <div className="gallery-container">
+  return <div className="gallery-container" style={ isMobile ? {overflow:'scroll', transform:`translate(${percent}%, 0%)`} : {}}>
     <div className="image-track" ref={track} >
       {[...Array(images.length).keys()].map((i) => (
-        <img className='gallery-image' key={i} ref={imageRefs[i]} src={images[i]} alt={'algae' + i} draggable="false"></img>
+        <img className='gallery-image' key={i} ref={imageRefs[i]} src={images[i]} alt={'algae' + i} draggable="false" style={isMobile ? {objectPosition: `${100 + percent}% center`} : {}}></img>
       ))}
     </div>
    

@@ -1,7 +1,7 @@
 .Dropdown {
   position: absolute;
   display:flex;
-  align-items: center;
+  align-self: flex-start;
   width: 140px;
   height: 100px;
 }
@@ -10,8 +10,8 @@
   display: flex;
   list-style: none;
   flex-direction: column;
+  align-self:flex-start;
   align-items: center;
-  align-self: center;
   padding-left: 1.7rem;
   margin-top: 10vh;
   color: black;
@@ -20,8 +20,6 @@
   display: flex;
   list-style: none;
   flex-direction: column;
-  align-items: center;
-  align-self: center;
   padding-left: 1.7rem;
   margin-top: 10vh;
   color: white !important;
@@ -70,13 +68,6 @@ a {
   transform: scaleX(1);
 }
 
-/* .item:nth-child(2) {
-  transition-delay: 50ms;
-}
-.item:nth-child(3) {
-  transition-delay: 100ms;
-} */
-
 .hidden {
   opacity: 0;
   display: none;
@@ -86,7 +77,7 @@ a {
 .show {
   opacity: 1;
   display: flex;
-  transform: translate(0%, 0%);
+  transform: translate(0%, -2vh);
   transition: opacity 0.3s transform 0.2s;
 }
 
