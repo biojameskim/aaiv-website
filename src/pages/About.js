@@ -111,8 +111,6 @@ export default function About({ isMobile = false }) {
           and God’s purposes in the world.<br></br><br></br>
           <b>- InterVarsity USA</b><br></br><br></br>
 
-          The vision of InterVarsity is to see students and faculty transformed, campuses renewed, and world changers developed. We seek to align this purpose and vision with the unique environment at Cornell.
-
         </p>
       </div>
       <img className={`${!isMobile ? 'about-image' : 'about-image-mobile'} `} src={gallery2} alt="gallery2"></img>

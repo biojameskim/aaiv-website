@@ -132,7 +132,7 @@ export default function SmallGroup({ isMobile = false }) {
           <hr></hr>
           <img src={thurs_img} alt="thursday"></img>
           <h3>Grace Li (gl443)</h3>
-          <p>7pm @ HIGHLANDS</p>
+          <p>7pm @ HIGHLANDS APT</p>
         </div>
       </div>
       <div className="sg-modals">

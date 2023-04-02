@@ -60,7 +60,9 @@ export default function Home({ isMobile = false }) {
         <div className={`vision-container fade-in-section ${isMobile ? 'vision-container-mobile' : ''} ${isVisible1 ? 'is-visible' : ''}`} ref={visionRef}>
             <div className="text-container">
                 <h1>Our Vision</h1>
-                <p>Our vision is to see students and faculty transformed, the campus renewed, and world changers develop.</p>
+                <p>
+                    The vision of InterVarsity is to see students and faculty transformed, campuses renewed, and world changers developed. We seek to align this purpose and vision with the unique environment at Cornell.
+                </p>
             </div>
             <img className="vision-image" src={vision_image} alt="vision"></img>
         </div>
