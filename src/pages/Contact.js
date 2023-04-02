@@ -155,7 +155,7 @@ export default function Contact({ isMobile = false }) {
                         <Question isMobile={isMobile} image={amy_prof} question={'Tell us a bit about yourself.'} answer={'Hii! I’m Amy, a freshman studying Information Science from San Diego, CA. Outside of AAIV, I’m also part of Cornell AppDev and the Cornell Badminton Club Team. In my free time, I enjoy art, video games, and reading.'} />
                         <Question isMobile={isMobile} image={amy_prof} question={'What is your vision for AAIV?'} answer={'My vision for AAIV is for us to be a witnessing community that seeks to share God’s love with the people around us. AAIV small groups hold a special place in my heart as I think it’s a great place to grow in our understanding of God’s word as well as in our relationships with each other. As small group coordinator, I hope to support our amazing small group leaders in facilitating these spaces. Feel free to reach out if you have any questions or just want to chat!'} />
                         <Question isMobile={isMobile} image={amy_prof} question={'Favorite AAIV memory?'} answer={'Stargazing on rawlings green!'} />
-                        <Question isMobile={isMobile} image={amy_prof} question={'Describe AAIV with three emojis.'} answer={'💓🙌🤠'} />
+                        <Question isMobile={isMobile} image={amy_prof} question={'Describe AAIV with three emojis.'} answer={'💓🙌🤠'} answerFontSize={'32px'} />
                     </div>
                 </Modal>
                 <Modal
@@ -168,7 +168,7 @@ export default function Contact({ isMobile = false }) {
                         <Question isMobile={isMobile} image={ben_prof} question={'Tell us a bit about yourself.'} answer={'Hello! I am Ben. I am a freshman studying Human Biology, Health, and Society and planning to minor in Healthy Futures and Human Development. I am from Smyrna, Georgia, and apart from AAIV, I am in Big Red Ambassadors, Phi Delta Epsilon, and a few other health-centered clubs on campus. In my free time, I enjoy listening to music and looking for the newest show to binge!'} />
                         <Question isMobile={isMobile} image={ben_prof} question={'What is your vision for AAIV?'} answer={'For AAIV, I envision a community motivated to share God’s love with others, as well as bolster each other’s spiritual journeys. Through outreach, I hope to provide an “open door” for any person of any faith background to connect and learn more about Christianity, while also reducing as many barriers as possible for people to form supportive relationships. As outreach coordinator, I aspire to provide opportunities and events for people in the Cornell community to learn more about AAIV and facilitate the growth of a witnessing community. '} />
                         <Question isMobile={isMobile} image={ben_prof} question={'Favorite AAIV memory?'} answer={'Dancing with the guys in AAIV as “Boys Generation” for Felly Dessert, an end-of-the-year formal!'} />
-                        <Question isMobile={isMobile} image={ben_prof} question={'Describe AAIV with three emojis.'} answer={'🕺🍹🥰'} />
+                        <Question isMobile={isMobile} image={ben_prof} question={'Describe AAIV with three emojis.'} answer={'🕺🍹🥰'} answerFontSize={'32px'} />
                     </div>
                 </Modal>
                 <Modal
@@ -181,7 +181,7 @@ export default function Contact({ isMobile = false }) {
                         <Question isMobile={isMobile} image={jonah_prof} question={'Tell us a bit about yourself.'} answer={'Hi! I\'m Jonah :) I\'m in the Class of 2026 studying ECE and ORIE. I come from Seattle, WA and in my free time I love to read ;)'} />
                         <Question isMobile={isMobile} image={jonah_prof} question={'What is your vision for AAIV?'} answer={'I believe AAIV should be a place where anyone on campus can come and find a loving, Christ-centered community. As large group coordinator, I want everyone to feel welcome, grow individually and as a community, and have a lot of fun together!'} />
                         <Question isMobile={isMobile} image={jonah_prof} question={'Favorite AAIV memory?'} answer={'My favorite AAIV memory is playing beach volleyball with Intervarsity chapters from all over NY and NJ at our annual Selah retreat :))'} />
-                        <Question isMobile={isMobile} image={jonah_prof} question={'Describe AAIV with three emojis.'} answer={'🙏🥳🥺'} />
+                        <Question isMobile={isMobile} image={jonah_prof} question={'Describe AAIV with three emojis.'} answer={'🙏🥳🥺'} answerFontSize={'32px'} />
                     </div>
                 </Modal>
             </div>
