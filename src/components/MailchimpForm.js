@@ -18,7 +18,7 @@ export default function MailchimpForm() {
       </button>
       {status === "sending" && <div>Sending...</div>}
       {status === "success" && <div>Thanks for subscribing!</div>}
-      {status === "error" && <div dangerouslySetInnerHTML={{ __html: message }} />}
+      {status === "error" && <div dangerouslySetInnerHTML={{ __html: message.substring(4) }} />}
     </div>
   );
 
