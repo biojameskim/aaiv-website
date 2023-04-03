@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './css/About.css';
 // import gallery1 from '../assets/about/about1.svg';
-import gallery2 from '../assets/about/about1(new).svg';
-import gallery3 from '../assets/about/about2(new).svg';
+// import gallery2 from '../assets/about/about1(new).svg';
+// import gallery3 from '../assets/about/about2(new).svg';
 import about1 from '../assets/about/about_1.png';
 import about2 from '../assets/about/about_2.png';
 import Footer from '../components/Footer';
