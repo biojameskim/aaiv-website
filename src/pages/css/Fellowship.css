@@ -85,6 +85,10 @@
   margin: 15vh 5vw 20vh 5vw;
 }
 
+.text-container-mobile h1 {
+  font-size: 2.5rem;
+}
+
 .fellowship-section h1 {
   padding-left: 5vw;
   padding-right: 5vw;

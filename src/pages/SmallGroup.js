@@ -34,6 +34,10 @@ export default function SmallGroup({ isMobile = false }) {
     overlay: { zIndex: 2 }
   };
 
+  // Photo for each small group within the modals
+  const SgPhoto = ({ src, alt }) => <img className={`sg-photo ${isMobile ? 'sg-photo-mobile' : ''}`} src={src} alt={alt} />
+
+
   const [isVisible1, setVisible1] = useState(false);
   const [isVisible2, setVisible2] = useState(false);
   const [isVisible3, setVisible3] = useState(false);
@@ -47,6 +51,7 @@ export default function SmallGroup({ isMobile = false }) {
   const tuesdayRef = useRef();
   const wednesdayRef = useRef();
   const thursdayRef = useRef();
+
   useEffect(() => {
     const observer1 = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -92,6 +97,7 @@ export default function SmallGroup({ isMobile = false }) {
     });
     observer4.observe(thursdayRef.current);
   }, []);
+
   return <div className="main-container">
     <div className={`sg-title-container ${isMobile ? 'sg-title-container-mobile' : ''}`}>
       <img className="sg-title-image" src={sg_img} alt="sg-title"></img>
@@ -100,7 +106,7 @@ export default function SmallGroup({ isMobile = false }) {
         <p>This is the best way to get connected in a small and close, tight-knit community of fellow AAIVers. Our God is a personal God, and Small Group is one of the spaces in AAIV where you can experience God’s closeness, goodness, and unfailing love for yourself. </p>
       </div>
     </div>
-    <div className="sg-leaders-section">
+    <div className={`sg-leaders-section ${isMobile ? 'sg-leaders-section-mobile' : ''}`}>
       <div className="text-container">
         <h1>Meet our Spring 2023 Small Group Leaders</h1>
         <p>Guided by one or two of our amazing and friendly small group leaders, you can share life and explore God together in weekly meetings centered around a Bible study, which are often preceded by a small group dinner. Whether you’ve grown up in church your whole life or are just starting to question if there could be a God who has created all things, you are invited to come check out a small group as we cover the book of Hebrews! Learn more about the specific small groups listed below. </p>
@@ -148,7 +154,7 @@ export default function SmallGroup({ isMobile = false }) {
               image={mon_prof}
               answer={"hello! we are melody and elisabeth (melisabeth) and we lead monday small group! at monday small group we fellowship through diving into God’s word, having fun faith-filled conversations, and enjoying okenshields’ orange chicken dinners!"}
             />
-            <img className='sg-photo' src={melisabeth_sg} alt="melisabeth small group" />
+            <SgPhoto src={melisabeth_sg} alt="melisabeth small group" />
           </div>
         </Modal>
         <Modal
@@ -163,7 +169,7 @@ export default function SmallGroup({ isMobile = false }) {
               image={tues_prof}
               answer={"Hello! My name is Grace Chen, and I'm part of Tuesday Small Group, which is a great community to meet new people, read God's Word, cultivate some of the most heinous inside jokes. Some highlights of small group for me have been discussing questions on why God created the world to be imperfect, cooking dinner for everyone during finals week, and looking for shooting stars while stargazing at Mt. Pleasant. Feel free to pop by any time, anyone and everyone is welcome!"}
             />
-            <img className='sg-photo' src={grace_chen_sg} alt="Grace Chen small group" />
+            <SgPhoto src={grace_chen_sg} alt="Grace Chen small group" />
           </div>
         </Modal>
         <Modal
@@ -178,7 +184,7 @@ export default function SmallGroup({ isMobile = false }) {
               image={wed_prof}
               answer={"Hi! We are Simon and Jed, and we co-lead Wednesday small group! We offer you a refreshing midweek Bible study where we gather to delve into God's word. We also foster a space for free-flowing conversations strive to grow alongside one another."}
             />
-            <img className='sg-photo' src={sed_sg} alt="Simon/Jed small group" />
+            <SgPhoto src={sed_sg} alt="Simon/Jed small group" />
           </div>
         </Modal>
         <Modal
@@ -193,7 +199,7 @@ export default function SmallGroup({ isMobile = false }) {
               image={thurs_prof}
               answer={"Hey! My name is Grace Li and I lead Thursday small group! Small group is a time for asking questions about the Bible, making new friends, and relaxing together after a long week. Some things we like to do is to grab food together, go stargazing, or picnic together on a warm sunny day. Come join us any time!"}
             />
-            <img className='sg-photo' src={grace_li_sg} alt="Grace Li small group" />
+            <SgPhoto src={grace_li_sg} alt="Grace Li small group" />
           </div>
         </Modal>
       </div>

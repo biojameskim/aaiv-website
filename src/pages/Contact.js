@@ -110,7 +110,7 @@ export default function Contact({ isMobile = false }) {
                 </div>
             </div>
         </div >
-        <div className="exec-container">
+        <div className={`exec-container ${isMobile ? 'exec-container-mobile' : ''}`}>
             <h1>Connect with an Exec Member</h1>
             <div className="exec-members">
                 <div className={`exec fade-in-section ${isVisibleAmy ? 'is-visible' : ''}`} ref={amyRef} onClick={() => { setAmyIsOpen(true) }}>

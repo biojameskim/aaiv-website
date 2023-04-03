@@ -21,7 +21,7 @@ export default function Fellowship({ isMobile = false }) {
             </div>
         </div>
         <div className="fellowship-section">
-            <div className="text-container">
+            <div className={`text-container ${isMobile ? 'text-container-mobile' : ''}`}>
                 <h1>Find a Fellowship that's Right for You</h1><br></br>
                 <a href='https://bethanycampuschurch.org/' target="_blank" rel="noopener noreferrer"><p>Bethany Christian Campus Church</p></a>
                 <a href='https://www.christianunion.org/ministries/universities/cornell' target="_blank" rel="noopener noreferrer"><p>Christian Union</p></a>
