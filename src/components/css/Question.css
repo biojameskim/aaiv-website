@@ -35,5 +35,8 @@
   padding: 1vh 5vw 2vh 5vw;
   background-color: #f6f6f6;
   border-radius: 15px;
+}
 
+.question-container-mobile h2 {
+  font-size: 1.5rem;
 }
