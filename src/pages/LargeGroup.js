@@ -46,18 +46,30 @@ export default function LargeGroup({ isMobile = false }) {
     <div className="lg-title-container">
       <div className='text-container'>
         <h1>Large Group</h1>
-        <p>Large Group is our biggest weekly gathering! Join us every Friday night at 7:30pm in RPCC 205 for a time of fellowship, worship, and learning (followed by fun!). All are welcome, whether you are curious about Christianity or have been Christian your entire life. </p>
+        <p>Large Group is our biggest weekly gathering! Join us every Friday night at 7:30pm in RPCC Auditorium (205) for a time of fellowship, worship, and learning (followed by fun!).
+        </p>
+        <p>
+          All are welcome, whether you are curious about Christianity or have been Christian your entire life. </p>
         <p>Check our instagram page for important updates:) We hope to see you there!</p>
       </div>
     </div>
     <div className="lg-content-container">
+      <h2>This Week's Topic</h2>
       <div className='flyer-container'>
         <img className={`flyer fade-in-section ${isVisibleFlyer ? 'is-visible' : ''}`} ref={flyerRef} src={flyer} alt='lg-flyer'></img>
       </div>
       <div className={`algae-container fade-in-section ${isVisibleAlgae ? 'is-visible' : ''}`} ref={algaeRef}>
         <div className='text-container'>
           <h1>ALGAE</h1>
-          <p>ALGAE stands for After Large Group Activities and Events. It takes place right after Large Group on Friday nights where we…  Everyone is invited to come and have fun!</p>
+          <p>
+            ALGAE stands for <b>A</b>fter <b>L</b>arge <b>G</b>roup <b>A</b>ctivity and <b>E</b>vent.
+          </p>
+          <p>
+            It takes place right after Large Group on Friday nights where we get boba together, play games, and spend time in community!
+          </p>
+          <p>
+            C'mon now. It's a friday night... You're not gonna study. Everyone is welcome to come out and have fun in fellowship!
+          </p>
         </div>
         <Gallery images={images} isMobile={isMobile} />
       </div>

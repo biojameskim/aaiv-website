@@ -21,6 +21,8 @@
   height: auto;
   background: linear-gradient(0deg, black 0%, lightgray 100%);
   position: relative;
+  text-align: center;
+  padding: 10vh 0vw 0vh 0vw;
 }
 
 .flyer-container {
@@ -29,7 +31,7 @@
   height: auto;
   align-items: center;
   justify-content: center;
-  padding: 10vh 0vw 0vh 0vw;
+  padding: 8vh 0vw 0vh 0vw;
   overflow: hidden;
 }
 
