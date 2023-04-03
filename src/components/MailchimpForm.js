@@ -13,12 +13,12 @@ export default function MailchimpForm() {
   const render = ({ subscribe, status, message }) => (
     <div className="chimp-forms">
       <input type="email" name="EMAIL" placeholder="Your email address" onChange={(e) => setEmail(e.target.value)} value={email} />
+      {status === "sending" && <div className="email-message">Sending...</div>}
+      {status === "success" && <div className="email-message">Thanks for subscribing!</div>}
+      {status === "error" && <div className="email-message" dangerouslySetInnerHTML={{ __html: message.substring(4) }} />}
       <button onClick={() => subscribe({ EMAIL: email })}>
         Subscribe
       </button>
-      {status === "sending" && <div>Sending...</div>}
-      {status === "success" && <div>Thanks for subscribing!</div>}
-      {status === "error" && <div dangerouslySetInnerHTML={{ __html: message.substring(4) }} />}
     </div>
   );
 
