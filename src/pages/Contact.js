@@ -189,7 +189,7 @@ export default function Contact({ isMobile = false }) {
         <div className="email-container">
             <div className="text-container">
                 <h1>Email List</h1>
-                <p>JOIN THE LISTSERV to receive weekly updates on what’s happening at AAIV.</p>
+                <p>Join our LISTSERV to receive weekly updates on what’s happening at AAIV!</p>
             </div>
 
             <div className={`mailchimp-form fade-in-section ${isMobile ? 'mailchimp-form-mobile' : ''} ${isVisibleEmail ? 'is-visible' : ''}`} ref={emailRef}>

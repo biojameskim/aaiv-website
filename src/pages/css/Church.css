@@ -1,6 +1,6 @@
 .church-title-container {
   background-image: url('../../assets/church/church-bkg.svg');
-  background-size:cover;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100vw;
@@ -46,7 +46,7 @@
   padding-top: 10vh;
   padding-bottom: 10vh;
   text-align: center;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   /* width: auto; */
 }
 
@@ -82,7 +82,7 @@
 }
 
 .church-image-mobile {
-  width: 50vw;
+  width: 75vw;
   margin: 5vw 5vw 0vw 5vw;
 }
 
@@ -120,4 +120,12 @@ button {
 button:hover {
   background-color: black;
   color: white;
+}
+
+.church-section-mobile .text-container-mobile h1 {
+  font-size: xx-large;
+}
+
+.church-section-mobile .text-container-mobile h2 {
+  font-size: x-large;
 }
