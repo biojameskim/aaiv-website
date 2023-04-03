@@ -61,7 +61,7 @@ export default function Home({ isMobile = false }) {
             <div className="text-container">
                 <h1>Our Vision</h1>
                 <p>
-                    The vision of InterVarsity is to see students and faculty transformed, campuses renewed, and world changers developed. We seek to align this purpose and vision with the unique environment at Cornell.
+                    Our vision at AAIV is to establish a witnessing, Christ-centered community at Cornell.
                 </p>
             </div>
             <img className="vision-image" src={vision_image} alt="vision"></img>

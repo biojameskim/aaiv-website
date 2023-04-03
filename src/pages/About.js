@@ -101,6 +101,8 @@ export default function About({ isMobile = false }) {
         <p>
           We are an affiliated chapter of InterVarsity, established in 1941 with approximately 700 campus chapters worldwide. <br></br><br></br>
 
+          The vision of InterVarsity is to see students and faculty transformed, campuses renewed, and world changers developed. We seek to align this purpose and vision with the unique environment at Cornell. <br></br><br></br>
+
           In response to God’s love, grace, and truth:<br></br><br></br>
           The purpose of InterVarsity Christian Fellowship/USA<br></br>
           is to establish and advance
