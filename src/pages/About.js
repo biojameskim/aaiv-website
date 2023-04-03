@@ -3,6 +3,8 @@ import './css/About.css';
 // import gallery1 from '../assets/about/about1.svg';
 import gallery2 from '../assets/about/about1(new).svg';
 import gallery3 from '../assets/about/about2(new).svg';
+import about1 from '../assets/about/about_1.png';
+import about2 from '../assets/about/about_2.png';
 import Footer from '../components/Footer';
 
 export default function About({ isMobile = false }) {
@@ -91,7 +93,7 @@ export default function About({ isMobile = false }) {
           <b>- InterVarsity USA</b>
         </p>
       </div>
-      <img className={`${!isMobile ? 'about-image' : 'about-image-mobile'} `} src={gallery3} alt="gallery1"></img>
+      <img className={`${!isMobile ? 'about-image' : 'about-image-mobile'} `} src={about1} alt="gallery1"></img>
     </div>
     <div className={`${!isMobile ? 'about-section' : 'about-section-mobile'} fade-in-section ${isVisible2 ? 'is-visible' : ''}`} ref={domRef2} style={{ backgroundColor: '#fff7ed' }}>
       <div className={`${!isMobile ? 'about-text' : 'about-text-mobile'} `}>
@@ -113,7 +115,7 @@ export default function About({ isMobile = false }) {
 
         </p>
       </div>
-      <img className={`${!isMobile ? 'about-image' : 'about-image-mobile'} `} src={gallery2} alt="gallery2"></img>
+      <img className={`${!isMobile ? 'about-image' : 'about-image-mobile'} `} src={about2} alt="gallery2"></img>
     </div>
     {/* <div className={`${!isMobile ? 'about-section' : 'about-section-mobile'} fade-in-section ${isVisible3 ? 'is-visible' : ''}`} ref={domRef3}>
       <div className={`${!isMobile ? 'about-text' : 'about-text-mobile'} `}>

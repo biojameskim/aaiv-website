@@ -54,6 +54,7 @@
 }
 
 .about-image {
+  object-fit: contain;
   padding-top: 10vw;
   padding-bottom: 10vw;
   padding-right: 10vw;
