@@ -28,7 +28,8 @@ export default function Fellowship({ isMobile = false }) {
                 <a href='https://cbscornell.com/' target="_blank" rel="noopener noreferrer"><p>Chinese Bible Study</p></a>
                 <a href='https://www.crucornell.com/' target="_blank" rel="noopener noreferrer"><p>CRU</p></a>
                 <a href='https://cornellicf.weebly.com/' target="_blank" rel="noopener noreferrer"><p>Cornell International Christian Fellowship</p></a>
-                <a href='https://www.emmausroadcornell.com/' target="_blank" rel="noopener noreferrer"><p>Emmaus Road/Korean Church at Cornell</p></a>
+                <a href='https://www.emmausroadcornell.com/' target="_blank" rel="noopener noreferrer"><p>Emmaus Road</p></a>
+                <a href='http://www.kccornell.org/' target="_blank" rel="noopener noreferrer"><p>Korean Church at Cornell</p></a>
                 <a href='https://www.instagram.com/fca_cornell/' target="_blank" rel="noopener noreferrer"><p>Fellowship of Christian Athletes</p></a>
                 <a href='https://graduatechristianfellowship.wordpress.com/' target="_blank" rel="noopener noreferrer"><p>Graduate Christian Fellowship</p></a>
             </div>
