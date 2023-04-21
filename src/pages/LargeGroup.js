@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './css/LargeGroup.css';
-import flyer from '../assets/large_group/flyer.png';
+import flyer from '../assets/large_group/flyer_4-21-23.png';
 import Gallery from '../components/Gallery';
 import Footer from '../components/Footer';
 import a1 from '../assets/large_group/algae2.svg';
