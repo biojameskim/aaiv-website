@@ -20,6 +20,7 @@ import thurs_prof from '../assets/small_group/FA23 Leaders/jed-prof.svg';
 import Modal from 'react-modal';
 import Profile from '../components/Profile';
 import Question from '../components/Question';
+import email from '../assets/footer/email.svg';
 
 export default function SmallGroup({ isMobile = false }) {
   const customStyles = {
@@ -119,28 +120,48 @@ export default function SmallGroup({ isMobile = false }) {
           <p>Monday</p>
           <hr></hr>
           <img src={monday_img} alt="monday"></img>
-          <h3 style={{ margin: '10px -2px 5px -2px' }}>Serena Wang (sw755)</h3>
+          <div className="sg-title">
+              <h3>Serena Wang</h3>
+              <a href="mailto: sw755@cornell.edu">
+                  <img className="sg-icon" src={email} alt="email-icon"></img>
+              </a>
+          </div>
           <p>6:30pm @ Goldwin Smith Hall G24</p>
         </div>
         <div className={`leader fade-in-section ${isVisible2 ? 'is-visible' : ''}`} ref={tuesdayRef} onClick={() => { setTuesIsOpen(true) }}>
           <p>Tuesday</p>
           <hr></hr>
           <img src={tuesday_img} alt="tuesday"></img>
-          <h3>Angie & Kaitlin (amh356, khc73)</h3>
+          <div className="sg-title">
+              <h3>Angie & Kaitlin</h3>
+              <a href="mailto: amh356@cornell.edu">
+                  <img className="sg-icon" src={email} alt="email-icon"></img>
+              </a>
+          </div>
           <p>6pm @ PSB 201</p>
         </div>
         <div className={`leader fade-in-section ${isVisible3 ? 'is-visible' : ''}`} ref={wednesdayRef} onClick={() => { setWedIsOpen(true) }}>
           <p>Wednesday</p>
           <hr></hr>
           <img src={wed_img} alt="wednesday"></img>
-          <h3>Cassy Kuo (clk229)</h3>
+          <div className="sg-title">
+              <h3>Cassy Kuo</h3>
+              <a href="mailto: clk229@cornell.edu">
+                  <img className="sg-icon" src={email} alt="email-icon"></img>
+              </a>
+          </div>
           <p>7:30pm @ Collegetown</p>
         </div>
         <div className={`leader fade-in-section ${isVisible4 ? 'is-visible' : ''}`} ref={thursdayRef} onClick={() => { setThursIsOpen(true) }}>
           <p>Thursday</p>
           <hr></hr>
           <img src={thurs_img} alt="thursday"></img>
-          <h3>Jed Tan (jyt8)</h3>
+          <div className="sg-title">
+              <h3>Jed Tan</h3>
+              <a href="mailto: jyt8@cornell.edu">
+                  <img className="sg-icon" src={email} alt="email-icon"></img>
+              </a>
+          </div>
           <p>7:30pm @ Hollister Hall</p>
         </div>
       </div>
@@ -195,7 +216,7 @@ export default function SmallGroup({ isMobile = false }) {
           style={customStyles}
         >
           <div>
-            <Profile image={wed_prof} title={'Cassy Kuo'} text={'Wednesdays 7:30pm @ Collegetown'} email={'clk229@cornell.edu'} />
+            <Profile image={wed_prof} title={'Cassy Kuo'} text={'Wednesdays 7:30pm @ Collegetown'} netid={'clk229'} email={'clk229@cornell.edu'} />
             <Question
               isMobile={isMobile}
               image={wed_prof}
@@ -217,7 +238,7 @@ export default function SmallGroup({ isMobile = false }) {
           style={customStyles}
         >
           <div>
-            <Profile image={thurs_prof} title={'Jed Tan'} text={'Thursdays 7:30pm @ Hollister Hall'} email={'jyt8@cornell.edu'} />
+            <Profile image={thurs_prof} title={'Jed Tan'} text={'Thursdays 7:30pm @ Hollister Hall'} netid={'jyt8'} email={'jyt8@cornell.edu'} />
             <Question
               isMobile={isMobile}
               image={thurs_prof}
