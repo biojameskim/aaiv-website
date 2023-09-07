@@ -133,7 +133,7 @@ export default function SmallGroup({ isMobile = false }) {
           <hr></hr>
           <img src={tuesday_img} alt="tuesday"></img>
           <div className="sg-title">
-              <h3>Angie & Kaitlin</h3>
+              <h3>Angie Huang & Kaitlin Chung</h3>
               <a href="mailto: amh356@cornell.edu">
                   <img className="sg-icon" src={email} alt="email-icon"></img>
               </a>
