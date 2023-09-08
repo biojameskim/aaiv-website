@@ -162,7 +162,7 @@ export default function SmallGroup({ isMobile = false }) {
                   <img className="sg-icon" src={email} alt="email-icon"></img>
               </a>
           </div>
-          <p>7:30pm @ Hollister Hall</p>
+          <p>7:30pm @ Hollister Hall 401</p>
         </div>
       </div>
       <div className="sg-modals">
@@ -172,7 +172,7 @@ export default function SmallGroup({ isMobile = false }) {
           style={customStyles}
         >
           <div>
-            <Profile image={mon_prof} title={'Serena Wang'} text={'Mondays 6:30pm @ Goldwin Smith Hall 398'} email={'sw755@cornell.edu'} />
+            <Profile image={mon_prof} title={'Serena Wang'} text={'Mondays 6:30pm @ Goldwin Smith Hall G24'} email={'sw755@cornell.edu'} />
             <Question
               isMobile={isMobile}
               image={mon_prof}
@@ -216,18 +216,18 @@ export default function SmallGroup({ isMobile = false }) {
           style={customStyles}
         >
           <div>
-            <Profile image={wed_prof} title={'Cassy Kuo'} text={'Wednesdays 7:30pm @ Collegetown'} netid={'clk229'} email={'clk229@cornell.edu'} />
+            <Profile image={wed_prof} title={'Cassy Kuo'} text={'Wednesdays 7:30pm @ Collegetown (Contact for apartment address)'} netid={'clk229'} email={'clk229@cornell.edu'} />
             <Question
               isMobile={isMobile}
               image={wed_prof}
               question={"Favorite small group memory?"}
-              answer={"Melisabeth small group spontaneously met on the arts quad to enjoy the good weather and sunshine"}
+              answer={"Melisabeth small group spontaneously met on the arts quad to enjoy the good weather and sunshine!"}
             />
             <Question
               isMobile={isMobile}
               image={wed_prof}
               question={"Vision for small group?"}
-              answer={"To encourage people of all walks of faith to encourage each other to pursue christ and love more like him"}
+              answer={"To encourage people of all walks of faith to encourage each other to pursue christ and love more like him!"}
             />
             {/* <SgPhoto src={wed_sg} alt="Cassy small group" /> */}
           </div>
@@ -238,7 +238,7 @@ export default function SmallGroup({ isMobile = false }) {
           style={customStyles}
         >
           <div>
-            <Profile image={thurs_prof} title={'Jed Tan'} text={'Thursdays 7:30pm @ Hollister Hall'} netid={'jyt8'} email={'jyt8@cornell.edu'} />
+            <Profile image={thurs_prof} title={'Jed Tan'} text={'Thursdays 7:30pm @ Hollister Hall 401'} netid={'jyt8'} email={'jyt8@cornell.edu'} />
             <Question
               isMobile={isMobile}
               image={thurs_prof}
