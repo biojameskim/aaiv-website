@@ -217,7 +217,7 @@ export default function SmallGroup({ isMobile = false }) {
                 <div className="sg-answer">
                   <span><span style={{fontWeight:500}}>Major:</span> Biological Sciences '26</span>
                   <span><span style={{fontWeight:500}}>Hometown:</span> Corning, NY</span>
-                  <span><span style={{fontWeight:500}}>Fav lunch spot:</span> Atrium cafe</span>
+                  <span><span style={{fontWeight:500}}>Fav lunch spot:</span> Atrium cafe or Trilium</span>
                   <span><span style={{fontWeight:500}}>Best study spot:</span> Mann Library</span>
                 </div>
               }
