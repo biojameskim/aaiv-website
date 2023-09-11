@@ -153,3 +153,9 @@
 .sg-photo-mobile {
   width: 90%;
 }
+
+.sg-answer {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}

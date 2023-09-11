@@ -11,7 +11,8 @@ import thurs_img from '../assets/small_group/FA23 Leaders/jed.svg';
 // import wed_sg from '../assets/small_group/sed_sg.jpeg'
 // import thurs_sg from '../assets/small_group/grace_li_sg.jpeg'
 import Footer from '../components/Footer';
-import mon_prof from '../assets/small_group/FA23 Leaders/serena-prof.svg';
+// import mon_prof from '../assets/small_group/FA23 Leaders/serena-prof.svg';
+import serena_prof from '../assets/small_group/FA23 Leaders/serena-prof2.svg';
 import tues_prof from '../assets/small_group/FA23 Leaders/angie-kaitlin-prof.svg';
 import angie_prof from '../assets/small_group/FA23 Leaders/angie.svg';
 import kaitlin_prof from '../assets/small_group/FA23 Leaders/kaitlin.svg';
@@ -172,16 +173,29 @@ export default function SmallGroup({ isMobile = false }) {
           style={customStyles}
         >
           <div>
-            <Profile image={mon_prof} title={'Serena Wang'} text={'Mondays 6:30pm @ Goldwin Smith Hall G24'} email={'sw755@cornell.edu'} />
+            <Profile image={serena_prof} title={'Serena Wang'} text={'Mondays 6:30pm @ Goldwin Smith Hall G24'} email={'sw755@cornell.edu'} />
             <Question
               isMobile={isMobile}
-              image={mon_prof}
+              image={serena_prof}
+              question={"Fast Facts"}
+              answer={
+                <div className="sg-answer">
+                  <span><span style={{fontWeight:500}}>Major:</span> Public Policy & Management '25</span>
+                  <span><span style={{fontWeight:500}}>Hometown:</span> McLean, VA</span>
+                  <span><span style={{fontWeight:500}}>Fav lunch spot:</span> Terrace</span>
+                  <span><span style={{fontWeight:500}}>Best study spot:</span> Kroch Library in Olin</span>
+                </div>
+              }
+            />
+            <Question
+              isMobile={isMobile}
+              image={serena_prof}
               question={"Favorite small group memory?"}
               answer={"Watching the Cornell Figure Skating SP23 Show with Melisabeth Mondays"}
             />
             <Question
               isMobile={isMobile}
-              image={mon_prof}
+              image={serena_prof}
               question={"Vision for small group?"}
               answer={"To create a space where people can intentionally grow deeper in their faith and gain spiritual discernment by carefully studying the Word of God via incorporating outside resources/texts for added context and relevance, and having more genuine and vulnerable conversations. My hope is that people will better understand the nature of who God is, His character, and what His design and purpose are for us."}
             />
@@ -195,6 +209,32 @@ export default function SmallGroup({ isMobile = false }) {
         >
           <div>
             <Profile image={tues_prof} title={'Angie Huang & Kaitlin Chung'} text={'Tuesdays 6pm @ PSB 201'} email={'amh356@cornell.edu'} />
+            <Question
+              isMobile={isMobile}
+              image={kaitlin_prof}
+              question={"Fast Facts"}
+              answer={
+                <div className="sg-answer">
+                  <span><span style={{fontWeight:500}}>Major:</span> Biological Sciences '26</span>
+                  <span><span style={{fontWeight:500}}>Hometown:</span> Corning, NY</span>
+                  <span><span style={{fontWeight:500}}>Fav lunch spot:</span> Atrium cafe</span>
+                  <span><span style={{fontWeight:500}}>Best study spot:</span> Mann Library</span>
+                </div>
+              }
+            />
+            <Question
+              isMobile={isMobile}
+              image={angie_prof}
+              question={"Fast Facts"}
+              answer={
+                <div className="sg-answer">
+                  <span><span style={{fontWeight:500}}>Major:</span> Chemistry '25</span>
+                  <span><span style={{fontWeight:500}}>Hometown:</span> Fairfax, VA</span>
+                  <span><span style={{fontWeight:500}}>Fav lunch spot:</span> Atrium cafe bc chicken panko sandwich (its breaded chicken and cabbage which sounds weird but hear me out they have this really good sauce and the bread is SO YUMMY and it's like 7.99? so relatively cheap and fills you up)</span>
+                  <span><span style={{fontWeight:500}}>Best study spot:</span> Mann Library</span>
+                </div>
+              }
+            />
             <Question
               isMobile={isMobile}
               image={kaitlin_prof}
@@ -220,6 +260,19 @@ export default function SmallGroup({ isMobile = false }) {
             <Question
               isMobile={isMobile}
               image={wed_prof}
+              question={"Fast Facts"}
+              answer={
+                <div className="sg-answer">
+                  <span><span style={{fontWeight:500}}>Major:</span> Health Care Policy '25</span>
+                  <span><span style={{fontWeight:500}}>Hometown:</span> Los Angeles, CA</span>
+                  <span><span style={{fontWeight:500}}>Fav lunch spot:</span> Trilium</span>
+                  <span><span style={{fontWeight:500}}>Best study spot:</span> Warren Hall</span>
+                </div>
+              }
+            />
+            <Question
+              isMobile={isMobile}
+              image={wed_prof}
               question={"Favorite small group memory?"}
               answer={"Melisabeth small group spontaneously met on the arts quad to enjoy the good weather and sunshine!"}
             />
@@ -239,6 +292,19 @@ export default function SmallGroup({ isMobile = false }) {
         >
           <div>
             <Profile image={thurs_prof} title={'Jed Tan'} text={'Thursdays 7:30pm @ Hollister Hall 401'} netid={'jyt8'} email={'jyt8@cornell.edu'} />
+            <Question
+              isMobile={isMobile}
+              image={thurs_prof}
+              question={"Fast Facts"}
+              answer={
+                <div className="sg-answer">
+                  <span><span style={{fontWeight:500}}>Major:</span> Civil Engineering '25</span>
+                  <span><span style={{fontWeight:500}}>Hometown:</span> Long Island, NY</span>
+                  <span><span style={{fontWeight:500}}>Fav lunch spot:</span> Trilium</span>
+                  <span><span style={{fontWeight:500}}>Best study spot:</span> Fine Arts Library</span>
+                </div>
+              }
+            />
             <Question
               isMobile={isMobile}
               image={thurs_prof}
