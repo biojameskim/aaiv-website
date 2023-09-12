@@ -12,6 +12,24 @@
   text-align: center;
 }
 
+.sg-title {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.sg-icon {
+  opacity: 0.5;
+  transition: 0.2s ease;
+  margin-top: 7px;
+  margin-right: 2px;
+
+}
+
+.sg-icon:hover {
+  opacity: 1;
+}
+
 .sg-title-image {
   position: relative;
   margin: 5vw 6vw 0vw 6vw;
@@ -134,4 +152,10 @@
 
 .sg-photo-mobile {
   width: 90%;
+}
+
+.sg-answer {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
