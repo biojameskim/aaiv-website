@@ -17,5 +17,8 @@ export default function Footer() {
             <img className="icon" src={email} alt="email-icon"></img>
         </a>
     </div>
+    <div style={{textAlign: 'center', fontSize: '12', marginBottom: '1rem'}}>
+      This organization is a registered student organization of Cornell University
+    </div>
   </div>
 }
