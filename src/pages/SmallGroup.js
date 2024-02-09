@@ -176,10 +176,10 @@ export default function SmallGroup({ isMobile = false }) {
           style={customStyles}
         >
           <div>
-            <Profile image={cherrie_prof_prof} title={'Cherrie Lan'} text={'Mondays 6:30pm @ Uris 302'} email={'cql2@cornell.edu'} />
+            <Profile image={cherrie_prof} title={'Cherrie Lan'} text={'Mondays 6:30pm @ Uris 302'} email={'cql2@cornell.edu'} />
             <Question
               isMobile={isMobile}
-              image={cherrie_prof_prof}
+              image={cherrie_prof}
               question={"Fast Facts"}
               answer={
                 <div className="sg-answer">
