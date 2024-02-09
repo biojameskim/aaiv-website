@@ -5,14 +5,14 @@ import instagram from '../assets/footer/instagram.svg';
 import facebook from '../assets/footer/facebook.svg';
 import email from '../assets/footer/email.svg';
 import elisabeth from '../assets/contact/SP24_exec/elisabeth.svg';
-import ben from '../assets/contact/ben.svg';
-import jonah from '../assets/contact/jonah.svg';
+import angie from '../assets/contact/SP24_exec/angie.svg';
+import jiaming from '../assets/contact/SP24_exec/jiaming.svg';
 import Footer from '../components/Footer';
 import Modal from 'react-modal';
 import Profile from '../components/Profile';
 import elisabeth_prof from '../assets/contact/SP24_exec/elisabeth-prof.svg';
-import ben_prof from '../assets/contact/ben-profile.svg';
-import jonah_prof from '../assets/contact/jonah-profile.svg';
+import angie_prof from '../assets/contact/SP24_exec/angie-prof.svg';
+import jiaming_prof from '../assets/contact/SP24_exec/jiaming.svg';;
 import Question from '../components/Question';
 
 import MailchimpForm from '../components/MailchimpForm';
@@ -34,16 +34,16 @@ export default function Contact({ isMobile = false }) {
     };
     Modal.setAppElement('body');
     const [isVisibleElisabeth, setVisibleElisabeth] = useState(false);
-    const [isVisibleBen, setVisibleBen] = useState(false);
-    const [isVisibleJonah, setVisibleJonah] = useState(false);
+    const [isVisibleAngie, setVisibleAngie] = useState(false);
+    const [isVisibleJiaming, setVisibleJiaming] = useState(false);
     const [isVisibleEmail, setVisibleEmail] = useState(false);
     const [elisabethIsOpen, setElisabethIsOpen] = useState(false);
-    const [benIsOpen, setBenIsOpen] = useState(false);
-    const [jonahIsOpen, setJonahIsOpen] = useState(false);
+    const [angieIsOpen, setAngieIsOpen] = useState(false);
+    const [jiamingIsOpen, setJiamingIsOpen] = useState(false);
 
     const elisabethRef = useRef();
-    const benRef = useRef();
-    const jonahRef = useRef();
+    const angieRef = useRef();
+    const jiamingRef = useRef();
     const emailRef = useRef();
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {
@@ -61,23 +61,23 @@ export default function Contact({ isMobile = false }) {
             entries.forEach(entry => {
                 if (entry.boundingClientRect.top > 0) {
                     if (entry.isIntersecting) {
-                        setVisibleBen(entry.isIntersecting);
+                        setVisibleAngie(entry.isIntersecting);
                     }
                 }
             });
         });
-        observer2.observe(benRef.current);
+        observer2.observe(angieRef.current);
 
         const observer3 = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 if (entry.boundingClientRect.top > 0) {
                     if (entry.isIntersecting) {
-                        setVisibleJonah(entry.isIntersecting);
+                        setVisibleJiaming(entry.isIntersecting);
                     }
                 }
             });
         });
-        observer3.observe(jonahRef.current);
+        observer3.observe(jiamingRef.current);
 
         const observer4 = new IntersectionObserver(entries => {
             entries.forEach(entry => {
@@ -123,25 +123,25 @@ export default function Contact({ isMobile = false }) {
                     </div>
                     <p>President</p>
                 </div>
-                <div className={`exec fade-in-section ${isVisibleBen ? 'is-visible' : ''}`} ref={benRef} onClick={() => { setBenIsOpen(true) }}>
-                    <img className="exec-image" src={ben} alt="elisabeth"></img>
+                <div className={`exec fade-in-section ${isVisibleAngie ? 'is-visible' : ''}`} ref={angieRef} onClick={() => { setAngieIsOpen(true) }}>
+                    <img className="exec-image" src={angie} alt="elisabeth"></img>
                     <div className="exec-title">
-                        <h3>Ben Loong (bjl99)</h3>
-                        <a href="mailto: bjl99@cornell.edu">
+                        <h3>Angie Huang (amh356)</h3>
+                        <a href="mailto: amh356@cornell.edu">
                             <img className="exec-icon" src={email} alt="email-icon"></img>
                         </a>
                     </div>
                     <p>Outreach Coordinator</p>
                 </div>
-                <div className={`exec fade-in-section ${isVisibleJonah ? 'is-visible' : ''}`} ref={jonahRef} onClick={() => { setJonahIsOpen(true) }}>
-                    <img className="exec-image" src={jonah} alt="elisabeth"></img>
+                <div className={`exec fade-in-section ${isVisibleJiaming ? 'is-visible' : ''}`} ref={jiamingRef} onClick={() => { setJiamingIsOpen(true) }}>
+                    <img className="exec-image" src={jiaming} alt="elisabeth"></img>
                     <div className="exec-title">
-                        <h3>Jonah Bernard (jb2528)</h3>
-                        <a href="mailto: jb2528@cornell.edu">
+                        <h3>Jiaming Yuan (jy729)</h3>
+                        <a href="mailto: jy729@cornell.edu">
                             <img className="exec-icon" src={email} alt="email-icon"></img>
                         </a>
                     </div>
-                    <p>Large Group Coordinator</p>
+                    <p>Community Co-Coordinator</p>
                 </div>
             </div>
             <div className="exec-modals">
@@ -152,36 +152,36 @@ export default function Contact({ isMobile = false }) {
                 >
                     <div>
                         <Profile image={elisabeth_prof} title={'Elisabeth Pan'} text={'President'} email={'ep438@cornell.edu'} />
-                        <Question isMobile={isMobile} image={elisabeth_prof} question={'Tell us a bit about yourself.'} answer={'Hii! I’m Amy, a sophomore studying Information Science from San Diego, CA. Outside of AAIV, I’m also part of Cornell AppDev and the Cornell Badminton Club Team. In my free time, I enjoy art, video games, and reading.'} />
-                        <Question isMobile={isMobile} image={elisabeth_prof} question={'What is your vision for AAIV?'} answer={'My vision for AAIV is for us to be a witnessing community that seeks to share God’s love with the people around us. AAIV small groups hold a special place in my heart as I think it’s a great place to grow in our understanding of God’s word as well as in our relationships with each other. As small group coordinator, I hope to support our amazing small group leaders in facilitating these spaces. Feel free to reach out if you have any questions or just want to chat!'} />
-                        <Question isMobile={isMobile} image={elisabeth_prof} question={'Favorite AAIV memory?'} answer={'Stargazing on rawlings green!'} />
-                        <Question isMobile={isMobile} image={elisabeth_prof} question={'Describe AAIV with three emojis.'} answer={'💓🙌🤠'} answerFontSize={'32px'} />
+                        <Question isMobile={isMobile} image={elisabeth_prof} question={'Tell us a bit about yourself.'} answer={'Hi! I’m Elisabeth, a junior studying Information Science from Queens, NY.'} />
+                        <Question isMobile={isMobile} image={elisabeth_prof} question={'What is your vision for AAIV?'} answer={'Our vision is for AAIV to build up and send out leaders in the kingdom of God. As Christians were called to make disciples of all nations, in that we are called to lead others to Christ. Our hope for AAIV is that it can be a community where we can be built up in both our personal and spiritual lives to serve one another and carry out this calling to be leaders and witnesses (that is reflections of Christ) to Cornell’s campus.'} />
+                        <Question isMobile={isMobile} image={elisabeth_prof} question={'Favorite AAIV memory?'} answer={'Playing manhunt on eng quad '} />
+                        <Question isMobile={isMobile} image={elisabeth_prof} question={'Describe AAIV with three emojis.'} answer={'🧋🕺🔫'} answerFontSize={'32px'} />
                     </div>
                 </Modal>
                 <Modal
-                    isOpen={benIsOpen}
-                    onRequestClose={() => { setBenIsOpen(false) }}
+                    isOpen={angieIsOpen}
+                    onRequestClose={() => { setAngieIsOpen(false) }}
                     style={customStyles}
                 >
                     <div>
-                        <Profile image={ben_prof} title={'Ben Loong'} text={'Outreach Coordinator'} email={'bjl99@cornell.edu'} />
-                        <Question isMobile={isMobile} image={ben_prof} question={'Tell us a bit about yourself.'} answer={'Hello! I am Ben. I am a sophomore studying Human Biology, Health, and Society and planning to minor in Healthy Futures and Human Development. I am from Smyrna, Georgia, and apart from AAIV, I am in Big Red Ambassadors, Phi Delta Epsilon, and a few other health-centered clubs on campus. In my free time, I enjoy listening to music and looking for the newest show to binge!'} />
-                        <Question isMobile={isMobile} image={ben_prof} question={'What is your vision for AAIV?'} answer={'For AAIV, I envision a community motivated to share God’s love with others, as well as bolster each other’s spiritual journeys. Through outreach, I hope to provide an “open door” for any person of any faith background to connect and learn more about Christianity, while also reducing as many barriers as possible for people to form supportive relationships. As outreach coordinator, I aspire to provide opportunities and events for people in the Cornell community to learn more about AAIV and facilitate the growth of a witnessing community. '} />
-                        <Question isMobile={isMobile} image={ben_prof} question={'Favorite AAIV memory?'} answer={'Dancing with the guys in AAIV as “Boys Generation” for Felly Dessert, an end-of-the-year formal!'} />
-                        <Question isMobile={isMobile} image={ben_prof} question={'Describe AAIV with three emojis.'} answer={'🕺🍹🥰'} answerFontSize={'32px'} />
+                        <Profile image={angie_prof} title={'Angie Huang'} text={'Outreach Coordinator'} email={'amh356@cornell.edu'} />
+                        <Question isMobile={isMobile} image={angie_prof} question={'Tell us a bit about yourself.'} answer={'Hello! I am Angie. I am a Junior studying Chemistry & Chemical Biology, and I am from Fairfax, VA'} />
+                        <Question isMobile={isMobile} image={angie_prof} question={'What is your vision for AAIV?'} answer={'Outreach ministry seeks to reach people from different corners of campus, from those who have been meaning to seek out a fellowship to those who have never heard about Jesus! We hope to invite people to a place where they not only can find belonging and meaningful relationships, but also to somewhere they can be encouraged to seek and follow the Lord in deeper, more personal ways.'} />
+                        <Question isMobile={isMobile} image={angie_prof} question={'Favorite AAIV memory?'} answer={'yelling during attempts to play nertz at algae while fighting a horrendous headache from overly sweet boba into wee hours of the morning'} />
+                        <Question isMobile={isMobile} image={angie_prof} question={'Describe AAIV with three emojis.'} answer={'🧋🕺🔫'} answerFontSize={'32px'} />
                     </div>
                 </Modal>
                 <Modal
-                    isOpen={jonahIsOpen}
-                    onRequestClose={() => { setJonahIsOpen(false) }}
+                    isOpen={jiamingIsOpen}
+                    onRequestClose={() => { setJiamingIsOpen(false) }}
                     style={customStyles}
                 >
                     <div>
-                        <Profile image={jonah_prof} title={'Jonah Bernard'} text={'Large Group Coordinator'} email={'jb2528@cornell.edu'} />
-                        <Question isMobile={isMobile} image={jonah_prof} question={'Tell us a bit about yourself.'} answer={'Hi! I\'m Jonah :) I\'m in the Class of 2026 studying ECE and ORIE. I come from Seattle, WA and in my free time I love to read ;)'} />
-                        <Question isMobile={isMobile} image={jonah_prof} question={'What is your vision for AAIV?'} answer={'I believe AAIV should be a place where anyone on campus can come and find a loving, Christ-centered community. As large group coordinator, I want everyone to feel welcome, grow individually and as a community, and have a lot of fun together!'} />
-                        <Question isMobile={isMobile} image={jonah_prof} question={'Favorite AAIV memory?'} answer={'My favorite AAIV memory is playing beach volleyball with Intervarsity chapters from all over NY and NJ at our annual Selah retreat :))'} />
-                        <Question isMobile={isMobile} image={jonah_prof} question={'Describe AAIV with three emojis.'} answer={'🙏🥳🥺'} answerFontSize={'32px'} />
+                        <Profile image={jiaming_prof} title={'Jiaming Yuan'} text={'Community Co-Coordinator'} email={'jy729@cornell.edu'} />
+                        <Question isMobile={isMobile} image={jiaming_prof} question={'Tell us a bit about yourself.'} answer={'Hi! I\'m Jiaming. I\'m in the Class of 2026 studying Environmental Engineering. I\'m from San Fransisco, CA'} />
+                        <Question isMobile={isMobile} image={jiaming_prof} question={'What is your vision for AAIV?'} answer={'Our vision is to make intentional spaces where members of AAIV can live together as one body of Christ. We hope to plan events that foster a welcoming and supportive community that encourages us to grow in faith and character as we spur each other on toward love and good works!'} />
+                        <Question isMobile={isMobile} image={jiaming_prof} question={'Favorite AAIV memory?'} answer={'Sophomore class dinner at Rose, where so many of us showed up that we combined two long tables and got confronted about creating a fire hazard'} />
+                        <Question isMobile={isMobile} image={jiaming_prof} question={'Describe AAIV with three emojis.'} answer={'🧋🕺🔫'} answerFontSize={'32px'} />
                     </div>
                 </Modal>
             </div>
