@@ -66,14 +66,25 @@ export default function Contact({ isMobile = false }) {
             entries.forEach(entry => {
                 if (entry.boundingClientRect.top > 0) {
                     if (entry.isIntersecting) {
+                        setVisibleKaitlin(entry.isIntersecting);
+                    }
+                }
+            });
+        });
+        observer2.observe(kaitlinRef.current);
+
+        const observer3 = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.boundingClientRect.top > 0) {
+                    if (entry.isIntersecting) {
                         setVisibleAngie(entry.isIntersecting);
                     }
                 }
             });
         });
-        observer2.observe(angieRef.current);
+        observer3.observe(angieRef.current);
 
-        const observer3 = new IntersectionObserver(entries => {
+        const observer4 = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 if (entry.boundingClientRect.top > 0) {
                     if (entry.isIntersecting) {
@@ -82,9 +93,9 @@ export default function Contact({ isMobile = false }) {
                 }
             });
         });
-        observer3.observe(jiamingRef.current);
+        observer4.observe(jiamingRef.current);
 
-        const observer4 = new IntersectionObserver(entries => {
+        const observer5 = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 if (entry.boundingClientRect.top > 0) {
                     if (entry.isIntersecting) {
@@ -93,18 +104,8 @@ export default function Contact({ isMobile = false }) {
                 }
             });
         });
-        observer4.observe(emailRef.current);
+        observer5.observe(emailRef.current);
 
-        const observer5 = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.boundingClientRect.top > 0) {
-                    if (entry.isIntersecting) {
-                        setVisibleKaitlin(entry.isIntersecting);
-                    }
-                }
-            });
-        });
-        observer3.observe(kaitlinRef.current);
     }, []);
 
     return <div className="main-container">
