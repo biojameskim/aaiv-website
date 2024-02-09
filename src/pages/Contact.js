@@ -5,12 +5,14 @@ import instagram from '../assets/footer/instagram.svg';
 import facebook from '../assets/footer/facebook.svg';
 import email from '../assets/footer/email.svg';
 import elisabeth from '../assets/contact/SP24_exec/elisabeth.svg';
+import kaitlin from '../assets/contact/SP24_exec/kaitlin.svg';
 import angie from '../assets/contact/SP24_exec/angie.svg';
 import jiaming from '../assets/contact/SP24_exec/jiaming.svg';
 import Footer from '../components/Footer';
 import Modal from 'react-modal';
 import Profile from '../components/Profile';
 import elisabeth_prof from '../assets/contact/SP24_exec/elisabeth-prof.svg';
+import kaitlin_prof from '../assets/contact/SP24_exec/kaitlin-prof.svg';
 import angie_prof from '../assets/contact/SP24_exec/angie-prof.svg';
 import jiaming_prof from '../assets/contact/SP24_exec/jiaming-prof.svg';
 import Question from '../components/Question';
@@ -35,13 +37,16 @@ export default function Contact({ isMobile = false }) {
     Modal.setAppElement('body');
     const [isVisibleElisabeth, setVisibleElisabeth] = useState(false);
     const [isVisibleAngie, setVisibleAngie] = useState(false);
+    const [isVisibleKaitlin, setVisibleKaitlin] = useState(false);
     const [isVisibleJiaming, setVisibleJiaming] = useState(false);
     const [isVisibleEmail, setVisibleEmail] = useState(false);
     const [elisabethIsOpen, setElisabethIsOpen] = useState(false);
+    const [kaitlinIsOpen, setKaitlinIsOpen] = useState(false);
     const [angieIsOpen, setAngieIsOpen] = useState(false);
     const [jiamingIsOpen, setJiamingIsOpen] = useState(false);
 
     const elisabethRef = useRef();
+    const kaitlinRef = useRef();
     const angieRef = useRef();
     const jiamingRef = useRef();
     const emailRef = useRef();
@@ -89,6 +94,17 @@ export default function Contact({ isMobile = false }) {
             });
         });
         observer4.observe(emailRef.current);
+
+        const observer5 = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.boundingClientRect.top > 0) {
+                    if (entry.isIntersecting) {
+                        setVisibleKaitlin(entry.isIntersecting);
+                    }
+                }
+            });
+        });
+        observer3.observe(kaitlinRef.current);
     }, []);
 
     return <div className="main-container">
@@ -123,6 +139,16 @@ export default function Contact({ isMobile = false }) {
                     </div>
                     <p>President</p>
                 </div>
+                <div className={`exec fade-in-section ${isVisibleKaitlin ? 'is-visible' : ''}`} ref={kaitlinRef} onClick={() => { setKaitlinIsOpen(true) }}>
+                    <img className="exec-image" src={kaitlin} alt="elisabeth"></img>
+                    <div className="exec-title">
+                        <h3>Kaitlin Chung (khc73)</h3>
+                        <a href="mailto: khc73@cornell.edu">
+                            <img className="exec-icon" src={email} alt="email-icon"></img>
+                        </a>
+                    </div>
+                    <p>Small Group Coordinator</p>
+                </div>
                 <div className={`exec fade-in-section ${isVisibleAngie ? 'is-visible' : ''}`} ref={angieRef} onClick={() => { setAngieIsOpen(true) }}>
                     <img className="exec-image" src={angie} alt="elisabeth"></img>
                     <div className="exec-title">
@@ -155,6 +181,19 @@ export default function Contact({ isMobile = false }) {
                         <Question isMobile={isMobile} image={elisabeth_prof} question={'Tell us a bit about yourself.'} answer={'Hi! I’m Elisabeth, a junior studying Information Science from Queens, NY.'} />
                         <Question isMobile={isMobile} image={elisabeth_prof} question={'What is your vision for AAIV?'} answer={'Our vision is for AAIV to build up and send out leaders in the kingdom of God. As Christians were called to make disciples of all nations, in that we are called to lead others to Christ. Our hope for AAIV is that it can be a community where we can be built up in both our personal and spiritual lives to serve one another and carry out this calling to be leaders and witnesses (that is reflections of Christ) to Cornell’s campus.'} />
                         <Question isMobile={isMobile} image={elisabeth_prof} question={'Favorite AAIV memory?'} answer={'Playing manhunt on eng quad '} />
+                        <Question isMobile={isMobile} image={elisabeth_prof} question={'Describe AAIV with three emojis.'} answer={'🧋🕺🔫'} answerFontSize={'32px'} />
+                    </div>
+                </Modal>
+                <Modal
+                    isOpen={kaitlinIsOpen}
+                    onRequestClose={() => { setKaitlinIsOpen(false) }}
+                    style={customStyles}
+                >
+                    <div>
+                        <Profile image={kaitlin_prof} title={'Kaitlin Chung'} text={'Small Group Coordinator'} email={'khc73@cornell.edu'} />
+                        <Question isMobile={isMobile} image={elisabeth_prof} question={'Tell us a bit about yourself.'} answer={'Hi! I’m Kaitlin, a sophomore studying Biological Sciences from Corning, NY.'} />
+                        <Question isMobile={isMobile} image={elisabeth_prof} question={'What is your vision for AAIV?'} answer={'My vision for small group this semester is to create intimate spaces where non-believers, seekers, and Christians can discover the joy to be found in reading Scripture and seeking God together. By engaging in weekly Bible study, open sharing, and application of the Word to daily life, we are able to become better reflections of Christ’s love to those around us.'} />
+                        <Question isMobile={isMobile} image={elisabeth_prof} question={'Favorite AAIV memory?'} answer={'The women in the Bible and fundamentals of faith small group workshops'} />
                         <Question isMobile={isMobile} image={elisabeth_prof} question={'Describe AAIV with three emojis.'} answer={'🧋🕺🔫'} answerFontSize={'32px'} />
                     </div>
                 </Modal>
