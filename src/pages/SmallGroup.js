@@ -1,30 +1,32 @@
 import React, { useRef, useState, useEffect } from 'react';
-import './css/SmallGroup.css';
-import sg_img from '../assets/small_group/sg-background.png';
-import monday_img from './assets/small_group/SP24_Leaders/cherrie-prof.svg';
-import tuesday_img from '../assets/small_group/SP24_Leaders/roann-karina-prof.svg';
-import wed_img from '../assets/small_group/FA23 Leaders/cassy.svg'
-import thurs_img from '../assets/small_group/SP24_Leaders/jed-prof.svg';
-// Group photos
-// import mon_sg from '../assets/small_group/melisabeth_sg.jpeg'
-// import tues_sg from '../assets/small_group/grace_chen_sg.jpeg'
-// import wed_sg from '../assets/small_group/sed_sg.jpeg'
-// import thurs_sg from '../assets/small_group/grace_li_sg.jpeg'
 import Footer from '../components/Footer';
-// import mon_prof from '../assets/small_group/FA23 Leaders/serena-prof.svg';
-//import serena_prof from '../assets/small_group/FA23 Leaders/serena-prof2.svg';
-import cherrie_prof from '../assets/small_group/SP24_Leaders/cherrie-prof.svg';
-import tues_prof from '../assets/small_group/SP24_Leaders/roann-karina-prof.svg';
-//import angie_prof from '../assets/small_group/FA23 Leaders/angie.svg';
-//import kaitlin_prof from '../assets/small_group/FA23 Leaders/kaitlin.svg';
-import karina_prof from '../assets/small_group/SP24_Leaders/karina-prof.svg';
-import roann_prof from '../assets/small_group/SP24_Leaders/roann-prof.svg';
-import wed_prof from '../assets/small_group/FA23 Leaders/cassy-prof.svg';
-import thurs_prof from '../assets/small_group/SP24_Leaders/jed-prof.svg';
 import Modal from 'react-modal';
 import Profile from '../components/Profile';
 import Question from '../components/Question';
 import email from '../assets/footer/email.svg';
+import './css/SmallGroup.css';
+import sg_img from '../assets/small_group/sg-background.png';
+
+// These are the leader COVER photos for each small group leader.
+import mon_img from '../assets/small_group/SP24_Leaders/cherrie-prof.svg';
+import tues_img from '../assets/small_group/SP24_Leaders/roann-karina-prof.svg';
+import wed_img from '../assets/small_group/FA23 Leaders/cassy.svg'
+import thurs_img from '../assets/small_group/SP24_Leaders/jed-prof.svg';
+
+// These are the group photos for each small group. 
+// import mon_sg from '../assets/small_group/melisabeth_sg.jpeg'
+// import tues_sg from '../assets/small_group/grace_chen_sg.jpeg'
+// import wed_sg from '../assets/small_group/sed_sg.jpeg'
+// import thurs_sg from '../assets/small_group/grace_li_sg.jpeg'
+
+// These are the profile photos for each small group leader (The circular pfps within the modal).
+import mon_prof from '../assets/small_group/SP24_Leaders/cherrie-prof.svg';
+import tues_prof from '../assets/small_group/SP24_Leaders/roann-karina-prof.svg';
+import karina_prof from '../assets/small_group/SP24_Leaders/karina-prof.svg';
+import roann_prof from '../assets/small_group/SP24_Leaders/roann-prof.svg';
+import wed_prof from '../assets/small_group/FA23 Leaders/cassy-prof.svg';
+import thurs_prof from '../assets/small_group/SP24_Leaders/jed-prof.svg';
+
 
 export default function SmallGroup({ isMobile = false }) {
   const customStyles = {
@@ -123,7 +125,7 @@ export default function SmallGroup({ isMobile = false }) {
         <div className={`leader fade-in-section ${isVisible1 ? 'is-visible' : ''}`} ref={mondayRef} onClick={() => { setMonIsOpen(true) }}>
           <p>Monday</p>
           <hr></hr>
-          <img src={monday_img} alt="monday"></img>
+          <img src={mon_img} alt="monday"></img>
           <div className="sg-title">
             <h3>Cherrie Lan</h3>
             <a href="mailto: cql2@cornell.edu">
@@ -135,7 +137,7 @@ export default function SmallGroup({ isMobile = false }) {
         <div className={`leader fade-in-section ${isVisible2 ? 'is-visible' : ''}`} ref={tuesdayRef} onClick={() => { setTuesIsOpen(true) }}>
           <p>Tuesday</p>
           <hr></hr>
-          <img src={tuesday_img} alt="tuesday"></img>
+          <img src={tues_img} alt="tuesday"></img>
           <div className="sg-title">
             <h3>Ro-Ann Shen & Karina Song</h3>
             <a href="mailto: rs2545@cornell.edu">
@@ -176,10 +178,10 @@ export default function SmallGroup({ isMobile = false }) {
           style={customStyles}
         >
           <div>
-            <Profile image={cherrie_prof} title={'Cherrie Lan'} text={'Mondays 6:30pm @ Uris 302'} email={'cql2@cornell.edu'} />
+            <Profile image={mon_prof} title={'Cherrie Lan'} text={'Mondays 6:30pm @ Uris 302'} email={'cql2@cornell.edu'} />
             <Question
               isMobile={isMobile}
-              image={cherrie_prof}
+              image={mon_prof}
               question={"Fast Facts"}
               answer={
                 <div className="sg-answer">
@@ -192,13 +194,13 @@ export default function SmallGroup({ isMobile = false }) {
             />
             <Question
               isMobile={isMobile}
-              image={cherrie_prof}
+              image={mon_prof}
               question={"Favorite AAIV Memory?"}
               answer={"Testimony nights, connecting with friends, playing Just Dance @ ALGAE"}
             />
             <Question
               isMobile={isMobile}
-              image={cherrie_prof}
+              image={mon_prof}
               question={"Vision for small group?"}
               answer={"To create an open, welcomng, and vulnerable space and community for people of any faith background. We come together so we can love Jesus and each other more, learn more about God's Word in the Bible, and live life together!"}
             />
