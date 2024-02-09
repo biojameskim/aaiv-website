@@ -113,7 +113,7 @@ export default function SmallGroup({ isMobile = false }) {
     </div>
     <div className={`sg-leaders-section ${isMobile ? 'sg-leaders-section-mobile' : ''}`}>
       <div className="text-container">
-        <h1>Meet our Fall 2023 Small Group Leaders</h1>
+        <h1>Meet our Spring 2024 Small Group Leaders</h1>
         <p>Guided by one or two of our amazing and friendly small group leaders, you can share life and explore God together in weekly meetings centered around a Bible study, which are often preceded by a small group dinner. Whether you’ve grown up in church your whole life or are just starting to question if there could be a God who has created all things, you are invited to come check out a small group as we cover the book of Mark! Click on a small group leader to learn more!</p>
       </div>
       <div className='leaders'>
@@ -122,10 +122,10 @@ export default function SmallGroup({ isMobile = false }) {
           <hr></hr>
           <img src={monday_img} alt="monday"></img>
           <div className="sg-title">
-              <h3>Serena Wang</h3>
-              <a href="mailto: sw755@cornell.edu">
-                  <img className="sg-icon" src={email} alt="email-icon"></img>
-              </a>
+            <h3>Serena Wang</h3>
+            <a href="mailto: sw755@cornell.edu">
+              <img className="sg-icon" src={email} alt="email-icon"></img>
+            </a>
           </div>
           <p>6:30pm @ Goldwin Smith Hall G24</p>
         </div>
@@ -134,10 +134,10 @@ export default function SmallGroup({ isMobile = false }) {
           <hr></hr>
           <img src={tuesday_img} alt="tuesday"></img>
           <div className="sg-title">
-              <h3>Angie Huang & Kaitlin Chung</h3>
-              <a href="mailto: amh356@cornell.edu">
-                  <img className="sg-icon" src={email} alt="email-icon"></img>
-              </a>
+            <h3>Angie Huang & Kaitlin Chung</h3>
+            <a href="mailto: amh356@cornell.edu">
+              <img className="sg-icon" src={email} alt="email-icon"></img>
+            </a>
           </div>
           <p>6pm @ PSB 201</p>
         </div>
@@ -146,10 +146,10 @@ export default function SmallGroup({ isMobile = false }) {
           <hr></hr>
           <img src={wed_img} alt="wednesday"></img>
           <div className="sg-title">
-              <h3>Cassy Kuo</h3>
-              <a href="mailto: clk229@cornell.edu">
-                  <img className="sg-icon" src={email} alt="email-icon"></img>
-              </a>
+            <h3>Cassy Kuo</h3>
+            <a href="mailto: clk229@cornell.edu">
+              <img className="sg-icon" src={email} alt="email-icon"></img>
+            </a>
           </div>
           <p>7:30pm @ Collegetown</p>
         </div>
@@ -158,10 +158,10 @@ export default function SmallGroup({ isMobile = false }) {
           <hr></hr>
           <img src={thurs_img} alt="thursday"></img>
           <div className="sg-title">
-              <h3>Jed Tan</h3>
-              <a href="mailto: jyt8@cornell.edu">
-                  <img className="sg-icon" src={email} alt="email-icon"></img>
-              </a>
+            <h3>Jed Tan</h3>
+            <a href="mailto: jyt8@cornell.edu">
+              <img className="sg-icon" src={email} alt="email-icon"></img>
+            </a>
           </div>
           <p>7:30pm @ Hollister Hall 401</p>
         </div>
@@ -180,10 +180,10 @@ export default function SmallGroup({ isMobile = false }) {
               question={"Fast Facts"}
               answer={
                 <div className="sg-answer">
-                  <span><span style={{fontWeight:500}}>Major:</span> Public Policy & Management '25</span>
-                  <span><span style={{fontWeight:500}}>Hometown:</span> McLean, VA</span>
-                  <span><span style={{fontWeight:500}}>Fav lunch spot:</span> Terrace</span>
-                  <span><span style={{fontWeight:500}}>Best study spot:</span> Kroch Library in Olin</span>
+                  <span><span style={{ fontWeight: 500 }}>Major:</span> Public Policy & Management '25</span>
+                  <span><span style={{ fontWeight: 500 }}>Hometown:</span> McLean, VA</span>
+                  <span><span style={{ fontWeight: 500 }}>Fav lunch spot:</span> Terrace</span>
+                  <span><span style={{ fontWeight: 500 }}>Best study spot:</span> Kroch Library in Olin</span>
                 </div>
               }
             />
@@ -215,10 +215,10 @@ export default function SmallGroup({ isMobile = false }) {
               question={"Fast Facts"}
               answer={
                 <div className="sg-answer">
-                  <span><span style={{fontWeight:500}}>Major:</span> Biological Sciences '26</span>
-                  <span><span style={{fontWeight:500}}>Hometown:</span> Corning, NY</span>
-                  <span><span style={{fontWeight:500}}>Fav lunch spot:</span> Atrium cafe or Trilium</span>
-                  <span><span style={{fontWeight:500}}>Best study spot:</span> Mann Library</span>
+                  <span><span style={{ fontWeight: 500 }}>Major:</span> Biological Sciences '26</span>
+                  <span><span style={{ fontWeight: 500 }}>Hometown:</span> Corning, NY</span>
+                  <span><span style={{ fontWeight: 500 }}>Fav lunch spot:</span> Atrium cafe or Trilium</span>
+                  <span><span style={{ fontWeight: 500 }}>Best study spot:</span> Mann Library</span>
                 </div>
               }
             />
@@ -228,10 +228,10 @@ export default function SmallGroup({ isMobile = false }) {
               question={"Fast Facts"}
               answer={
                 <div className="sg-answer">
-                  <span><span style={{fontWeight:500}}>Major:</span> Chemistry '25</span>
-                  <span><span style={{fontWeight:500}}>Hometown:</span> Fairfax, VA</span>
-                  <span><span style={{fontWeight:500}}>Fav lunch spot:</span> Atrium cafe bc chicken panko sandwich (its breaded chicken and cabbage which sounds weird but hear me out they have this really good sauce and the bread is SO YUMMY and it's like 7.99? so relatively cheap and fills you up)</span>
-                  <span><span style={{fontWeight:500}}>Best study spot:</span> Mann Library</span>
+                  <span><span style={{ fontWeight: 500 }}>Major:</span> Chemistry '25</span>
+                  <span><span style={{ fontWeight: 500 }}>Hometown:</span> Fairfax, VA</span>
+                  <span><span style={{ fontWeight: 500 }}>Fav lunch spot:</span> Atrium cafe bc chicken panko sandwich (its breaded chicken and cabbage which sounds weird but hear me out they have this really good sauce and the bread is SO YUMMY and it's like 7.99? so relatively cheap and fills you up)</span>
+                  <span><span style={{ fontWeight: 500 }}>Best study spot:</span> Mann Library</span>
                 </div>
               }
             />
@@ -263,10 +263,10 @@ export default function SmallGroup({ isMobile = false }) {
               question={"Fast Facts"}
               answer={
                 <div className="sg-answer">
-                  <span><span style={{fontWeight:500}}>Major:</span> Health Care Policy '25</span>
-                  <span><span style={{fontWeight:500}}>Hometown:</span> Los Angeles, CA</span>
-                  <span><span style={{fontWeight:500}}>Fav lunch spot:</span> Trilium</span>
-                  <span><span style={{fontWeight:500}}>Best study spot:</span> Warren Hall</span>
+                  <span><span style={{ fontWeight: 500 }}>Major:</span> Health Care Policy '25</span>
+                  <span><span style={{ fontWeight: 500 }}>Hometown:</span> Los Angeles, CA</span>
+                  <span><span style={{ fontWeight: 500 }}>Fav lunch spot:</span> Trilium</span>
+                  <span><span style={{ fontWeight: 500 }}>Best study spot:</span> Warren Hall</span>
                 </div>
               }
             />
@@ -298,10 +298,10 @@ export default function SmallGroup({ isMobile = false }) {
               question={"Fast Facts"}
               answer={
                 <div className="sg-answer">
-                  <span><span style={{fontWeight:500}}>Major:</span> Civil Engineering '25</span>
-                  <span><span style={{fontWeight:500}}>Hometown:</span> Long Island, NY</span>
-                  <span><span style={{fontWeight:500}}>Fav lunch spot:</span> Trilium</span>
-                  <span><span style={{fontWeight:500}}>Best study spot:</span> Fine Arts Library</span>
+                  <span><span style={{ fontWeight: 500 }}>Major:</span> Civil Engineering '25</span>
+                  <span><span style={{ fontWeight: 500 }}>Hometown:</span> Long Island, NY</span>
+                  <span><span style={{ fontWeight: 500 }}>Fav lunch spot:</span> Trilium</span>
+                  <span><span style={{ fontWeight: 500 }}>Best study spot:</span> Fine Arts Library</span>
                 </div>
               }
             />
