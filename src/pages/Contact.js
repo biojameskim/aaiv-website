@@ -12,7 +12,7 @@ import Modal from 'react-modal';
 import Profile from '../components/Profile';
 import elisabeth_prof from '../assets/contact/SP24_exec/elisabeth-prof.svg';
 import angie_prof from '../assets/contact/SP24_exec/angie-prof.svg';
-import jiaming_prof from '../assets/contact/SP24_exec/jiaming.svg';;
+import jiaming_prof from '../assets/contact/SP24_exec/jiaming-prof.svg';
 import Question from '../components/Question';
 
 import MailchimpForm from '../components/MailchimpForm';
