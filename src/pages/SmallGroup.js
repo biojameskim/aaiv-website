@@ -12,12 +12,15 @@ import thurs_img from '../assets/small_group/FA23 Leaders/jed.svg';
 // import thurs_sg from '../assets/small_group/grace_li_sg.jpeg'
 import Footer from '../components/Footer';
 // import mon_prof from '../assets/small_group/FA23 Leaders/serena-prof.svg';
-import serena_prof from '../assets/small_group/FA23 Leaders/serena-prof2.svg';
-import tues_prof from '../assets/small_group/FA23 Leaders/angie-kaitlin-prof.svg';
-import angie_prof from '../assets/small_group/FA23 Leaders/angie.svg';
-import kaitlin_prof from '../assets/small_group/FA23 Leaders/kaitlin.svg';
+//import serena_prof from '../assets/small_group/FA23 Leaders/serena-prof2.svg';
+import cherrie_prof from '../assets/small_group/SP24_Leaders/cherrie-prof.svg';
+import tues_prof from '../assets/small_group/SP24_Leaders/roann-karina-prof.svg';
+//import angie_prof from '../assets/small_group/FA23 Leaders/angie.svg';
+//import kaitlin_prof from '../assets/small_group/FA23 Leaders/kaitlin.svg';
+import karina_prof from '../assets/small_group/SP24_Leaders/karina-prof.svg';
+import roann_prof from '../assets/small_group/SP24_Leaders/roann-prof.svg';
 import wed_prof from '../assets/small_group/FA23 Leaders/cassy-prof.svg';
-import thurs_prof from '../assets/small_group/FA23 Leaders/jed-prof.svg';
+import thurs_prof from '../assets/small_group/SP24_Leaders/jed-prof.svg';
 import Modal from 'react-modal';
 import Profile from '../components/Profile';
 import Question from '../components/Question';
@@ -173,10 +176,10 @@ export default function SmallGroup({ isMobile = false }) {
           style={customStyles}
         >
           <div>
-            <Profile image={serena_prof} title={'Cherrie Lan'} text={'Mondays 6:30pm @ Uris 302'} email={'cql2@cornell.edu'} />
+            <Profile image={cherrie_prof_prof} title={'Cherrie Lan'} text={'Mondays 6:30pm @ Uris 302'} email={'cql2@cornell.edu'} />
             <Question
               isMobile={isMobile}
-              image={serena_prof}
+              image={cherrie_prof_prof}
               question={"Fast Facts"}
               answer={
                 <div className="sg-answer">
@@ -189,13 +192,13 @@ export default function SmallGroup({ isMobile = false }) {
             />
             <Question
               isMobile={isMobile}
-              image={serena_prof}
+              image={cherrie_prof}
               question={"Favorite AAIV Memory?"}
               answer={"Testimony nights, connecting with friends, playing Just Dance @ ALGAE"}
             />
             <Question
               isMobile={isMobile}
-              image={serena_prof}
+              image={cherrie_prof}
               question={"Vision for small group?"}
               answer={"To create an open, welcomng, and vulnerable space and community for people of any faith background. We come together so we can love Jesus and each other more, learn more about God's Word in the Bible, and live life together!"}
             />
@@ -211,7 +214,7 @@ export default function SmallGroup({ isMobile = false }) {
             <Profile image={tues_prof} title={'Ro-Ann Shen & Karina Song'} text={'Tuesdays 6:30pm @ Uris 204'} email={'rs2545@cornell.edu'} />
             <Question
               isMobile={isMobile}
-              image={kaitlin_prof} //Kaitlyn will be for Karina
+              image={karina_prof} //Kaitlyn will be for Karina
               question={"Fast Facts"}
               answer={
                 <div className="sg-answer">
@@ -224,7 +227,7 @@ export default function SmallGroup({ isMobile = false }) {
             />
             <Question
               isMobile={isMobile}
-              image={angie_prof} //Angie will be for Ro-Ann
+              image={roann_prof} //Angie will be for Ro-Ann
               question={"Fast Facts"}
               answer={
                 <div className="sg-answer">
@@ -237,13 +240,13 @@ export default function SmallGroup({ isMobile = false }) {
             />
             <Question
               isMobile={isMobile}
-              image={kaitlin_prof} //Karina
+              image={karina_prof}
               question={"Favorite AAIV Memory?"}
               answer={"Sunrising with Arvin, Agnes, and Sam"}
             />
             <Question
               isMobile={isMobile}
-              image={angie_prof} // Ro-Ann
+              image={roann_prof}
               question={"Vision for small group?"}
               answer={"Our vision is to have small group as a supportive, non-intimidating space for anyone regardless of spiritual standing to study scripture and build spiritual discipline. We hope to foster family energy through community activites and a space where people feel safe to be open and vulnerable."}
             />
