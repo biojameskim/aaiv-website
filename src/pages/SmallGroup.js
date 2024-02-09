@@ -122,24 +122,24 @@ export default function SmallGroup({ isMobile = false }) {
           <hr></hr>
           <img src={monday_img} alt="monday"></img>
           <div className="sg-title">
-            <h3>Serena Wang</h3>
-            <a href="mailto: sw755@cornell.edu">
+            <h3>Cherrie Lan</h3>
+            <a href="mailto: cql2@cornell.edu">
               <img className="sg-icon" src={email} alt="email-icon"></img>
             </a>
           </div>
-          <p>6:30pm @ Goldwin Smith Hall G24</p>
+          <p>6:30pm @ Uris 302</p>
         </div>
         <div className={`leader fade-in-section ${isVisible2 ? 'is-visible' : ''}`} ref={tuesdayRef} onClick={() => { setTuesIsOpen(true) }}>
           <p>Tuesday</p>
           <hr></hr>
           <img src={tuesday_img} alt="tuesday"></img>
           <div className="sg-title">
-            <h3>Angie Huang & Kaitlin Chung</h3>
-            <a href="mailto: amh356@cornell.edu">
+            <h3>Ro-Ann Shen & Karina Song</h3>
+            <a href="mailto: rs2545@cornell.edu">
               <img className="sg-icon" src={email} alt="email-icon"></img>
             </a>
           </div>
-          <p>6pm @ PSB 201</p>
+          <p>6:30pm @ Uris 204</p>
         </div>
         <div className={`leader fade-in-section ${isVisible3 ? 'is-visible' : ''}`} ref={wednesdayRef} onClick={() => { setWedIsOpen(true) }}>
           <p>Wednesday</p>
@@ -173,31 +173,31 @@ export default function SmallGroup({ isMobile = false }) {
           style={customStyles}
         >
           <div>
-            <Profile image={serena_prof} title={'Serena Wang'} text={'Mondays 6:30pm @ Goldwin Smith Hall G24'} email={'sw755@cornell.edu'} />
+            <Profile image={serena_prof} title={'Cherrie Lan'} text={'Mondays 6:30pm @ Uris 302'} email={'cql2@cornell.edu'} />
             <Question
               isMobile={isMobile}
               image={serena_prof}
               question={"Fast Facts"}
               answer={
                 <div className="sg-answer">
-                  <span><span style={{ fontWeight: 500 }}>Major:</span> Public Policy & Management '25</span>
-                  <span><span style={{ fontWeight: 500 }}>Hometown:</span> McLean, VA</span>
-                  <span><span style={{ fontWeight: 500 }}>Fav lunch spot:</span> Terrace</span>
-                  <span><span style={{ fontWeight: 500 }}>Best study spot:</span> Kroch Library in Olin</span>
+                  <span><span style={{ fontWeight: 500 }}>Major:</span> Human Development '23</span>
+                  <span><span style={{ fontWeight: 500 }}>Hometown:</span> Stony Brook, NY</span>
+                  <span><span style={{ fontWeight: 500 }}>Fav lunch spot:</span> Martha's Cafe</span>
+                  <span><span style={{ fontWeight: 500 }}>Best study spot:</span> Not recent but Olin 7th floor stacks has a beautiful view</span>
                 </div>
               }
             />
             <Question
               isMobile={isMobile}
               image={serena_prof}
-              question={"Favorite small group memory?"}
-              answer={"Watching the Cornell Figure Skating SP23 Show with Melisabeth Mondays"}
+              question={"Favorite AAIV Memory?"}
+              answer={"Testimony nights, connecting with friends, playing Just Dance @ ALGAE"}
             />
             <Question
               isMobile={isMobile}
               image={serena_prof}
               question={"Vision for small group?"}
-              answer={"To create a space where people can intentionally grow deeper in their faith and gain spiritual discernment by carefully studying the Word of God via incorporating outside resources/texts for added context and relevance, and having more genuine and vulnerable conversations. My hope is that people will better understand the nature of who God is, His character, and what His design and purpose are for us."}
+              answer={"To create an open, welcomng, and vulnerable space and community for people of any faith background. We come together so we can love Jesus and each other more, learn more about God's Word in the Bible, and live life together!"}
             />
             {/* <SgPhoto src={melisabeth_sg} alt="melisabeth small group" /> */}
           </div>
@@ -208,44 +208,44 @@ export default function SmallGroup({ isMobile = false }) {
           style={customStyles}
         >
           <div>
-            <Profile image={tues_prof} title={'Angie Huang & Kaitlin Chung'} text={'Tuesdays 6pm @ PSB 201'} email={'amh356@cornell.edu'} />
+            <Profile image={tues_prof} title={'Ro-Ann Shen & Karina Song'} text={'Tuesdays 6:30pm @ Uris 204'} email={'rs2545@cornell.edu'} />
             <Question
               isMobile={isMobile}
-              image={kaitlin_prof}
+              image={kaitlin_prof} //Kaitlyn will be for Karina
               question={"Fast Facts"}
               answer={
                 <div className="sg-answer">
-                  <span><span style={{ fontWeight: 500 }}>Major:</span> Biological Sciences '26</span>
-                  <span><span style={{ fontWeight: 500 }}>Hometown:</span> Corning, NY</span>
-                  <span><span style={{ fontWeight: 500 }}>Fav lunch spot:</span> Atrium cafe or Trilium</span>
-                  <span><span style={{ fontWeight: 500 }}>Best study spot:</span> Mann Library</span>
+                  <span><span style={{ fontWeight: 500 }}>Major:</span> ILR, minoring in Business, Inequality Studies, Theatre '24</span>
+                  <span><span style={{ fontWeight: 500 }}>Hometown:</span> Seoul, South Korea</span>
+                  <span><span style={{ fontWeight: 500 }}>Fav lunch spot:</span> Bus Stop Bagels</span>
+                  <span><span style={{ fontWeight: 500 }}>Best study spot:</span> Catherwood Library</span>
                 </div>
               }
             />
             <Question
               isMobile={isMobile}
-              image={angie_prof}
+              image={angie_prof} //Angie will be for Ro-Ann
               question={"Fast Facts"}
               answer={
                 <div className="sg-answer">
-                  <span><span style={{ fontWeight: 500 }}>Major:</span> Chemistry '25</span>
-                  <span><span style={{ fontWeight: 500 }}>Hometown:</span> Fairfax, VA</span>
-                  <span><span style={{ fontWeight: 500 }}>Fav lunch spot:</span> Atrium cafe bc chicken panko sandwich (its breaded chicken and cabbage which sounds weird but hear me out they have this really good sauce and the bread is SO YUMMY and it's like 7.99? so relatively cheap and fills you up)</span>
-                  <span><span style={{ fontWeight: 500 }}>Best study spot:</span> Mann Library</span>
+                  <span><span style={{ fontWeight: 500 }}>Major:</span> Information Science '24</span>
+                  <span><span style={{ fontWeight: 500 }}>Hometown:</span> Geneva, NY</span>
+                  <span><span style={{ fontWeight: 500 }}>Fav lunch spot:</span> Terrace </span>
+                  <span><span style={{ fontWeight: 500 }}>Best study spot:</span> Libe Cafe by the windows :D </span>
                 </div>
               }
             />
             <Question
               isMobile={isMobile}
-              image={kaitlin_prof}
-              question={"Favorite small group memory?"}
-              answer={"Prep meetings on Sunday afternoons with Melody, Elisabeth, and Serena!"}
+              image={kaitlin_prof} //Karina
+              question={"Favorite AAIV Memory?"}
+              answer={"Sunrising with Arvin, Agnes, and Sam"}
             />
             <Question
               isMobile={isMobile}
-              image={angie_prof}
+              image={angie_prof} // Ro-Ann
               question={"Vision for small group?"}
-              answer={"Small group is a place for everyone - especially freshmen, transfers, anyone looking for community or even just people to talk to - to discover the riches of God’s Word and the life found in it through Bible study. It's more than just a Bible study though! Small group is also a place for people to grow closer together by sharing vulnerably, praying for each other, encouraging one another and building each other up regardless of where they are in their faith journey. Our longing for this small group is for each person to take steps toward ownership of their faith and fostering their personal relationship with God."}
+              answer={"Our vision is to have small group as a supportive, non-intimidating space for anyone regardless of spiritual standing to study scripture and build spiritual discipline. We hope to foster family energy through community activites and a space where people feel safe to be open and vulnerable."}
             />
             {/* <SgPhoto src={tues_sg} alt="Angie & Kaitlin small group" /> */}
           </div>
@@ -265,22 +265,22 @@ export default function SmallGroup({ isMobile = false }) {
                 <div className="sg-answer">
                   <span><span style={{ fontWeight: 500 }}>Major:</span> Health Care Policy '25</span>
                   <span><span style={{ fontWeight: 500 }}>Hometown:</span> Los Angeles, CA</span>
-                  <span><span style={{ fontWeight: 500 }}>Fav lunch spot:</span> Trilium</span>
-                  <span><span style={{ fontWeight: 500 }}>Best study spot:</span> Warren Hall</span>
+                  <span><span style={{ fontWeight: 500 }}>Fav lunch spot:</span> Macs</span>
+                  <span><span style={{ fontWeight: 500 }}>Best study spot:</span> Mann Library</span>
                 </div>
               }
             />
             <Question
               isMobile={isMobile}
               image={wed_prof}
-              question={"Favorite small group memory?"}
-              answer={"Melisabeth small group spontaneously met on the arts quad to enjoy the good weather and sunshine!"}
+              question={"Favorite AAIV memory?"}
+              answer={"Playing ping pong until 5 in the morning with 15 people at AlGAE"}
             />
             <Question
               isMobile={isMobile}
               image={wed_prof}
               question={"Vision for small group?"}
-              answer={"To encourage people of all walks of faith to encourage each other to pursue christ and love more like him!"}
+              answer={"To encourage people to love and re-love Jesus and learn from each other about him."}
             />
             {/* <SgPhoto src={wed_sg} alt="Cassy small group" /> */}
           </div>
@@ -291,7 +291,7 @@ export default function SmallGroup({ isMobile = false }) {
           style={customStyles}
         >
           <div>
-            <Profile image={thurs_prof} title={'Jed Tan'} text={'Thursdays 7:30pm @ Hollister Hall 401'} netid={'jyt8'} email={'jyt8@cornell.edu'} />
+            <Profile image={thurs_prof} title={'Jed Tan'} text={'Thursdays 7:30pm @ Hollister Hall'} netid={'jyt8'} email={'jyt8@cornell.edu'} />
             <Question
               isMobile={isMobile}
               image={thurs_prof}
@@ -299,23 +299,23 @@ export default function SmallGroup({ isMobile = false }) {
               answer={
                 <div className="sg-answer">
                   <span><span style={{ fontWeight: 500 }}>Major:</span> Civil Engineering '25</span>
-                  <span><span style={{ fontWeight: 500 }}>Hometown:</span> Long Island, NY</span>
-                  <span><span style={{ fontWeight: 500 }}>Fav lunch spot:</span> Trilium</span>
-                  <span><span style={{ fontWeight: 500 }}>Best study spot:</span> Fine Arts Library</span>
+                  <span><span style={{ fontWeight: 500 }}>Hometown:</span> Stony Brook, NY</span>
+                  <span><span style={{ fontWeight: 500 }}>Fav lunch spot:</span> Risley's Nashville Hot Chicken</span>
+                  <span><span style={{ fontWeight: 500 }}>Best study spot:</span> Sage Atrium</span>
                 </div>
               }
             />
             <Question
               isMobile={isMobile}
               image={thurs_prof}
-              question={"Favorite small group memory?"}
-              answer={"Picnic on the slope"}
+              question={"Favorite AAIV memory?"}
+              answer={"Early morning devos and 6 mile jog at Basileia"}
             />
             <Question
               isMobile={isMobile}
               image={thurs_prof}
               question={"Vision for small group?"}
-              answer={"I want my small group to be a place to learn from each other what God's word means and to be a community that cares deeply for one another. I hope that small group can provide insight into how God is working in each of our lives."}
+              answer={"A place to learn from each other what God's word means, and how to live lives that imitate Christ's example, caring deeply for one another."}
             />
             {/* <SgPhoto src={thurs_sg} alt="Jed Tan small group" /> */}
           </div>
