@@ -4,7 +4,7 @@ import sg_img from '../assets/small_group/sg-background.png';
 import monday_img from './assets/small_group/SP24_Leaders/cherrie-prof.svg';
 import tuesday_img from '../assets/small_group/SP24_Leaders/roann-karina-prof.svg';
 import wed_img from '../assets/small_group/FA23 Leaders/cassy.svg'
-import thurs_img from '../assets/small_group/FA23 Leaders/jed.svg';
+import thurs_img from '../assets/small_group/SP24_Leaders/jed-prof.svg';
 // Group photos
 // import mon_sg from '../assets/small_group/melisabeth_sg.jpeg'
 // import tues_sg from '../assets/small_group/grace_chen_sg.jpeg'

@@ -10,9 +10,12 @@ import jonah from '../assets/contact/jonah.svg';
 import Footer from '../components/Footer';
 import Modal from 'react-modal';
 import Profile from '../components/Profile';
-import amy_prof from '../assets/contact/amy-profile.svg';
-import ben_prof from '../assets/contact/ben-profile.svg';
-import jonah_prof from '../assets/contact/jonah-profile.svg';
+//import amy_prof from '../assets/contact/amy-profile.svg';
+//import ben_prof from '../assets/contact/ben-profile.svg';
+//import jonah_prof from '../assets/contact/jonah-profile.svg';
+import amy_prof from '../assets/contact/SP24_exec/elisabeth-prof.svg';
+import ben_prof from '../assets/contact/SP24_exec/angie-prof.svg';
+import jonah_prof from '../assets/contact/SP24_exec/jiaming-prof.svg'
 import Question from '../components/Question';
 
 import MailchimpForm from '../components/MailchimpForm';
