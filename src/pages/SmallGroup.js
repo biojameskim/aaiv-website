@@ -1,8 +1,8 @@
 import React, { useRef, useState, useEffect } from 'react';
 import './css/SmallGroup.css';
 import sg_img from '../assets/small_group/sg-background.png';
-import monday_img from '../assets/small_group/FA23 Leaders/serena.svg';
-import tuesday_img from '../assets/small_group/FA23 Leaders/angie-kaitlin.svg';
+import monday_img from './assets/small_group/SP24_Leaders/cherrie-prof.svg';
+import tuesday_img from '../assets/small_group/SP24_Leaders/roann-karina-prof.svg';
 import wed_img from '../assets/small_group/FA23 Leaders/cassy.svg'
 import thurs_img from '../assets/small_group/FA23 Leaders/jed.svg';
 // Group photos
