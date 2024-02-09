@@ -293,7 +293,7 @@ export default function Contact({ isMobile = false }) {
                     style={customStyles}
                 >
                     <div>
-                        <Profile image={jiaming_prof} title={'Serena Wang'} text={'Large Group Coordinator'} email={'sw755@cornell.edu'} />
+                        <Profile image={serena_prof} title={'Serena Wang'} text={'Large Group Coordinator'} email={'sw755@cornell.edu'} />
                         <Question isMobile={isMobile} image={serena_prof} question={'Tell us a bit about yourself.'} answer={'Hi! I\'m Serena. I\'m in the Class of 2025 studying Policy Analysis & Management. I\'m from McLean, VA'} />
                         <Question isMobile={isMobile} image={serena_prof} question={'What is your vision for AAIV?'} answer={'My vision for large group centers around discipleship and hospitality. My hope is that large group would be a welcoming and loving space where people would grow in spiritual discernment and knowledge of the Word, and be able to tangibly feel the love of God through fellowship.'} />
                         <Question isMobile={isMobile} image={serena_prof} question={'Favorite AAIV memory?'} answer={'Monday Small Group Testimony Night!'} />
