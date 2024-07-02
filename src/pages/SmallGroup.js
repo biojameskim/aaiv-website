@@ -8,10 +8,10 @@ import './css/SmallGroup.css';
 import sg_img from '../assets/small_group/sg-background.png';
 
 // These are the leader COVER photos for each small group leader.
-import mon_img from '../assets/small_group/SP24_Leaders/cherrie-prof.svg';
-import tues_img from '../assets/small_group/SP24_Leaders/roann-karina-prof.svg';
+import mon_img from '../assets/small_group/SP24_Leaders/cherrie.svg';
+import tues_img from '../assets/small_group/SP24_Leaders/roann-karina.svg';
 import wed_img from '../assets/small_group/FA23 Leaders/cassy.svg'
-import thurs_img from '../assets/small_group/SP24_Leaders/jed-prof.svg';
+import thurs_img from '../assets/small_group/SP24_Leaders/jed.svg';
 
 // These are the group photos for each small group. 
 // import mon_sg from '../assets/small_group/melisabeth_sg.jpeg'
