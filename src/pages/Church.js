@@ -100,7 +100,7 @@ export default function Church({ isMobile = false }) {
                         <button>Rides</button>
                     </a>
                 </div>
-                <p>Contact Micah Chen (mc2284) for more details.</p>
+                <p>Contact Jed Tan (jyt8) for more details.</p>
             </div>
         </div>
         <div className={`church-section ${isMobile ? 'church-section-mobile' : ''} church-section-left fade-in-section ${isVisible2 ? 'is-visible' : ''}`} ref={domRef2}>
@@ -161,7 +161,7 @@ export default function Church({ isMobile = false }) {
                         <button>Website</button>
                     </a>
                 </div>
-                <p>Anabel Taylor Hall B21 (One World Room)</p>
+                <p>Anabel Taylor Hall (Room 230 - Auditorium)</p>
                 <p>Contact Kaitlin Chung (khc73) for more details.</p>
             </div>
         </div>
