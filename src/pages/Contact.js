@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import './css/Contact.css';
 import contact_img from '../assets/contact/contact_background.png';
 import instagram from '../assets/footer/instagram.svg';
-import facebook from '../assets/footer/facebook.svg';
 import email from '../assets/footer/email.svg';
 import elisabeth from '../assets/contact/SP24_exec/elisabeth.svg';
 import kaitlin from '../assets/contact/SP24_exec/kaitlin.svg';
@@ -147,9 +146,6 @@ export default function Contact({ isMobile = false }) {
                 <div className="icons">
                     <a href="https://www.instagram.com/cornellaaiv/" target="_blank" rel="noopener noreferrer">
                         <img className="icon" src={instagram} alt="insta-icon"></img>
-                    </a>
-                    <a href="https://www.facebook.com/cornellaaiv/" target="_blank" rel="noopener noreferrer">
-                        <img className="icon" src={facebook} alt="fb-icon"></img>
                     </a>
                     <a href="mailto: cornellaaiv@gmail.com">
                         <img className="icon" src={email} alt="email-icon"></img>
