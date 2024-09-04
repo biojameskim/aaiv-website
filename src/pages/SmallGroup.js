@@ -151,12 +151,12 @@ export default function SmallGroup({ isMobile = false }) {
           <hr></hr>
           <img src={wed_img} alt="wednesday"></img>
           <div className="sg-title">
-            <h3>Cassy Kuo</h3>
-            <a href="mailto: clk229@cornell.edu">
+            <h3>Guillaume Ah-Hot</h3>
+            <a href="mailto: gaa59@cornell.edu">
               <img className="sg-icon" src={email} alt="email-icon"></img>
             </a>
           </div>
-          <p>7:30pm @ Collegetown</p>
+          <p>7:30pm @ Stimson 206</p>
         </div>
         <div className={`leader fade-in-section ${isVisible4 ? 'is-visible' : ''}`} ref={thursdayRef} onClick={() => { setThursIsOpen(true) }}>
           <p>Thursday</p>
@@ -261,17 +261,17 @@ export default function SmallGroup({ isMobile = false }) {
           style={customStyles}
         >
           <div>
-            <Profile image={wed_prof} title={'Cassy Kuo'} text={'Wednesdays 7:30pm @ Collegetown (Contact for apartment address)'} netid={'clk229'} email={'clk229@cornell.edu'} />
+            <Profile image={wed_prof} title={'Guillaume Ah-Hot'} text={'Wednesdays 7:30pm @ Stimson 206 (Contact for apartment address)'} netid={'gaa59'} email={'gaa59@cornell.edu'} />
             <Question
               isMobile={isMobile}
               image={wed_prof}
               question={"Fast Facts"}
               answer={
                 <div className="sg-answer">
-                  <span><span style={{ fontWeight: 500 }}>Major:</span> Health Care Policy '25</span>
-                  <span><span style={{ fontWeight: 500 }}>Hometown:</span> Los Angeles, CA</span>
-                  <span><span style={{ fontWeight: 500 }}>Fav lunch spot:</span> Macs</span>
-                  <span><span style={{ fontWeight: 500 }}>Best study spot:</span> Mann Library</span>
+                  <span><span style={{ fontWeight: 500 }}>Major:</span> ECE '27</span>
+                  <span><span style={{ fontWeight: 500 }}>Hometown:</span> Singapore</span>
+                  <span><span style={{ fontWeight: 500 }}>Fav lunch spot:</span> Okies after 2PM</span>
+                  <span><span style={{ fontWeight: 500 }}>Best study spot:</span> Kirby Reading Room</span>
                 </div>
               }
             />
@@ -279,13 +279,13 @@ export default function SmallGroup({ isMobile = false }) {
               isMobile={isMobile}
               image={wed_prof}
               question={"Favorite AAIV memory?"}
-              answer={"Playing ping pong until 5 in the morning with 15 people at AlGAE"}
+              answer={"Selah (AAIV Fall Retreat)"}
             />
             <Question
               isMobile={isMobile}
               image={wed_prof}
               question={"Vision for small group?"}
-              answer={"To encourage people to love and re-love Jesus and learn from each other about him."}
+              answer={"I want to create an intimate space where anyone is able to make friends while also learning about God and His Word."}
             />
             {/* <SgPhoto src={wed_sg} alt="Cassy small group" /> */}
           </div>
