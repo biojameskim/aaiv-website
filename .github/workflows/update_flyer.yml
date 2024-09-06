@@ -6,6 +6,9 @@ on:
     - cron: '0 2 * * FRI'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   update-flyer:
     runs-on: ubuntu-latest
