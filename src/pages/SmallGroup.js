@@ -171,17 +171,17 @@ export default function SmallGroup({ isMobile = false }) {
           style={customStyles}
         >
           <div>
-            <Profile image={mon_prof} title={'Cherrie Lan'} text={'Mondays 6:30pm @ Uris 302'} email={'cql2@cornell.edu'} />
+            <Profile image={mon_prof} title={'Melody Xu'} text={'Mondays 7:30pm @ Uris 302 (bring-your-own-dinner @ 7pm)'} email={'myx2@cornell.edu'} />
             <Question
               isMobile={isMobile}
               image={mon_prof}
               question={"Fast Facts"}
               answer={
                 <div className="sg-answer">
-                  <span><span style={{ fontWeight: 500 }}>Major:</span> Human Development '23</span>
-                  <span><span style={{ fontWeight: 500 }}>Hometown:</span> Stony Brook, NY</span>
-                  <span><span style={{ fontWeight: 500 }}>Fav lunch spot:</span> Martha's Cafe</span>
-                  <span><span style={{ fontWeight: 500 }}>Best study spot:</span> Not recent but Olin 7th floor stacks has a beautiful view</span>
+                  <span><span style={{ fontWeight: 500 }}>Major:</span> HBHS '25</span>
+                  <span><span style={{ fontWeight: 500 }}>Hometown:</span> Cincinnati, OH & Shanghai, China</span>
+                  <span><span style={{ fontWeight: 500 }}>Fav lunch spot:</span> Goldies</span>
+                  <span><span style={{ fontWeight: 500 }}>Best study spot:</span> Olin 7th floor stacks</span>
                 </div>
               }
             />
@@ -189,13 +189,13 @@ export default function SmallGroup({ isMobile = false }) {
               isMobile={isMobile}
               image={mon_prof}
               question={"Favorite AAIV Memory?"}
-              answer={"Testimony nights, connecting with friends, playing Just Dance @ ALGAE"}
+              answer={"Playing Nertz at algae with alumni"}
             />
             <Question
               isMobile={isMobile}
               image={mon_prof}
               question={"Vision for small group?"}
-              answer={"To create an open, welcomng, and vulnerable space and community for people of any faith background. We come together so we can love Jesus and each other more, learn more about God's Word in the Bible, and live life together!"}
+              answer={"For me, AAIV small group is a safe place to be vulnerable, share our doubts, struggles, and joys. Through studying scripture, we aim to get to know Jesus better and find joy in our faith journey with one another"}
             />
             {/* <SgPhoto src={melisabeth_sg} alt="melisabeth small group" /> */}
           </div>
@@ -253,7 +253,7 @@ export default function SmallGroup({ isMobile = false }) {
           style={customStyles}
         >
           <div>
-            <Profile image={wed_prof} title={'Guillaume Ah-Hot'} text={'Wednesdays 7:30pm @ Stimson 206 (Contact for apartment address)'} netid={'gaa59'} email={'gaa59@cornell.edu'} />
+            <Profile image={wed_prof} title={'Guillaume Ah-Hot'} text={'Wednesdays 7:30pm @ Stimson 206 (Dinner 6:30pm @ Okenshields)'} netid={'gaa59'} email={'gaa59@cornell.edu'} />
             <Question
               isMobile={isMobile}
               image={wed_prof}
