@@ -120,12 +120,12 @@ export default function SmallGroup({ isMobile = false }) {
           <hr></hr>
           <img src={mon_img} alt="monday"></img>
           <div className="sg-title">
-            <h3>Cherrie Lan</h3>
-            <a href="mailto: cql2@cornell.edu">
+            <h3>Melody Xu</h3>
+            <a href="mailto: myx2@cornell.edu">
               <img className="sg-icon" src={email} alt="email-icon"></img>
             </a>
           </div>
-          <p>6:30pm @ Uris 302</p>
+          <p>7:30pm @ Uris 302</p>
         </div>
         {/* <div className={`leader fade-in-section ${isVisible2 ? 'is-visible' : ''}`} ref={tuesdayRef} onClick={() => { setTuesIsOpen(true) }}>
           <p>Tuesday</p>
