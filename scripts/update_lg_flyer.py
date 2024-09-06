@@ -51,17 +51,12 @@ def main():
         file_id, file_name = get_latest_file(service, FOLDER_ID)
         if file_id:
             print(f"Downloading latest flyer: {file_name}")
-            destination = 'src/large_group/lg_graphics/lg_flyer.png'
+            destination = 'src/large_group/lg_graphics/'
             download_flyer(file_id, destination, service)
         else:
             print("No flyer found.")
     except Exception as e:
         print(f"An error occurred: {e}")
-    
-    if file_id:
-        print(f"Downloading latest flyer: {file_name}")
-        destination = f'src/large_group/lg_graphics/lg_flyer.png'
-        download_flyer(file_id, destination, service)
 
 if __name__ == '__main__':
     main()
