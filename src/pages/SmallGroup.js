@@ -125,7 +125,7 @@ export default function SmallGroup({ isMobile = false }) {
               <img className="sg-icon" src={email} alt="email-icon"></img>
             </a>
           </div>
-          <p>7:30pm @ Uris 302</p>
+          <p>7:30pm @ Uris 262</p>
         </div>
         {/* <div className={`leader fade-in-section ${isVisible2 ? 'is-visible' : ''}`} ref={tuesdayRef} onClick={() => { setTuesIsOpen(true) }}>
           <p>Tuesday</p>
@@ -171,7 +171,7 @@ export default function SmallGroup({ isMobile = false }) {
           style={customStyles}
         >
           <div>
-            <Profile image={mon_prof} title={'Melody Xu'} text={'Mondays 7:30pm @ Uris 302 (bring-your-own-dinner @ 7pm)'} email={'myx2@cornell.edu'} />
+            <Profile image={mon_prof} title={'Melody Xu'} text={'Mondays 7:30pm @ Uris 262 (bring-your-own-dinner @ 7pm)'} email={'myx2@cornell.edu'} />
             <Question
               isMobile={isMobile}
               image={mon_prof}
