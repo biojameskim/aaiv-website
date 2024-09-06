@@ -36,7 +36,7 @@ jobs:
       run: |
         git config --local user.email "biojameskim2002@gmail.com"
         git config --local user.name "James Kim"
-        git add src/large_group/lg_graphics/lg_flyer.png
+        git add src/assets/large_group/lg_graphics/lg_flyer.png
         git commit -m "Update LG flyer"
         git push origin main
       env:

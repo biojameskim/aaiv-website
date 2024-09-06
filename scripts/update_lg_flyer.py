@@ -51,7 +51,7 @@ def main():
         file_id, file_name = get_latest_file(service, FOLDER_ID)
         if file_id:
             print(f"Downloading latest flyer: {file_name}")
-            destination = 'src/large_group/lg_graphics/'
+            destination = 'src/assets/large_group/lg_graphics/lg_flyer.png'
             download_flyer(file_id, destination, service)
         else:
             print("No flyer found.")
