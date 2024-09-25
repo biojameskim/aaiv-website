@@ -37,13 +37,20 @@ jobs:
 
     # Check if there are changes before committing
     - name: Check for changes
+      id: changes
       run: |
         git add src/assets/large_group/lg_graphics/lg_flyer.png
-        git diff --cached --exit-code || echo "Changes detected"
+        if git diff --cached --quiet; then
+          echo "no changes"
+          echo "::set-output name=changed::false"
+        else
+          echo "Changes detected"
+          echo "::set-output name=changed::true"
+        fi
         
     # Only commit and push if there are changes
     - name: Commit and push changes if any
-      if: ${{ success() && steps.check-for-changes.outputs.changed == 'true' }}
+      if: ${{ steps.changes.outputs.changed == 'true' }}
       run: |
         git config --local user.email "biojameskim2002@gmail.com"
         git config --local user.name "James Kim"
