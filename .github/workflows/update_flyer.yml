@@ -42,15 +42,15 @@ jobs:
         git add src/assets/large_group/lg_graphics/lg_flyer.png
         if git diff --cached --quiet; then
           echo "no changes"
-          echo "::set-output name=changed::false"
+          echo "changed=false" >> $GITHUB_ENV
         else
           echo "Changes detected"
-          echo "::set-output name=changed::true"
+          echo "changed=true" >> $GITHUB_ENV
         fi
         
     # Only commit and push if there are changes
     - name: Commit and push changes if any
-      if: ${{ steps.changes.outputs.changed == 'true' }}
+      if: ${{ env.changed == 'true' }}
       run: |
         git config --local user.email "biojameskim2002@gmail.com"
         git config --local user.name "James Kim"
