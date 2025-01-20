@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './css/Home.css';
-import home_image from '../assets/home/home-img.png';
-import vision_image from '../assets/home/vision.svg';
+import home_image from '../assets/home/home2025.png';
+import vision_image from '../assets/home/vision2025.svg';
 import Footer from '../components/Footer';
 
 export default function Home({ isMobile = false }) {

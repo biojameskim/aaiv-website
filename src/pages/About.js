@@ -4,7 +4,7 @@ import './css/About.css';
 // import gallery2 from '../assets/about/about1(new).svg';
 // import gallery3 from '../assets/about/about2(new).svg';
 import about1 from '../assets/about/about12025.png';
-import about2 from '../assets/about/about22025.png';
+import about2 from '../assets/about/about_22025.png';
 import Footer from '../components/Footer';
 
 export default function About({ isMobile = false }) {
