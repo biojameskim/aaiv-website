@@ -166,7 +166,7 @@ export default function SmallGroup({ isMobile = false }) {
               <img className="sg-icon" src={email} alt="email-icon"></img>
             </a>
           </div>
-          <p>6:00pm @ CHOP ~ 536 thurston ave</p>
+          <p>6:00pm @ CHOP ~ 536 Thurston Ave</p>
         </div>
       </div>
       <div className="sg-modals">
@@ -317,7 +317,7 @@ export default function SmallGroup({ isMobile = false }) {
               isMobile={isMobile}
               image={thurs_prof}
               question={"Prayer for small group?"}
-              answer={"Love for learning from scripture."}
+              answer={"Love for learning from scripture"}
             />
           </div>
         </Modal>
