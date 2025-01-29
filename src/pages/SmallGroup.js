@@ -176,7 +176,7 @@ export default function SmallGroup({ isMobile = false }) {
           style={customStyles}
         >
           <div>
-            <Profile image={mon_prof} title={'Melody Xu'} text={'Mondays 7:30pm @ Uris Hall 260 (bring-your-own-dinner @ 7pm)'} email={'myx2@cornell.edu'} />
+            <Profile image={mon_prof} title={'Melody Xu'} text={'Mondays 7:30pm @ Uris Hall 260'} email={'myx2@cornell.edu'} />
             <Question
               isMobile={isMobile}
               image={mon_prof}
