@@ -122,7 +122,7 @@ export default function Church({ isMobile = false }) {
         <div className={`church-section ${isMobile ? 'church-section-mobile' : ''} church-section-right  fade-in-section ${isVisible3 ? 'is-visible' : ''}`} ref={domRef3}>
             <img className={`${isMobile ? 'church-image-mobile' : 'church-image'}`} src={christ_chapel} alt="christ-chapel"></img>
             <div className={`${isMobile ? 'text-container-mobile' : 'text-container'}`}>
-                <h2>9:00 AM & 11:00 AM</h2>
+                <h2>10:30 AM</h2>
                 <h1>Christ Chapel</h1>
                 <div className={`button-container ${isMobile ? 'button-container-mobile' : ''}`}>
                     <a href='https://www.christchapelithaca.org/' target="_blank" rel="noopener noreferrer">
