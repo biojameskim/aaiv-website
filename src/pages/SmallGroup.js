@@ -8,10 +8,10 @@ import './css/SmallGroup.css';
 import sg_img from '../assets/small_group/sg-background.png';
 
 // These are the leader COVER photos for each small group leader.
-import mon_img from '../assets/small_group/SP25_Leaders/melody_img.svg';
-import tues_img from '../assets/small_group/SP25_Leaders/lizzy+elaine_img.svg';
-import wed_img from '../assets/small_group/SP25_Leaders/guillaume_img.svg';
-import thurs_img from '../assets/small_group/SP25_Leaders/jed_img.svg'
+import mon_img from '../assets/small_group/SP25_Leaders/melody_img.png';
+import tues_img from '../assets/small_group/SP25_Leaders/lizzy+elaine_img.png';
+import wed_img from '../assets/small_group/SP25_Leaders/guillaume_img.png';
+import thurs_img from '../assets/small_group/SP25_Leaders/jed_img.png'
 
 // These are the group photos for each small group. 
 // import mon_sg from '../assets/small_group/melisabeth_sg.jpeg'
@@ -20,10 +20,10 @@ import thurs_img from '../assets/small_group/SP25_Leaders/jed_img.svg'
 // import thurs_sg from '../assets/small_group/grace_li_sg.jpeg'
 
 // These are the profile photos for each small group leader (The circular pfps within the modal).
-import mon_prof from '../assets/small_group/SP25_Leaders/melody_prof.svg';
-import tues_prof from '../assets/small_group/SP25_Leaders/lizzy+elaine_prof.svg';
-import wed_prof from '../assets/small_group/SP25_Leaders/guillaume_prof.svg';
-import thurs_prof from '../assets/small_group/SP25_Leaders/jed_prof.svg'
+import mon_prof from '../assets/small_group/SP25_Leaders/melody_prof.png';
+import tues_prof from '../assets/small_group/SP25_Leaders/lizzy+elaine_prof.png';
+import wed_prof from '../assets/small_group/SP25_Leaders/guillaume_prof.png';
+import thurs_prof from '../assets/small_group/SP25_Leaders/jed_prof.png'
 
 
 export default function SmallGroup({ isMobile = false }) {

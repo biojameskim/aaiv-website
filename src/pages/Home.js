@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './css/Home.css';
 import home_image from '../assets/home/home2025.png';
-import vision_image from '../assets/home/vision_2circle.svg';
+import vision_image from '../assets/home/vision_2circle.png';
 import Footer from '../components/Footer';
 
 export default function Home({ isMobile = false }) {
@@ -61,7 +61,13 @@ export default function Home({ isMobile = false }) {
             <div className="text-container">
                 <h1>Our Vision</h1>
                 <p>
-                    Our vision at AAIV is to establish a witnessing, Christ-centered community at Cornell.
+                Our vision at AAIV is to establish a witnessing, Christ-centered community at Cornell. This year, we hope to grow deeper in our love for God as we unite Cornell's campus and His people. 
+                </p>
+                <p>
+                We strive to be a beacon of light on campus, living fully for God in all that we do. By grounding ourselves in Scripture and experiencing His presence, love, and guidance, we hope to build one another up and share this joy with those around us.
+                </p>
+                <p>
+                Through intentional discipleship, we hope to cultivate a heart that faithfully serves and glorifies God, leading others to know and follow Christ.
                 </p>
             </div>
             <img className="vision-image" src={vision_image} alt="vision"></img>
