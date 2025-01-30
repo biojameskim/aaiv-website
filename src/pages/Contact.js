@@ -224,7 +224,7 @@ export default function Contact({ isMobile = false }) {
                     style={customStyles}
                 >
                     <div>
-                        <Profile image={elisabeth_prof} title={'Elisabeth Pan'} text={'President'} email={'ep438@cornell.edu'} />
+                        <Profile className={`${isMobile ? 'profile-mobile' : 'profile'}`} image={elisabeth_prof} title={'Elisabeth Pan'} text={'President'} email={'ep438@cornell.edu'} />
                         <Question isMobile={isMobile} image={elisabeth_prof} question={'Tell us a bit about yourself.'} answer={'Hi! I’m Elisabeth, a junior studying Information Science from Queens, NY.'} />
                         <Question isMobile={isMobile} image={elisabeth_prof} question={'What is your vision for AAIV?'} answer={'Our vision is for AAIV to build up and send out leaders in the kingdom of God. As Christians were called to make disciples of all nations, in that we are called to lead others to Christ. Our hope for AAIV is that it can be a community where we can be built up in both our personal and spiritual lives to serve one another and carry out this calling to be leaders and witnesses (that is reflections of Christ) to Cornell’s campus.'} />
                         <Question isMobile={isMobile} image={elisabeth_prof} question={'Favorite AAIV memory?'} answer={'Playing manhunt on eng quad '} />
@@ -237,7 +237,7 @@ export default function Contact({ isMobile = false }) {
                     style={customStyles}
                 >
                     <div>
-                        <Profile image={kaitlin_prof} title={'Kaitlin Chung'} text={'Small Group Coordinator'} email={'khc73@cornell.edu'} />
+                        <Profile className={`${isMobile ? 'profile-mobile' : 'profile'}`} image={kaitlin_prof} title={'Kaitlin Chung'} text={'Small Group Coordinator'} email={'khc73@cornell.edu'} />
                         <Question isMobile={isMobile} image={kaitlin_prof} question={'Tell us a bit about yourself.'} answer={'Hi! I’m Kaitlin, a sophomore studying Biological Sciences from Corning, NY.'} />
                         <Question isMobile={isMobile} image={kaitlin_prof} question={'What is your vision for AAIV?'} answer={'My vision for small group this semester is to create intimate spaces where non-believers, seekers, and Christians can discover the joy to be found in reading Scripture and seeking God together. By engaging in weekly Bible study, open sharing, and application of the Word to daily life, we are able to become better reflections of Christ’s love to those around us.'} />
                         <Question isMobile={isMobile} image={kaitlin_prof} question={'Favorite AAIV memory?'} answer={'The women in the Bible and fundamentals of faith small group workshops'} />
@@ -250,7 +250,7 @@ export default function Contact({ isMobile = false }) {
                     style={customStyles}
                 >
                     <div>
-                        <Profile image={angie_prof} title={'Angie Huang'} text={'Outreach Coordinator'} email={'amh356@cornell.edu'} />
+                        <Profile className={`${isMobile ? 'profile-mobile' : 'profile'}`} image={angie_prof} title={'Angie Huang'} text={'Outreach Coordinator'} email={'amh356@cornell.edu'} />
                         <Question isMobile={isMobile} image={angie_prof} question={'Tell us a bit about yourself.'} answer={'Hello! I am Angie. I am a Junior studying Chemistry & Chemical Biology, and I am from Fairfax, VA'} />
                         <Question isMobile={isMobile} image={angie_prof} question={'What is your vision for AAIV?'} answer={'Outreach ministry seeks to reach people from different corners of campus, from those who have been meaning to seek out a fellowship to those who have never heard about Jesus! We hope to invite people to a place where they not only can find belonging and meaningful relationships, but also to somewhere they can be encouraged to seek and follow the Lord in deeper, more personal ways.'} />
                         <Question isMobile={isMobile} image={angie_prof} question={'Favorite AAIV memory?'} answer={'yelling during attempts to play nertz at algae while fighting a horrendous headache from overly sweet boba into wee hours of the morning'} />
@@ -263,7 +263,7 @@ export default function Contact({ isMobile = false }) {
                     style={customStyles}
                 >
                     <div>
-                        <Profile image={jiaming_prof} title={'Jiaming Yuan'} text={'Community Co-Coordinator'} email={'jy729@cornell.edu'} />
+                        <Profile className={`${isMobile ? 'profile-mobile' : 'profile'}`} image={jiaming_prof} title={'Jiaming Yuan'} text={'Community Co-Coordinator'} email={'jy729@cornell.edu'} />
                         <Question isMobile={isMobile} image={jiaming_prof} question={'Tell us a bit about yourself.'} answer={'Hi! I\'m Jiaming. I\'m in the Class of 2026 studying Environmental Engineering. I\'m from San Fransisco, CA'} />
                         <Question isMobile={isMobile} image={jiaming_prof} question={'What is your vision for AAIV?'} answer={'Our vision is to make intentional spaces where members of AAIV can live together as one body of Christ. We hope to plan events that foster a welcoming and supportive community that encourages us to grow in faith and character as we spur each other on toward love and good works!'} />
                         <Question isMobile={isMobile} image={jiaming_prof} question={'Favorite AAIV memory?'} answer={'Sophomore class dinner at Rose, where so many of us showed up that we combined two long tables and got confronted about creating a fire hazard'} />
@@ -276,7 +276,7 @@ export default function Contact({ isMobile = false }) {
                     style={customStyles}
                 >
                     <div>
-                        <Profile image={hannah_prof} title={'Hannah Wang'} text={'Community Co-Coordinator'} email={'hw762@cornell.edu'} />
+                        <Profile className={`${isMobile ? 'profile-mobile' : 'profile'}`} image={hannah_prof} title={'Hannah Wang'} text={'Community Co-Coordinator'} email={'hw762@cornell.edu'} />
                         <Question isMobile={isMobile} image={hannah_prof} question={'Tell us a bit about yourself.'} answer={'Hi! I\'m Hannah. I\'m in the Class of 2027 studying Astronomy/Astrophysics. I\'m from Scarsdale, NY'} />
                         <Question isMobile={isMobile} image={hannah_prof} question={'What is your vision for AAIV?'} answer={'Our vision is to make intentional spaces where members of AAIV can live together as one body of Christ. We hope to plan events that foster a welcoming and supportive community that encourages us to grow in faith and character as we spur each other on toward love and good works!'} />
                         <Question isMobile={isMobile} image={hannah_prof} question={'Favorite AAIV memory?'} answer={'Selah FA23 & walking to UTea in the cold darkness then playing card games during ALGAE '} />
@@ -289,7 +289,7 @@ export default function Contact({ isMobile = false }) {
                     style={customStyles}
                 >
                     <div>
-                        <Profile image={serena_prof} title={'Serena Wang'} text={'Large Group Coordinator'} email={'sw755@cornell.edu'} />
+                        <Profile className={`${isMobile ? 'profile-mobile' : 'profile'}`} image={serena_prof} title={'Serena Wang'} text={'Large Group Coordinator'} email={'sw755@cornell.edu'} />
                         <Question isMobile={isMobile} image={serena_prof} question={'Tell us a bit about yourself.'} answer={'Hi! I\'m Serena. I\'m in the Class of 2025 studying Policy Analysis & Management. I\'m from McLean, VA'} />
                         <Question isMobile={isMobile} image={serena_prof} question={'What is your vision for AAIV?'} answer={'My vision for large group centers around discipleship and hospitality. My hope is that large group would be a welcoming and loving space where people would grow in spiritual discernment and knowledge of the Word, and be able to tangibly feel the love of God through fellowship.'} />
                         <Question isMobile={isMobile} image={serena_prof} question={'Favorite AAIV memory?'} answer={'Monday Small Group Testimony Night!'} />

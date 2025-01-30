@@ -154,7 +154,7 @@ export default function SmallGroup({ isMobile = false }) {
               <img className="sg-icon" src={email} alt="email-icon"></img>
             </a>
           </div>
-          <p>7:00pm @ Uris 204</p>
+          <p>7:00pm @ Stimson 206</p>
         </div>
         <div className={`leader fade-in-section ${isVisible4 ? 'is-visible' : ''}`} ref={thursdayRef} onClick={() => { setThursIsOpen(true) }}>
           <p>Thursday</p>
@@ -211,7 +211,7 @@ export default function SmallGroup({ isMobile = false }) {
           style={customStyles}
         >
           <div>
-            <Profile isMobile={isMobile} image={tues_prof} title={'Elaine Tsai & Lizzy Zhang'} text={'Tuesdays 6:30pm @ Stimson 206 (Dinner @ Okies at 5:30PM 😋)'} email={'ect65@cornell.edu'} />
+            <Profile isMobile={isMobile} image={tues_prof} title={'Elaine Tsai & Lizzy Zhang'} text={<>Tuesdays 6:30pm @ Stimson 206 <br /> Dinner @ Okies at 5:30PM 😋</>} email={'ect65@cornell.edu'} />
             <Question
               isMobile={isMobile}
               image={tues_prof} //Kaitlyn will be for Karina
@@ -260,7 +260,7 @@ export default function SmallGroup({ isMobile = false }) {
           style={customStyles}
         >
           <div>
-            <Profile isMobile={isMobile} image={wed_prof} title={'Guillaume Ah-Hot'} text={'Wednesdays 7:00pm @ Uris 204'} netid={'gaa59'} email={'gaa59@cornell.edu'} />
+            <Profile isMobile={isMobile} image={wed_prof} title={'Guillaume Ah-Hot'} text={'Wednesdays 7:00pm @ Stimson 206'} netid={'gaa59'} email={'gaa59@cornell.edu'} />
             <Question
               isMobile={isMobile}
               image={wed_prof}
@@ -295,7 +295,7 @@ export default function SmallGroup({ isMobile = false }) {
           style={customStyles}
         >
           <div>
-            <Profile isMobile={isMobile} image={thurs_prof} title={'Jed Tan'} text={'Thursdays 6:00pm @ CHOP ~ 536 Thurston Ave (Morrison dinner @ 5PM)'} netid={'jyt8'} email={'jyt8@cornell.edu'} />
+            <Profile isMobile={isMobile} image={thurs_prof} title={'Jed Tan'} text={<>Thursdays 6:00pm @ CHOP (536 Thurston Ave) <br /> Dinner @ Morrison at 5PM</>} netid={'jyt8'} email={'jyt8@cornell.edu'} />
             <Question
               isMobile={isMobile}
               image={thurs_prof}
