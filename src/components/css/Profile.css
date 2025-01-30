@@ -15,6 +15,12 @@
   height: auto; 
 }
 
+.profile-img-mobile {
+  transition: all 0.1s ease;
+  width: 30vw;
+  height: auto; 
+}
+
 .profile-img:hover {
   transform: scale(1.05);
 }

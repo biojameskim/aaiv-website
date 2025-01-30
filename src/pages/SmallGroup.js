@@ -123,7 +123,7 @@ export default function SmallGroup({ isMobile = false }) {
         <div className={`leader fade-in-section ${isVisible1 ? 'is-visible' : ''}`} ref={mondayRef} onClick={() => { setMonIsOpen(true) }}>
           <p>Monday</p>
           <hr></hr>
-          <img id="profile" src={mon_img} alt="monday"></img>
+          <img className={`${isMobile ? 'profile-mobile' : 'profile'}`} src={mon_img} alt="monday"></img>
           <div className="sg-title">
             <h3>Melody Xu</h3>
             <a href="mailto: myx2@cornell.edu">
@@ -135,7 +135,7 @@ export default function SmallGroup({ isMobile = false }) {
         <div className={`leader fade-in-section ${isVisible2 ? 'is-visible' : ''}`} ref={tuesdayRef} onClick={() => { setTuesIsOpen(true) }}>
           <p>Tuesday</p>
           <hr></hr>
-          <img id="profile" src={tues_img} alt="tuesday"></img>
+          <img className={`${isMobile ? 'profile-mobile' : 'profile'}`} src={tues_img} alt="tuesday"></img>
           <div className="sg-title">
             <h3>Elaine Tsai & Lizzy Zhang</h3>
             <a href="mailto: ect65@cornell.edu">
@@ -147,7 +147,7 @@ export default function SmallGroup({ isMobile = false }) {
         <div className={`leader fade-in-section ${isVisible3 ? 'is-visible' : ''}`} ref={wednesdayRef} onClick={() => { setWedIsOpen(true) }}>
           <p>Wednesday</p>
           <hr></hr>
-          <img id="profile" src={wed_img} alt="wednesday"></img>
+          <img className={`${isMobile ? 'profile-mobile' : 'profile'}`} src={wed_img} alt="wednesday"></img>
           <div className="sg-title">
             <h3>Guillaume Ah-Hot</h3>
             <a href="mailto: gaa59@cornell.edu">
@@ -159,7 +159,7 @@ export default function SmallGroup({ isMobile = false }) {
         <div className={`leader fade-in-section ${isVisible4 ? 'is-visible' : ''}`} ref={thursdayRef} onClick={() => { setThursIsOpen(true) }}>
           <p>Thursday</p>
           <hr></hr>
-          <img id="profile" src={thurs_img} alt="thursday"></img>
+          <img className={`${isMobile ? 'profile-mobile' : 'profile'}`} src={thurs_img} alt="thursday"></img>
           <div className="sg-title">
             <h3>Jed Tan</h3>
             <a href="mailto: jyt8@cornell.edu">
@@ -176,7 +176,7 @@ export default function SmallGroup({ isMobile = false }) {
           style={customStyles}
         >
           <div>
-            <Profile image={mon_prof} title={'Melody Xu'} text={'Mondays 7:30pm @ Uris Hall 260'} email={'myx2@cornell.edu'} />
+            <Profile isMobile={isMobile} image={mon_prof} title={'Melody Xu'} text={'Mondays 7:30pm @ Uris Hall 260'} email={'myx2@cornell.edu'} />
             <Question
               isMobile={isMobile}
               image={mon_prof}
@@ -211,7 +211,7 @@ export default function SmallGroup({ isMobile = false }) {
           style={customStyles}
         >
           <div>
-            <Profile image={tues_prof} title={'Elaine Tsai & Lizzy Zhang'} text={'Tuesdays 6:30pm @ Stimson 206 (Dinner @ Okies at 5:30PM 😋)'} email={'ect65@cornell.edu'} />
+            <Profile isMobile={isMobile} image={tues_prof} title={'Elaine Tsai & Lizzy Zhang'} text={'Tuesdays 6:30pm @ Stimson 206 (Dinner @ Okies at 5:30PM 😋)'} email={'ect65@cornell.edu'} />
             <Question
               isMobile={isMobile}
               image={tues_prof} //Kaitlyn will be for Karina
@@ -260,7 +260,7 @@ export default function SmallGroup({ isMobile = false }) {
           style={customStyles}
         >
           <div>
-            <Profile image={wed_prof} title={'Guillaume Ah-Hot'} text={'Wednesdays 7:00pm @ Uris 204'} netid={'gaa59'} email={'gaa59@cornell.edu'} />
+            <Profile isMobile={isMobile} image={wed_prof} title={'Guillaume Ah-Hot'} text={'Wednesdays 7:00pm @ Uris 204'} netid={'gaa59'} email={'gaa59@cornell.edu'} />
             <Question
               isMobile={isMobile}
               image={wed_prof}
@@ -295,7 +295,7 @@ export default function SmallGroup({ isMobile = false }) {
           style={customStyles}
         >
           <div>
-            <Profile image={thurs_prof} title={'Jed Tan'} text={'Thursdays 6:00pm @ CHOP ~ 536 Thurston Ave (Morrison dinner @ 5PM)'} netid={'jyt8'} email={'jyt8@cornell.edu'} />
+            <Profile isMobile={isMobile} image={thurs_prof} title={'Jed Tan'} text={'Thursdays 6:00pm @ CHOP ~ 536 Thurston Ave (Morrison dinner @ 5PM)'} netid={'jyt8'} email={'jyt8@cornell.edu'} />
             <Question
               isMobile={isMobile}
               image={thurs_prof}

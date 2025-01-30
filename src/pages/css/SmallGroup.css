@@ -122,8 +122,13 @@
   object-fit: contain;
 }
 
-#profile {
+.profile {
   width: 19vw;
+  height: auto;
+}
+
+.profile-mobile {
+  width: 80vw;
   height: auto;
 }
 
