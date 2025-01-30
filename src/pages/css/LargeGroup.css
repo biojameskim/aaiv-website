@@ -37,12 +37,16 @@
 
 .flyer {
   display: block;
-  width: 65%;
+  width: 45%;
   height: auto;
   margin: auto;
   border-radius: 20px;
-  border: white solid 20px;
+  border: white solid 10px;
   overflow: hidden;
+}
+
+.flyer-mobile {
+  width: 75%;
 }
 
 .algae-container {

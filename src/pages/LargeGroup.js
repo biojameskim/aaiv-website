@@ -56,7 +56,7 @@ export default function LargeGroup({ isMobile = false }) {
     <div className="lg-content-container">
       <h2>This Week's Topic</h2>
       <div className='flyer-container'>
-        <img className={`flyer fade-in-section ${isVisibleFlyer ? 'is-visible' : ''}`} ref={flyerRef} src={flyer} alt='lg-flyer'></img>
+        <img className={`flyer fade-in-section ${isVisibleFlyer ? 'is-visible' : ''} ${isMobile ? 'flyer-mobile' : ''}`} ref={flyerRef} src={flyer} alt='lg-flyer'></img>
       </div>
       <div className={`algae-container fade-in-section ${isVisibleAlgae ? 'is-visible' : ''}`} ref={algaeRef}>
         <div className='text-container'>
