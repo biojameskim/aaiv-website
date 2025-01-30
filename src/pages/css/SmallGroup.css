@@ -122,10 +122,10 @@
   object-fit: contain;
 }
 
-/* .leader img {
+#profile {
   width: 19vw;
   height: auto;
-} */
+}
 
 .fade-in-section {
   opacity: 0;

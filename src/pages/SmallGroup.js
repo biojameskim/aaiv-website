@@ -123,7 +123,7 @@ export default function SmallGroup({ isMobile = false }) {
         <div className={`leader fade-in-section ${isVisible1 ? 'is-visible' : ''}`} ref={mondayRef} onClick={() => { setMonIsOpen(true) }}>
           <p>Monday</p>
           <hr></hr>
-          <img src={mon_img} alt="monday"></img>
+          <img id="profile" src={mon_img} alt="monday"></img>
           <div className="sg-title">
             <h3>Melody Xu</h3>
             <a href="mailto: myx2@cornell.edu">
@@ -135,7 +135,7 @@ export default function SmallGroup({ isMobile = false }) {
         <div className={`leader fade-in-section ${isVisible2 ? 'is-visible' : ''}`} ref={tuesdayRef} onClick={() => { setTuesIsOpen(true) }}>
           <p>Tuesday</p>
           <hr></hr>
-          <img src={tues_img} alt="tuesday"></img>
+          <img id="profile" src={tues_img} alt="tuesday"></img>
           <div className="sg-title">
             <h3>Elaine Tsai & Lizzy Zhang</h3>
             <a href="mailto: ect65@cornell.edu">
@@ -147,7 +147,7 @@ export default function SmallGroup({ isMobile = false }) {
         <div className={`leader fade-in-section ${isVisible3 ? 'is-visible' : ''}`} ref={wednesdayRef} onClick={() => { setWedIsOpen(true) }}>
           <p>Wednesday</p>
           <hr></hr>
-          <img src={wed_img} alt="wednesday"></img>
+          <img id="profile" src={wed_img} alt="wednesday"></img>
           <div className="sg-title">
             <h3>Guillaume Ah-Hot</h3>
             <a href="mailto: gaa59@cornell.edu">
@@ -159,7 +159,7 @@ export default function SmallGroup({ isMobile = false }) {
         <div className={`leader fade-in-section ${isVisible4 ? 'is-visible' : ''}`} ref={thursdayRef} onClick={() => { setThursIsOpen(true) }}>
           <p>Thursday</p>
           <hr></hr>
-          <img src={thurs_img} alt="thursday"></img>
+          <img id="profile" src={thurs_img} alt="thursday"></img>
           <div className="sg-title">
             <h3>Jed Tan</h3>
             <a href="mailto: jyt8@cornell.edu">
@@ -242,7 +242,9 @@ export default function SmallGroup({ isMobile = false }) {
               isMobile={isMobile}
               image={tues_prof}
               question={"Favorite AAIV Memory?"}
-              answer={"Elaine (Prepping boys gen and girls gen  💃🕺), Lizzy (Just dance and karaoke after large group💃)"}
+              answer={<>
+              Elaine (Prepping boys gen and girls gen  💃🕺) <br /> Lizzy (Just dance and karaoke after large group💃)
+              </>}
             />
             <Question
               isMobile={isMobile}

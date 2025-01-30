@@ -11,6 +11,8 @@
 
 .profile-img {
   transition: all 0.1s ease;
+  width: 14vw;
+  height: auto; 
 }
 
 .profile-img:hover {
