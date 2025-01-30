@@ -211,7 +211,7 @@ export default function SmallGroup({ isMobile = false }) {
           style={customStyles}
         >
           <div>
-            <Profile isMobile={isMobile} image={tues_prof} title={'Elaine Tsai & Lizzy Zhang'} text={<>Tuesdays 6:30pm @ Stimson 206 <br /> Dinner @ Okies at 5:30PM 😋</>} email={'ect65@cornell.edu'} />
+            <Profile isMobile={isMobile} image={tues_prof} title={'Elaine Tsai & Lizzy Zhang'} text={<>Tuesdays 6:30pm @ Stimson 206 <br /> Dinner @ Okies at 5:30pm 😋</>} email={'ect65@cornell.edu'} />
             <Question
               isMobile={isMobile}
               image={tues_prof} //Kaitlyn will be for Karina
@@ -260,7 +260,7 @@ export default function SmallGroup({ isMobile = false }) {
           style={customStyles}
         >
           <div>
-            <Profile isMobile={isMobile} image={wed_prof} title={'Guillaume Ah-Hot'} text={'Wednesdays 7:00pm @ Stimson 206'} netid={'gaa59'} email={'gaa59@cornell.edu'} />
+            <Profile isMobile={isMobile} image={wed_prof} title={'Guillaume Ah-Hot'} text={<>Wednesdays 7:00pm @ Stimson 206 <br /> Dinner @ Okies at 6:00pm</>} netid={'gaa59'} email={'gaa59@cornell.edu'} />
             <Question
               isMobile={isMobile}
               image={wed_prof}
@@ -269,7 +269,7 @@ export default function SmallGroup({ isMobile = false }) {
                 <div className="sg-answer">
                   <span><span style={{ fontWeight: 500 }}>Major:</span> ECE '27</span>
                   <span><span style={{ fontWeight: 500 }}>Hometown:</span> Paris</span>
-                  {/* <span><span style={{ fontWeight: 500 }}>Fav lunch spot:</span> Okies after 2PM</span>
+                  {/* <span><span style={{ fontWeight: 500 }}>Fav lunch spot:</span> Okies after 2pm</span>
                   <span><span style={{ fontWeight: 500 }}>Best study spot:</span> Kirby Reading Room</span> */}
                 </div>
               }
@@ -295,7 +295,7 @@ export default function SmallGroup({ isMobile = false }) {
           style={customStyles}
         >
           <div>
-            <Profile isMobile={isMobile} image={thurs_prof} title={'Jed Tan'} text={<>Thursdays 6:00pm @ CHOP (536 Thurston Ave) <br /> Dinner @ Morrison at 5PM</>} netid={'jyt8'} email={'jyt8@cornell.edu'} />
+            <Profile isMobile={isMobile} image={thurs_prof} title={'Jed Tan'} text={<>Thursdays 6:00pm @ CHOP (536 Thurston Ave) <br /> Dinner @ Morrison at 5:00pm</>} netid={'jyt8'} email={'jyt8@cornell.edu'} />
             <Question
               isMobile={isMobile}
               image={thurs_prof}
