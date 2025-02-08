@@ -314,7 +314,7 @@ export default function Contact({ isMobile = false }) {
                         <Question isMobile={isMobile} image={joanna_prof} question={'LG Vision:'} answer={
                             'My vision for our weekly Large Group gatherings is to create an open \
                             and welcoming space where the fellowship is able to know, see, and love \
-                            God. From understanding God\’s character and power, to learning how to \
+                            God. From understanding God’s character and power, to learning how to \
                             recognize His presence, I hope the fellowship will encounter God and \
                             discover the goodness of building His kingdom together.'} />
                     </div>
