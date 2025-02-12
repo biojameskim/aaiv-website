@@ -165,7 +165,7 @@ export default function Contact({ isMobile = false }) {
                             <img className="exec-icon" src={email} alt="email-icon"></img>
                         </a>
                     </div>
-                    <p>President</p>
+                    <p>President & Outreach Coordinator</p>
                 </div>
 
                 <div className={`exec fade-in-section ${isVisibleHannah ? 'is-visible' : ''}`} ref={hannahRef} onClick={() => { setHannahIsOpen(true) }}>
@@ -227,7 +227,7 @@ export default function Contact({ isMobile = false }) {
                     style={customStyles}
                 >
                     <div>
-                        <Profile isMobile={isMobile} image={jonathan_prof} title={'Jonathan Wang'} text={'President'} email={'jyw38@cornell.edu'} />
+                        <Profile isMobile={isMobile} image={jonathan_prof} title={'Jonathan Wang'} text={'President & Outreach Coordinator'} email={'jyw38@cornell.edu'} />
                         <Question isMobile={isMobile} image={jonathan_prof} question={'Tell us a bit about yourself.'} answer={'Hi! I’m Jonathan, a sophomore studying Computer Science from Northborough, MA.'} />
                         <Question isMobile={isMobile} image={jonathan_prof} question={'Favorite AAIV memory?'} answer={'Playing irl mario kart and nertz during algae.'} />
                         <Question isMobile={isMobile} image={jonathan_prof} question={'President & Outreach Vision:'} 
