@@ -27,3 +27,13 @@
 .footer-container .icons .icon:hover {
   opacity: 1;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  cursor: pointer;
+  color: gray;
+}

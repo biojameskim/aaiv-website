@@ -14,7 +14,10 @@ export default function Footer() {
         </a>
     </div>
     <div style={{textAlign: 'center', fontSize: '12', marginBottom: '1rem'}}>
-      This organization is a registered student organization of Cornell University
+      This organization is a registered student organization of Cornell University | 
+      <a  
+      href="https://hr.cornell.edu/about/workplace-rights/equal-education-and-employment"
+      target="_blank" rel="noopener noreferrer">  Equal Education and Employment</a>
     </div>
   </div>
 }
