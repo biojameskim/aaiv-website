@@ -2,7 +2,8 @@ import React from 'react';
 import './css/Church.css';
 import ficcc from '../assets/church/ficcc.svg';
 // import ithaca_first from '../assets/church/ithaca-first.svg';
-import vineyard from '../assets/church/vineyard.svg';
+// import vineyard from '../assets/church/vineyard.svg';
+import bethelgrove from '../assets/church/bethelgrove.svg';
 import calvary from '../assets/church/calvary.svg';
 import christ_chapel from '../assets/church/christ-chapel.svg';
 import emmaus from '../assets/church/emmaus.svg';
@@ -100,24 +101,24 @@ export default function Church({ isMobile = false }) {
                         <button>Rides</button>
                     </a>
                 </div>
-                <p>Contact Jed Tan (jyt8) for more details.</p>
+                <p>Contact Lily Yang (ly345) for more details.</p>
             </div>
         </div>
         <div className={`church-section ${isMobile ? 'church-section-mobile' : ''} church-section-left fade-in-section ${isVisible2 ? 'is-visible' : ''}`} ref={domRef2}>
             <div className={`${isMobile ? 'text-container-mobile' : 'text-container'}`}>
-                <h2>10:00 AM</h2>
-                <h1>Vineyard Church of Ithaca</h1>
+                <h2>9:30 AM</h2>
+                <h1>Bethel Grove Bible Church</h1>
                 <div className={`button-container ${isMobile ? 'button-container-mobile' : ''}`}>
-                    <a href='https://ithacavineyard.org/' target="_blank" rel="noopener noreferrer">
+                    <a href='https://bg.org/' target="_blank" rel="noopener noreferrer">
                         <button>Website</button>
                     </a>
-                    <a href='https://ithacavineyard.org/how-to-get-here/' target="_blank" rel="noopener noreferrer">
+                    <a href='https://bg.org/contact-bethel-grove/#transportation' target="_blank" rel="noopener noreferrer">
                         <button>Rides</button>
                     </a>
                 </div>
-                <p>Contact David Wang (dyw22) for more details.</p>
+                <p>Contact Sarah Feng (sf527) for more details.</p>
             </div>
-            <img className={`${isMobile ? 'church-image-mobile' : 'church-image'}`} src={vineyard} alt="vineyard"></img>
+            <img className={`${isMobile ? 'church-image-mobile' : 'church-image'}`} src={bethelgrove} alt="bethelgrove"></img>
         </div>
         <div className={`church-section ${isMobile ? 'church-section-mobile' : ''} church-section-right  fade-in-section ${isVisible3 ? 'is-visible' : ''}`} ref={domRef3}>
             <img className={`${isMobile ? 'church-image-mobile' : 'church-image'}`} src={christ_chapel} alt="christ-chapel"></img>
@@ -132,7 +133,7 @@ export default function Church({ isMobile = false }) {
                         <button>Rides</button>
                     </a>
                 </div>
-                <p>Contact Melody Xu (myx2) for more details.</p>
+                <p>Contact Jiaming Yuan (jy729) for more details.</p>
             </div>
         </div>
         <div className={`church-section ${isMobile ? 'church-section-mobile' : ''} church-section-left fade-in-section ${isVisible4 ? 'is-visible' : ''}`} ref={domRef4}>
@@ -147,7 +148,7 @@ export default function Church({ isMobile = false }) {
                         <button>Rides</button>
                     </a>
                 </div>
-                <p>Contact Angie Huang (amh356) for more details.</p>
+                <p>Contact Christine Chen (cc2786) for more details.</p>
             </div>
             <img className={`${isMobile ? 'church-image-mobile' : 'church-image'}`} src={calvary} alt="calvary"></img>
         </div>
@@ -162,7 +163,7 @@ export default function Church({ isMobile = false }) {
                     </a>
                 </div>
                 <p>Anabel Taylor Hall (Room 230 - Auditorium)</p>
-                <p>Contact Kaitlin Chung (khc73) for more details.</p>
+                <p>Contact Joyce Yang (jby33) for more details.</p>
             </div>
         </div>
         <Footer />
