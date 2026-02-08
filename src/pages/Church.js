@@ -3,7 +3,7 @@ import './css/Church.css';
 import ficcc from '../assets/church/ficcc.svg';
 // import ithaca_first from '../assets/church/ithaca-first.svg';
 // import vineyard from '../assets/church/vineyard.svg';
-import bethelgrove from '../assets/church/bethelgrove.svg';
+import bethel from '../assets/church/bethel.svg';
 import calvary from '../assets/church/calvary.svg';
 import christ_chapel from '../assets/church/christ-chapel.svg';
 import emmaus from '../assets/church/emmaus.svg';
@@ -118,7 +118,7 @@ export default function Church({ isMobile = false }) {
                 </div>
                 <p>Contact Sarah Feng (sf527) for more details.</p>
             </div>
-            <img className={`${isMobile ? 'church-image-mobile' : 'church-image'}`} src={bethelgrove} alt="bethelgrove"></img>
+            <img className={`${isMobile ? 'church-image-mobile' : 'church-image'}`} src={bethel} alt="bethel"></img>
         </div>
         <div className={`church-section ${isMobile ? 'church-section-mobile' : ''} church-section-right  fade-in-section ${isVisible3 ? 'is-visible' : ''}`} ref={domRef3}>
             <img className={`${isMobile ? 'church-image-mobile' : 'church-image'}`} src={christ_chapel} alt="christ-chapel"></img>
