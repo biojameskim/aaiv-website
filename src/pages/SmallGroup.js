@@ -130,7 +130,6 @@ export default function SmallGroup({ isMobile = false }) {
           <div className="sg-title">
             <h3>Jiaming Yuan</h3>
             <a href="mailto: jy729@cornell.edu">
-              onClick={(e) => e.stopPropagation()}
               <img className="sg-icon" src={email} alt="email-icon"></img>
             </a>
           </div>
@@ -143,7 +142,6 @@ export default function SmallGroup({ isMobile = false }) {
           <div className="sg-title">
             <h3>Ailin Chen</h3>
             <a href="mailto: ac3232@cornell.edu">
-              onClick={(e) => e.stopPropagation()}
               <img className="sg-icon" src={email} alt="email-icon"></img>
             </a>
           </div>
@@ -156,7 +154,6 @@ export default function SmallGroup({ isMobile = false }) {
           <div className="sg-title">
             <h3>Guillaume Ah-Hot</h3>
             <a href="mailto: gaa59@cornell.edu">
-              onClick={(e) => e.stopPropagation()}
               <img className="sg-icon" src={email} alt="email-icon"></img>
             </a>
           </div>
@@ -169,7 +166,6 @@ export default function SmallGroup({ isMobile = false }) {
           <div className="sg-title">
             <h3>Joyce Yang</h3>
             <a href="mailto: jby33@cornell.edu">
-              onClick={(e) => e.stopPropagation()}
               <img className="sg-icon" src={email} alt="email-icon"></img>
             </a>
           </div>
