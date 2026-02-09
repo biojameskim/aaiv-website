@@ -3,21 +3,29 @@ import './css/Contact.css';
 import contact_img from '../assets/contact/contact_background.png';
 import instagram from '../assets/footer/instagram.svg';
 import email from '../assets/footer/email.svg';
-import jonathan from '../assets/contact/SP25_exec/jonathan.svg';
+// import jonathan from '../assets/contact/SP25_exec/jonathan.svg';
 // import kaitlin from '../assets/contact/SP24_exec/kaitlin.svg';
 // import angie from '../assets/contact/SP24_exec/angie.svg';
 // import jiaming from '../assets/contact/SP24_exec/jiaming.svg';
-import hannah from '../assets/contact/SP25_exec/hannah.svg';
-import joanna from '../assets/contact/SP25_exec/joanna.svg';
+// import hannah from '../assets/contact/SP25_exec/hannah.svg';
+// import joanna from '../assets/contact/SP25_exec/joanna.svg';
+import phoebe from '../assets/contact/SP26_exec/phoebe_img.svg';
+import christine from '../assets/contact/SP26_exec/christine_img.svg';
+import joshua from '../assets/contact/SP26_exec/joshua_img.svg';
+import pothan from '../assets/contact/SP26_exec/pothan_img.svg';
 import Footer from '../components/Footer';
 import Modal from 'react-modal';
 import Profile from '../components/Profile';
-import jonathan_prof from '../assets/contact/SP25_exec/jonathan-prof.svg';
+// import jonathan_prof from '../assets/contact/SP25_exec/jonathan-prof.svg';
 // import kaitlin_prof from '../assets/contact/SP24_exec/kaitlin-prof.svg';
 // import angie_prof from '../assets/contact/SP24_exec/angie-prof.svg';
 // import jiaming_prof from '../assets/contact/SP24_exec/jiaming-prof.svg';
-import hannah_prof from '../assets/contact/SP25_exec/hannah-prof.svg';
-import joanna_prof from '../assets/contact/SP25_exec/joanna-prof.svg';
+// import hannah_prof from '../assets/contact/SP25_exec/hannah-prof.svg';
+// import joanna_prof from '../assets/contact/SP25_exec/joanna-prof.svg';
+import phoebe_prof from '../assets/contact/SP26_exec/phoebe-prof.svg';
+import christine_prof from '../assets/contact/SP26_exec/christine-prof.svg';
+import joshua_prof from '../assets/contact/SP26_exec/joshua-prof.svg';
+import pothan_prof from '../assets/contact/SP26_exec/pothan-prof.svg';
 import Question from '../components/Question';
 
 import MailchimpForm from '../components/MailchimpForm';
@@ -38,94 +46,78 @@ export default function Contact({ isMobile = false }) {
         overlay: { zIndex: 2 }
     };
     Modal.setAppElement('body');
-    const [isVisibleJonathan, setVisibleJonathan] = useState(false);
     // const [isVisibleAngie, setVisibleAngie] = useState(false);
     // const [isVisibleKaitlin, setVisibleKaitlin] = useState(false);
     // const [isVisibleJiaming, setVisibleJiaming] = useState(false);
-    const [isVisibleHannah, setVisibleHannah] = useState(false);
-    const [isVisibleJoanna, setVisibleJoanna] = useState(false);
+    const [isVisiblePhoebe, setVisiblePhoebe] = useState(false);
+    const [isVisibleChristine, setVisibleChristine] = useState(false);
+    const [isVisibleJoshua, setVisibleJoshua] = useState(false);
+    const [isVisiblePothan, setVisiblePothan] = useState(false);
+
     const [isVisibleEmail, setVisibleEmail] = useState(false);
 
-    const [jonathanIsOpen, setJonathanIsOpen] = useState(false);
     // const [kaitlinIsOpen, setKaitlinIsOpen] = useState(false);
     // const [angieIsOpen, setAngieIsOpen] = useState(false);
     // const [jiamingIsOpen, setJiamingIsOpen] = useState(false);
-    const [hannahIsOpen, setHannahIsOpen] = useState(false);
-    const [joannaIsOpen, setJoannaIsOpen] = useState(false);
+    const [phoebeIsOpen, setPhoebeIsOpen] = useState(false);
+    const [christineIsOpen, setChristineIsOpen] = useState(false);
+    const [joshuaIsOpen, setJoshuaIsOpen] = useState(false);
+    const [pothanIsOpen, setPothanIsOpen] = useState(false);
 
-    const jonathanRef = useRef();
     // const kaitlinRef = useRef();
     // const angieRef = useRef();
     // const jiamingRef = useRef();
-    const hannahRef = useRef();
-    const joannaRef = useRef();
+    const phoebeRef = useRef();
+    const christineRef = useRef();
+    const joshuaRef = useRef();
+    const pothanRef = useRef();
     const emailRef = useRef();
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 if (entry.boundingClientRect.top > 0) {
                     if (entry.isIntersecting) {
-                        setVisibleJonathan(entry.isIntersecting);
+                        setVisiblePhoebe(entry.isIntersecting);
                     }
                 }
             });
         });
-        observer.observe(jonathanRef.current);
+        observer.observe(phoebeRef.current);
 
-        // const observer2 = new IntersectionObserver(entries => {
-        //     entries.forEach(entry => {
-        //         if (entry.boundingClientRect.top > 0) {
-        //             if (entry.isIntersecting) {
-        //                 setVisibleKaitlin(entry.isIntersecting);
-        //             }
-        //         }
-        //     });
-        // });
-        // observer2.observe(kaitlinRef.current);
+        const observer2 = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.boundingClientRect.top > 0) {
+                    if (entry.isIntersecting) {
+                        setVisibleChristine(entry.isIntersecting);
+                    }
+                }
+            });
+        });
+        observer2.observe(christineRef.current);
 
-        // const observer3 = new IntersectionObserver(entries => {
-        //     entries.forEach(entry => {
-        //         if (entry.boundingClientRect.top > 0) {
-        //             if (entry.isIntersecting) {
-        //                 setVisibleAngie(entry.isIntersecting);
-        //             }
-        //         }
-        //     });
-        // });
-        // observer3.observe(angieRef.current);
+        const observer3 = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.boundingClientRect.top > 0) {
+                    if (entry.isIntersecting) {
+                        setVisibleJoshua(entry.isIntersecting);
+                    }
+                }
+            });
+        });
+        observer3.observe(joshuaRef.current);
 
-        // const observer4 = new IntersectionObserver(entries => {
-        //     entries.forEach(entry => {
-        //         if (entry.boundingClientRect.top > 0) {
-        //             if (entry.isIntersecting) {
-        //                 setVisibleJiaming(entry.isIntersecting);
-        //             }
-        //         }
-        //     });
-        // });
-        // observer4.observe(jiamingRef.current);
+        const observer4 = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.boundingClientRect.top > 0) {
+                    if (entry.isIntersecting) {
+                        setVisiblePothan(entry.isIntersecting);
+                    }
+                }
+            });
+        });
+        observer4.observe(pothanRef.current);
+
         const observer5 = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.boundingClientRect.top > 0) {
-                    if (entry.isIntersecting) {
-                        setVisibleHannah(entry.isIntersecting);
-                    }
-                }
-            });
-        });
-        observer5.observe(hannahRef.current);
-        const observer6 = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.boundingClientRect.top > 0) {
-                    if (entry.isIntersecting) {
-                        setVisibleJoanna(entry.isIntersecting);
-                    }
-                }
-            });
-        });
-        observer6.observe(joannaRef.current);
-
-        const observer7 = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 if (entry.boundingClientRect.top > 0) {
                     if (entry.isIntersecting) {
@@ -157,166 +149,97 @@ export default function Contact({ isMobile = false }) {
         <div className={`exec-container ${isMobile ? 'exec-container-mobile' : ''}`}>
             <h1>Connect with an Exec Member</h1>
             <div className="exec-members">
-                <div className={`exec fade-in-section ${isVisibleJonathan ? 'is-visible' : ''}`} ref={jonathanRef} onClick={() => { setJonathanIsOpen(true) }}>
-                    <img className="exec-image" src={jonathan} alt="jonathan"></img>
+                <div className={`exec fade-in-section ${isVisiblePhoebe ? 'is-visible' : ''}`} ref={PhoebeRef} onClick={() => { setPhoebeIsOpen(true) }}>
+                    <img className="exec-image" src={phoebe} alt="phoebe"></img>
                     <div className="exec-title">
-                        <h3>Jonathan Wang (jyw38)</h3>
-                        <a href="mailto: jyw38@cornell.edu">
+                        <h3>Phoebe Qian (pq29)</h3>
+                        <a href="mailto: pq2938@cornell.edu">
                             <img className="exec-icon" src={email} alt="email-icon"></img>
                         </a>
                     </div>
-                    <p>President & Outreach Coordinator</p>
+                    <p>President</p>
                 </div>
 
-                <div className={`exec fade-in-section ${isVisibleHannah ? 'is-visible' : ''}`} ref={hannahRef} onClick={() => { setHannahIsOpen(true) }}>
-                    <img className="exec-image" src={hannah} alt="hannah"></img>
+                <div className={`exec fade-in-section ${isVisibleChristine ? 'is-visible' : ''}`} ref={christineRef} onClick={() => { setChristineIsOpen(true) }}>
+                    <img className="exec-image" src={christine} alt="christine"></img>
                     <div className="exec-title">
-                        <h3>Hannah Wang (hw762)</h3>
-                        <a href="mailto: hw762@cornell.edu">
-                            <img className="exec-icon" src={email} alt="email-icon"></img>
-                        </a>
-                    </div>
-                    <p>Small Group Coordinator</p>
-                </div>
-
-                {/* <div className={`exec fade-in-section ${isVisibleAngie ? 'is-visible' : ''}`} ref={angieRef} onClick={() => { setAngieIsOpen(true) }}>
-                    <img className="exec-image" src={angie} alt="elisabeth"></img>
-                    <div className="exec-title">
-                        <h3>Angie Huang (amh356)</h3>
-                        <a href="mailto: amh356@cornell.edu">
-                            <img className="exec-icon" src={email} alt="email-icon"></img>
-                        </a>
-                    </div>
-                    <p>Outreach Coordinator</p>
-                </div>
-                <div className={`exec fade-in-section ${isVisibleJiaming ? 'is-visible' : ''}`} ref={jiamingRef} onClick={() => { setJiamingIsOpen(true) }}>
-                    <img className="exec-image" src={jiaming} alt="elisabeth"></img>
-                    <div className="exec-title">
-                        <h3>Jiaming Yuan (jy729)</h3>
-                        <a href="mailto: jy729@cornell.edu">
-                            <img className="exec-icon" src={email} alt="email-icon"></img>
-                        </a>
-                    </div>
-                    <p>Community Co-Coordinator</p>
-                </div>
-                <div className={`exec fade-in-section ${isVisibleHannah ? 'is-visible' : ''}`} ref={hannahRef} onClick={() => { setHannahIsOpen(true) }}>
-                    <img className="exec-image" src={hannah} alt="elisabeth"></img>
-                    <div className="exec-title">
-                        <h3>Hannah Wang (hw762)</h3>
-                        <a href="mailto: hw762@cornell.edu">
-                            <img className="exec-icon" src={email} alt="email-icon"></img>
-                        </a>
-                    </div>
-                    <p>Community Co-Coordinator</p>
-                </div> */}
-                <div className={`exec fade-in-section ${isVisibleJoanna ? 'is-visible' : ''}`} ref={joannaRef} onClick={() => { setJoannaIsOpen(true) }}>
-                    <img className="exec-image" src={joanna} alt="joanna"></img>
-                    <div className="exec-title">
-                        <h3>Joanna Tan (jat362)</h3>
-                        <a href="mailto: jat362@cornell.edu">
+                        <h3>Christine Chen (cc2786)</h3>
+                        <a href="mailto: cc2786@cornell.edu">
                             <img className="exec-icon" src={email} alt="email-icon"></img>
                         </a>
                     </div>
                     <p>Large Group Coordinator</p>
                 </div>
+                <div className={`exec fade-in-section ${isVisibleJoshua ? 'is-visible' : ''}`} ref={joshuaRef} onClick={() => { setJoshuaIsOpen(true) }}>
+                    <img className="exec-image" src={joshua} alt="joshua"></img>
+                    <div className="exec-title">
+                        <h3>Joshua Chen (jc3852)</h3>
+                        <a href="mailto: jc3852@cornell.edu">
+                            <img className="exec-icon" src={email} alt="email-icon"></img>
+                        </a>
+                    </div>
+                    <p>Discipleship Coordinator</p>
+                </div>
+                <div className={`exec fade-in-section ${isVisiblePothan ? 'is-visible' : ''}`} ref={pothanRef} onClick={() => { setPothanIsOpen(true) }}>
+                    <img className="exec-image" src={pothan} alt="pothan"></img>
+                    <div className="exec-title">
+                        <h3>Pothan Tang (pt426)</h3>
+                        <a href="mailto: pt426@cornell.edu">
+                            <img className="exec-icon" src={email} alt="email-icon"></img>
+                        </a>
+                    </div>
+                    <p>Connection Coordinator</p>
+                </div>
+                
             </div>
             <div className="exec-modals">
                 <Modal
-                    isOpen={jonathanIsOpen}
-                    onRequestClose={() => { setJonathanIsOpen(false) }}
+                    isOpen={phoebeIsOpen}
+                    onRequestClose={() => { setPhoebeIsOpen(false) }}
                     style={customStyles}
                 >
                     <div>
-                        <Profile isMobile={isMobile} image={jonathan_prof} title={'Jonathan Wang'} text={'President & Outreach Coordinator'} email={'jyw38@cornell.edu'} />
-                        <Question isMobile={isMobile} image={jonathan_prof} question={'Tell us a bit about yourself.'} answer={'Hi! I’m Jonathan, a sophomore studying Computer Science from Northborough, MA.'} />
-                        <Question isMobile={isMobile} image={jonathan_prof} question={'Favorite AAIV memory?'} answer={'Playing irl mario kart and nertz during algae.'} />
-                        <Question isMobile={isMobile} image={jonathan_prof} question={'President & Outreach Vision:'} 
-                        answer={
-                            'My vision is to cultivate a culture of vulnerability within the fellowship—a space where we, \
-                            as the body of Christ, can come together to learn, grow, and deepen our love for Jesus. We want \
-                            AAIV to continue to be a welcoming environment where both believers and non-believers feel safe \
-                            to ask questions, share their lives, and rely on Jesus in every situation. Ultimately, we hope to \
-                            see the fellowship ignited with a passion and boldness to share the Gospel, fully embracing \
-                            and reflecting the transformative work of the Lord in our lives.'} />
-                    </div>
-                </Modal>
-                {/* <Modal
-                    isOpen={kaitlinIsOpen}
-                    onRequestClose={() => { setKaitlinIsOpen(false) }}
-                    style={customStyles}
-                >
-                    <div>
-                        <Profile isMobile={isMobile} image={kaitlin_prof} title={'Kaitlin Chung'} text={'Small Group Coordinator'} email={'khc73@cornell.edu'} />
-                        <Question isMobile={isMobile} image={kaitlin_prof} question={'Tell us a bit about yourself.'} answer={'Hi! I’m Kaitlin, a sophomore studying Biological Sciences from Corning, NY.'} />
-                        <Question isMobile={isMobile} image={kaitlin_prof} question={'What is your vision for AAIV?'} answer={'My vision for small group this semester is to create intimate spaces where non-believers, seekers, and Christians can discover the joy to be found in reading Scripture and seeking God together. By engaging in weekly Bible study, open sharing, and application of the Word to daily life, we are able to become better reflections of Christ’s love to those around us.'} />
-                        <Question isMobile={isMobile} image={kaitlin_prof} question={'Favorite AAIV memory?'} answer={'The women in the Bible and fundamentals of faith small group workshops'} />
-                        <Question isMobile={isMobile} image={kaitlin_prof} question={'Describe AAIV with three emojis.'} answer={'🧋🕺🔫'} answerFontSize={'32px'} />
+                        <Profile isMobile={isMobile} image={phoebe_prof} title={'Phoebe Qian'} text={'President'} email={'pq29@cornell.edu'} />
+                        <Question isMobile={isMobile} image={phoebe_prof} question={'Tell us a bit about yourself.'} answer={'Hi! I’m Phoebe, a junior studying Computer Science from McLean, VA.'} />
+                        <Question isMobile={isMobile} image={phoebe_prof} question={'Favorite AAIV memory?'} answer={'Playing man hunt in the arts quad after large group'} />
+                        <Question isMobile={isMobile} image={phoebe_prof} question={'President Vision:'} 
+                        answer={'My vision for AAIV is to unite student believers across diverse walks of faith, forming them through discipleship to become devoted servants of God and to live out Christ’s presence on campus and throughout the world. '} />
                     </div>
                 </Modal>
                 <Modal
-                    isOpen={angieIsOpen}
-                    onRequestClose={() => { setAngieIsOpen(false) }}
+                    isOpen={christineIsOpen}
+                    onRequestClose={() => { setChristineIsOpen(false) }}
                     style={customStyles}
                 >
                     <div>
-                        <Profile isMobile={isMobile} image={angie_prof} title={'Angie Huang'} text={'Outreach Coordinator'} email={'amh356@cornell.edu'} />
-                        <Question isMobile={isMobile} image={angie_prof} question={'Tell us a bit about yourself.'} answer={'Hello! I am Angie. I am a Junior studying Chemistry & Chemical Biology, and I am from Fairfax, VA'} />
-                        <Question isMobile={isMobile} image={angie_prof} question={'What is your vision for AAIV?'} answer={'Outreach ministry seeks to reach people from different corners of campus, from those who have been meaning to seek out a fellowship to those who have never heard about Jesus! We hope to invite people to a place where they not only can find belonging and meaningful relationships, but also to somewhere they can be encouraged to seek and follow the Lord in deeper, more personal ways.'} />
-                        <Question isMobile={isMobile} image={angie_prof} question={'Favorite AAIV memory?'} answer={'yelling during attempts to play nertz at algae while fighting a horrendous headache from overly sweet boba into wee hours of the morning'} />
-                        <Question isMobile={isMobile} image={angie_prof} question={'Describe AAIV with three emojis.'} answer={'🧋🕺🔫'} answerFontSize={'32px'} />
+                        <Profile isMobile={isMobile} image={christine_prof} title={'Christine Chen'} text={'Large Group Coordinator'} email={'cc2786@cornell.edu'} />
+                        <Question isMobile={isMobile} image={christine_prof} question={'Tell us a bit about yourself.'} answer={'Hi! I’m Christine, a junior studying Applied Economics and Management from Highland Park, NJ.'} />
+                        <Question isMobile={isMobile} image={christine_prof} question={'Favorite AAIV memory?'} answer={'Mario kart in hollister 🚗💨🏃‍♀️'} />
+                        <Question isMobile={isMobile} image={christine_prof} question={'What is your vision for AAIV?'} answer={'My vision for Large Group in AAIV is to help everyone love and pursue God wholeheartedly while learning how to live out their faith boldly. I hope to cultivate a welcoming and loving community for people to grow together that does not just inspire people for a night, but equips and encourages them to walk in faith.'} />
                     </div>
                 </Modal>
                 <Modal
-                    isOpen={jiamingIsOpen}
-                    onRequestClose={() => { setJiamingIsOpen(false) }}
+                    isOpen={joshuaIsOpen}
+                    onRequestClose={() => { setJoshuaIsOpen(false) }}
                     style={customStyles}
                 >
                     <div>
-                        <Profile isMobile={isMobile} image={jiaming_prof} title={'Jiaming Yuan'} text={'Community Co-Coordinator'} email={'jy729@cornell.edu'} />
-                        <Question isMobile={isMobile} image={jiaming_prof} question={'Tell us a bit about yourself.'} answer={'Hi! I\'m Jiaming. I\'m in the Class of 2026 studying Environmental Engineering. I\'m from San Fransisco, CA'} />
-                        <Question isMobile={isMobile} image={jiaming_prof} question={'What is your vision for AAIV?'} answer={'Our vision is to make intentional spaces where members of AAIV can live together as one body of Christ. We hope to plan events that foster a welcoming and supportive community that encourages us to grow in faith and character as we spur each other on toward love and good works!'} />
-                        <Question isMobile={isMobile} image={jiaming_prof} question={'Favorite AAIV memory?'} answer={'Sophomore class dinner at Rose, where so many of us showed up that we combined two long tables and got confronted about creating a fire hazard'} />
-                        <Question isMobile={isMobile} image={jiaming_prof} question={'Describe AAIV with three emojis.'} answer={'🧋🕺🔫'} answerFontSize={'32px'} />
-                    </div>
-                </Modal> */}
-                <Modal
-                    isOpen={hannahIsOpen}
-                    onRequestClose={() => { setHannahIsOpen(false) }}
-                    style={customStyles}
-                >
-                    <div>
-                        <Profile isMobile={isMobile} image={hannah_prof} title={'Hannah Wang'} text={'Small Group Coordinator'} email={'hw762@cornell.edu'} />
-                        <Question isMobile={isMobile} image={hannah_prof} question={'Tell us a bit about yourself.'} answer={'Hi! I\'m Hannah. I\'m in the Class of 2027 studying Astronomy/Astrophysics. I\'m from Scarsdale, NY.'} />
-                        <Question isMobile={isMobile} image={hannah_prof} question={'Favorite AAIV memory?'} answer={'staying up really late several times in the Holy Week tent to worship, pray, yap, and try not to fall asleep <3'} />
-                        <Question isMobile={isMobile} image={hannah_prof} question={'SG Vision:'} answer={
-                            'My vision for small groups this semester is to cultivate \
-                            close-knit, welcoming, and accessible spaces where \
-                            individuals—regardless of faith background—can come \
-                            together to study the Word. Our goal is to deepen \
-                            understanding and love for God: His character, His work \
-                            in each of our lives, and how we can live His love out in \
-                            our communities. We hope to foster a greater love for \
-                            God\'s Word by engaging with Scripture and having deeper \
-                            conversations in meaningful fellowship, helping everyone \
-                            to know, experience, and love Him more fully (Colossians 3:16). '} />
-
+                        <Profile isMobile={isMobile} image={joshua_prof} title={'Joshua Chen'} text={'Discipleship Coordinator'} email={'jc3852@cornell.edu'} />
+                        <Question isMobile={isMobile} image={joshua_prof} question={'Tell us a bit about yourself.'} answer={'Hi! I\'m Joshua, a sophomore studying Information Science from Brooklyn, NY'} />
+                        <Question isMobile={isMobile} image={joshua_prof} question={'Favorite AAIV memory?'} answer={'Kayaking at Selah 2025'} />
+                        <Question isMobile={isMobile} image={joshua_prof} question={'What is your vision for AAIV?'} answer={'I believe discipleship falls into place as brothers and sisters walk together intentionally in seeking the heart of Jesus. In light of this, my vision for discipleship through small group is to invite the Holy Spirit in these spaces that He may work in each one of us to be more like Him. Our prayer is that as AAIV grows in the coming year, we would bear fruit by building one another up as truth-seekers. In this pursuit, small groups would create spaces of vulnerability where we are able to deepen our relationship with Christ and walk in obedience to His every command.'} />
                     </div>
                 </Modal>
                 <Modal
-                    isOpen={joannaIsOpen}
-                    onRequestClose={() => { setJoannaIsOpen(false) }}
+                    isOpen={pothanIsOpen}
+                    onRequestClose={() => { setPothanIsOpen(false) }}
                     style={customStyles}
                 >
                     <div>
-                        <Profile isMobile={isMobile} image={joanna_prof} title={'Joanna Tan'} text={'Large Group Coordinator'} email={'jat362@cornell.edu'} />
-                        <Question isMobile={isMobile} image={joanna_prof} question={'Tell us a bit about yourself.'} answer={'Hi! I\'m Joanna. I\'m in the Class of 2026 studying Mechanical Engineering. I\'m from Piscataway, NJ.'} />
-                        <Question isMobile={isMobile} image={joanna_prof} question={'Favorite AAIV memory?'} answer={'Stargazing in Ithaca with my freshman year small group.'} />
-                        <Question isMobile={isMobile} image={joanna_prof} question={'LG Vision:'} answer={
-                            'My vision for our weekly Large Group gatherings is to create an open \
-                            and welcoming space where the fellowship is able to know, see, and love \
-                            God. From understanding God’s character and power, to learning how to \
-                            recognize His presence, I hope the fellowship will encounter God and \
-                            discover the goodness of building His kingdom together.'} />
+                        <Profile isMobile={isMobile} image={pothan_prof} title={'Pothan Tang'} text={'Connection Coordinator'} email={'pt426@cornell.edu'} />
+                        <Question isMobile={isMobile} image={pothan_prof} question={'Tell us a bit about yourself.'} answer={'Hi! I\'m Pothan, a sophomore studying Physics and Mathematics from Hong Kong.'} />
+                        <Question isMobile={isMobile} image={pothan_prof} question={'Favorite AAIV memory?'} answer={'Playing sardines in Hollister Hall during ALGAE.'} />
+                        <Question isMobile={isMobile} image={pothan_prof} question={'What is your vision for AAIV?'} answer={'To promote and facilitate the outreach ministry in AAIV.'} />
                     </div>
                 </Modal>
             </div>
