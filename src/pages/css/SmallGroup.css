@@ -123,13 +123,17 @@
 }
 
 .profile {
-  width: 19vw;
+  width: 100%;
+  max-width: 260px;
   height: auto;
+  display: block;
 }
 
 .profile-mobile {
-  width: 80vw;
+  width: 100%;
+  max-width: 320px;
   height: auto;
+  display: block;
 }
 
 .fade-in-section {
