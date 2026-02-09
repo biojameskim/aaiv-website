@@ -126,7 +126,7 @@ export default function Contact({ isMobile = false }) {
                 }
             });
         });
-        observer7.observe(emailRef.current);
+        observer5.observe(emailRef.current);
 
     }, []);
 
@@ -149,7 +149,7 @@ export default function Contact({ isMobile = false }) {
         <div className={`exec-container ${isMobile ? 'exec-container-mobile' : ''}`}>
             <h1>Connect with an Exec Member</h1>
             <div className="exec-members">
-                <div className={`exec fade-in-section ${isVisiblePhoebe ? 'is-visible' : ''}`} ref={PhoebeRef} onClick={() => { setPhoebeIsOpen(true) }}>
+                <div className={`exec fade-in-section ${isVisiblePhoebe ? 'is-visible' : ''}`} ref={phoebeRef} onClick={() => { setPhoebeIsOpen(true) }}>
                     <img className="exec-image" src={phoebe} alt="phoebe"></img>
                     <div className="exec-title">
                         <h3>Phoebe Qian (pq29)</h3>
