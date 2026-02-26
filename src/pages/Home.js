@@ -73,6 +73,7 @@ export default function Home({ isMobile = false }) {
                 Through large group, we strive to LOVE and pursue God wholeheartedly and deeply. Through small group, we hope to LOVE and build one another up to be like Jesus. For our community, we will LOVE and live out our faith BODLY, bearing faithful witness to Christ.
                 </p>
                 <p>
+                <br></br>
                 Ephesians 4:4-6
                 </p>
                 <p>
