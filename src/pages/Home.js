@@ -73,8 +73,9 @@ export default function Home({ isMobile = false }) {
                 Through large group, we strive to LOVE and pursue God wholeheartedly and deeply. Through small group, we hope to LOVE and build one another up to be like Jesus. For our community, we will LOVE and live out our faith BODLY, bearing faithful witness to Christ.
                 </p>
                 <p>
-                Ephesians 4:4-6<br></br>
-
+                Ephesians 4:4-6
+                </p>
+                <p>
                 (4) There is one body and one Spirit, just as you were called to one hope when you were called; (5) one Lord, one faith, one baptism; (6) one God and Father of all, who is over all and through all and in all.
                 </p>
             </div>
